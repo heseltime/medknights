@@ -52,25 +52,16 @@
 
 				<div class="inner">
 					<section>
-						<h2>Schritt 1: medKnights Profil Anlegen</h2>
-						<p>Bitte teile mit uns zuerst ein paar grundlegende Informationen. </p>
-						<form action="#" class="alt" method="POST">
-							<div class="row uniform">
-								<div class="6u 12u$(xsmall)">
-									<input name="name" placeholder="Name" type="text">
-								</div>
-								<div class="6u$ 12u$(xsmall)">
-									<input name="email" placeholder="Email" type="email">
-								</div>
-								<div class="12u$">
-									<textarea name="message" placeholder="Message" rows="4"></textarea>
- 								</div>
- 							</div>
- 							<ul class="actions special">
-								<li><a href="#" class="button alt">medKnights Profil Anlegen</a></li>
-								<p class="space_20">Im nächsten Schritt kannst du die Materialien, die du medCastle zur Verfügung stellen willst, <span class="strong">per Dropbox</span> teilen.</p>
-							</ul>
- 						</form>
+						<h2>Schritt 1: medKnights Account Anlegen</h2>
+						<p>Bitte lege zuerst einen Account zum Login an. </p>
+						<form method="POST">
+  
+							{% csrf_token %}
+							{{ form }}
+						
+						  <input type="submit" class="space" />
+						
+						</form>
 					</section>
 				</div>
 			</section>

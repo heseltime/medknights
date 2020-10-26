@@ -6,6 +6,13 @@
 
 		<!-- Banner -->
 			<section id="banner">
+
+        {% for message in messages %}
+
+          <p class="flash_message">{{ message }}</p>
+
+        {% endfor %}
+
 				<div class="inner split">
 					<section>
 						<h2>Willkommen <span class="purple magnify">zurück</span> bei den <span class="black">medKnights,</span> nur bei <a href="https://medcastle.at" alt="medCastle" class="">medCastle</a></h2>

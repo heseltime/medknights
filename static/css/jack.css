@@ -1,3 +1,4 @@
+/****-- general --****/
 
 form label {
     margin-top: 20px;
@@ -5,6 +6,22 @@ form label {
 
 form input[type="submit"] {
     margin-top: 25px;
+    display: block;
+}
+
+/****-- util classes --****/
+
+.helptext {
+    background: yellow;
+}
+
+.flash_message {
+    margin: auto;
+    color: #dd15b9;
+}
+
+ul.errorlist li {
+    background: red;
 }
 
 .white {
@@ -41,4 +58,143 @@ form input[type="submit"] {
 
 .magnify_2 {
     font-size: 1.8em;
+}
+
+/****-- mC uebernahme, modular --****/
+
+/*-----------nav base-----------*/
+
+#header a.logo span {
+	background: #518f6c;
+	margin-left: 5px;
+	padding: 2px;
+	border-radius: 2px;
+}
+
+	#header a.logo span i {
+			color: #ffb5be;
+			margin-left: 2px;
+			padding: 2px;
+			font-size: 0.6em;
+			font-weight: 600;
+		}
+		
+	.outside-div > .fb-like {
+		//background: #6cc091;
+		margin-left: 5px;
+		padding: 2px;
+		border-radius: 2px;
+		position: absolute;
+		padding: 5px;
+		top: 55px;
+		left: 0;
+		color: #fff;
+		
+		-webkit-box-shadow: 3px 6px 5px 2px rgba(0,0,0,0.08);
+		-moz-box-shadow: 3px 6px 5px 2px rgba(0,0,0,0.08);
+		box-shadow: 3px 6px 5px 2px rgba(0,0,0,0.08);
+		
+	}
+	
+		.outside-div:hover > .fb-like {
+			//background: #6cc091;
+		}
+		
+		.no_bg {
+			background: none;
+		}
+		
+	#f {
+		font-weight: 600;
+	}
+	
+	#nav a i.fa-shopping-bag{
+		margin-right: 5px;
+		color: #fff;
+	}
+	
+/*-----------nav work-----------*/
+
+
+nav h5 {
+	display: inline-block;
+	float: right;
+	padding: 20px;
+	color: #fff;
+	font-size: 1em;
+	position: relative;
+}
+
+nav h5 ul {
+	list-style: none;
+	background: #518f6c;
+	position: absolute;
+	border-radius: 2px;
+	box-shadow: 0 0 5px rgba(#000, .15);
+	padding: 2px;
+	display: none;
+	z-index: 10;
+}
+
+	nav h5 ul:hover {
+		
+	}
+
+	nav h5 ul li {
+		width: 100%;
+		position: relative;
+		text-align: left;
+		padding: 5px;
+		border-radius: 2px;
+		font-size: 1em;
+		
+	}
+	
+		nav h5 ul li:not(.notice) {
+			text-transform: uppercase;
+			color: #ffb5be;
+			font-weight: 700;
+		}
+		
+		li.notice {
+			color: #e8e8e8;
+		}
+	
+		nav h5 ul li a.swatch_sch {
+			color: red;
+		}
+		
+		nav h5 ul li a:hover {
+			background: ;
+			//padding: 10px;
+			//font-size: 1em;
+			color: #ffb5be;
+			
+		}
+		
+		
+		
+		nav h5 ul li:hover:before {
+			//content: "> ";
+			
+		}
+		
+		
+nav h5:hover ul {
+	display: block;
+	
+	animation:fadeInRight .3s ease;
+	-webkit-animation:fadeInRight .3s ease;
+}
+
+@keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		transform: translate3d(100%, 0, 0);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: none;
+	}
 }
