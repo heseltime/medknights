@@ -1,3 +1,12 @@
+
+form label {
+    margin-top: 20px;
+}
+
+form input[type="submit"] {
+    margin-top: 25px;
+}
+
 .white {
     color: #fff;
 }
@@ -6,10 +15,30 @@
     font-weight: bold;
 }
 
+.italics {
+    font-style: italic;
+}
+
 .space {
     margin-top: 10px;
 }
 
 .space_20 {
     margin-top: 20px;
+}
+
+.black {
+    color: #000;
+}
+
+.purple {
+    color: #945093;
+}
+
+.magnify {
+    font-size: 1.4em;
+}
+
+.magnify_2 {
+    font-size: 1.8em;
 }
