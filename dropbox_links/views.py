@@ -19,4 +19,3 @@ class Dropbox_linkViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         _user = self.request.user
         return Dropbox_link.objects.filter(user=_user)
-

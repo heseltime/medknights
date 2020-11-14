@@ -63,6 +63,7 @@ import axios from 'axios'
 const API_BASE = 'http://127.0.0.1:8000/'
 
 const API_URL_DROPBOX_LINKS = API_BASE + 'dropbox_links'
+const API_URL_USER_INFO = API_BASE + 'accounts'
 
 export default {
     name: 'fileChooser',
@@ -80,11 +81,20 @@ export default {
             .then(response => {
                 this.attachments = response.data
 
-                if (this.attachments.length) {
+                /*if (this.attachments.length) {
                     this.user = this.attachments[0].user;
                 } else {
 
-                }
+                    getUser();
+
+                }*/
+
+            });
+
+        axios.get(API_URL_USER_INFO)
+            .then(response => {
+                
+                this.user = response.data[0].username;
 
             });
     },

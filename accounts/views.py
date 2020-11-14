@@ -15,6 +15,11 @@ from django.contrib.auth.hashers import make_password
 
 from django.contrib import messages
 
+from django.contrib.auth.models import User
+from rest_framework import serializers
+
+from rest_framework import viewsets
+
 def login_view(request):
     if request.user.is_authenticated:
         return redirect('/app')
@@ -65,3 +70,21 @@ def register(request):
     }
 
     return render(request, "storefront.html", context)
+
+
+class UserSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = User
+        fields = ['id', 'username', 'email']
+
+class UserViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint to retrieve user
+    """
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+    #permission_classes = [permissions.IsAuthenticated]
+
+    def get_queryset(self):
+        _user = self.request.user
+        return User.objects.filter(username=_user)
