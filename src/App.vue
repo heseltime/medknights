@@ -9,7 +9,7 @@
 
 				<a href="/" class="logo"><span>by med<strong>Castle </i><i class="fab fa-fort-awesome magnify"></i></strong></span></a>
 
-        <a href="https://www.facebook.com/groups/252411336109045/" class="facebook_link"><span><strong><i class="fab fa-facebook magnify"></i>-Gruppe</strong></span></a>
+        <a href="https://www.facebook.com/groups/252411336109045/" class="facebook_link"><span><strong><i class="fab fa-facebook magnify"></i>-Gruppe!</strong></span></a>
 				
 			</div>
 			

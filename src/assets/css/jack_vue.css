@@ -76,7 +76,7 @@ ul.errorlist li {
 
 /****-- ---------------------- --****/
 
-/* old header */
+/* old header incorp */
 
 #header a.logo span {
 	background: #518f6c;
@@ -98,9 +98,6 @@ ul.errorlist li {
 
 .inner {
 	max-width: 75em;
-	margin: 0 auto;
-
-	padding: 10px;
 }
 
 	@media screen and (max-width: 1280px) {
@@ -122,18 +119,17 @@ ul.errorlist li {
 #header {
 	cursor: default;
 	height: 3.5em;
-	left: 0;
-	line-height: 3.5em;
+	line-height: 3.2em;
 	position: absolute;
 	text-align: left;
 	top: 1em;
 	width: 100%;
-	z-index: 10001;
 }
 
 	#header .inner {
 		margin: 0 auto;
 		position: relative;
+		left: 20px;
 	}
 
 	#header .logo {
