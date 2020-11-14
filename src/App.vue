@@ -1,14 +1,35 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>dropbox choose is coming.</h1>
-    <router-view/>
+
+    <header id="header">
+			
+			<div class="inner">
+				
+        <a href="/" class="med_knights"><span>med<strong>Knights <i class="fas fa-chess-knight"></i></strong></span></a>
+
+				<a href="/" class="logo"><span>by med<strong>Castle </i><i class="fab fa-fort-awesome magnify"></i></strong></span></a>
+
+        <a href="https://www.facebook.com/groups/252411336109045/" class="facebook_link"><span><strong><i class="fab fa-facebook magnify"></i>-Gruppe</strong></span></a>
+				
+			</div>
+			
+		</header>
+    
+    <Header />
+    <fileChooser />
   </div>
 </template>
 
 <script>
+import Header from './components/Header.vue'
+import fileChooser from './components/fileChooser.vue'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Header,
+    fileChooser
+  }
 }
 </script>
 

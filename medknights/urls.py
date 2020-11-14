@@ -29,4 +29,5 @@ urlpatterns = [
     path('', account_views.register),
     path('accounts', include('accounts.urls')),
     path('app/', app),
+    path('dropbox_links', include('dropbox_links.urls')),
 ]
