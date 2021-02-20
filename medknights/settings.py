@@ -171,8 +171,8 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # CORS
 
 CORS_ORIGIN_WHITELIST = (
-    'https://medknights.herokuapp.com/',
-    'https://knights.medcastle.at/',
+    'https://medknights.herokuapp.com',
+    'https://knights.medcastle.at',
 )
 
 CORS_ORIGIN_ALLOW_ALL = False
