@@ -11,7 +11,7 @@
         <b-jumbotron header="File-Upload" lead="Teile deine MedAT-Materialien mit DropBox.">
         <p>Für diesen Schritt benötigst du einen <a href="https://www.dropbox.com/" alt="DropBox Account Anlegen" target="_BLANK">DropBox-Account</a>.</p>
         <b-button id="tooltip-target-1" variant="primary" href="#" @click="dropboxIconClicked()">DropBox-Dateien Wählen</b-button>
-        <p>Mit dem Upload willigst du den unten angeführten Vereinbarungen ein. Wenn deine Materialien von der Redaktion geprüft wurden und bereit zur Veröffentlichung sind, erhältst du eine Einladung zur <b>Tafelrunde</b> an deine Anmeldungs-Emailadresse zugeschickt.</p>
+        <p class="mt-3"><i>Mit dem Upload willigst du den unten angeführten <b>Vereinbarungen</b> ein. </i></p> 
 
         <b-tooltip target="tooltip-target-1" triggers="hover">
             Auswählbar sind ".pdf",  ".doc", ".docx" Dateien.
@@ -24,6 +24,8 @@
         </ul>
 
         </b-jumbotron>
+
+        <b-alert class="alert alert-dark" show>Nachdem deine Materialien von der Redaktion geprüft wurden und bereit zur Veröffentlichung sind, erhältst du eine Einladung in die <b>Tafelrunde</b>, an deine Anmeldungs-Emailadresse zugeschickt.</b-alert>
 
         <b-alert show>Bitte per DropBox Materialien auswählen und speichern</b-alert>
 
@@ -46,7 +48,7 @@
 
             <b-col>
 
-                
+                <img src="/static/img/filechooser_logo-01.png" alt="medKnights file_chooser" width="570" height="483"/>
 
             </b-col>
 
