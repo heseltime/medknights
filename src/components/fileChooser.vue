@@ -67,6 +67,10 @@ import axios from 'axios'
 axios.defaults.xsrfCookieName = 'csrftoken'
 axios.defaults.xsrfHeaderName = "X-CSRFTOKEN"
 
+//"/app" issue ...
+//const API_URL_DROPBOX_LINKS = process.env.API_BASE + 'dropbox_links'
+//const API_URL_USER_INFO = process.env.API_BASE + 'accounts'
+
 //const API_BASE = 'http://127.0.0.1:8000/'
 const API_BASE = 'https://medknights.herokuapp.com/'
 
