@@ -41,7 +41,7 @@
 
             <b-col>
                 <ul v-if="attachments.length" class="list-group space">
-                    <h2 class="space">Bereits Gespeicherte Links</h2>
+                    <h2 class="space">Gespeicherte Links</h2>
                     <li v-for="item in attachments" class="list-group-item disabled">{{ item.title }} <span class="small_print">{{ item.link }}</span></li>
                 </ul>
             </b-col>
