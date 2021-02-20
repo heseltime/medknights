@@ -1,0 +1,216 @@
+/****-- general --****/
+
+form label {
+    margin-top: 20px;
+}
+
+form input[type="submit"] {
+    margin-top: 25px;
+    display: block;
+}
+
+/****-- util classes --****/
+
+.helptext {
+    background: yellow;
+}
+
+.flash_message {
+    margin: auto;
+    color: #dd15b9;
+}
+
+ul.errorlist li {
+    background: red;
+}
+
+.white {
+    color: #fff;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.space {
+    margin-top: 10px;
+}
+
+.space_20 {
+    margin-top: 20px;
+}
+
+.black {
+    color: #000;
+}
+
+.purple {
+    color: #945093;
+}
+
+.magnify {
+    font-size: 1.4em;
+}
+
+.magnify_2 {
+    font-size: 1.8em;
+}
+
+/****-- ---------------------- --****/
+
+/****-- modular styles new --- --****/
+
+/****-- ---------------------- --****/
+
+h1 {
+	text-align: center;
+	color: #fff;
+	font-size: 3em;
+	margin-top: -3em;
+}
+
+/****-- ---------------------- --****/
+
+/****-- mC uebernahme, modular --****/
+
+/****-- ---------------------- --****/
+
+/* old header */
+
+#header a.logo span {
+	background: #518f6c;
+	margin-left: 5px;
+	padding: 5px 4px 3px 4px;
+	border-radius: 2px;
+
+	-moz-transition: background-color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+}
+
+	#header a.logo span:hover {
+		background: #00bc8a;
+	}
+
+.inner {
+	max-width: 75em;
+	margin: 0 auto;
+}
+
+	@media screen and (max-width: 1280px) {
+
+		.inner {
+			max-width: 90%;
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		.inner {
+			max-width: 90%;
+		}
+
+	}
+
+#header {
+	cursor: default;
+	height: 3.5em;
+	left: 0;
+	line-height: 3.5em;
+	position: absolute;
+	text-align: left;
+	top: 1em;
+	width: 100%;
+	z-index: 10001;
+}
+
+	#header .inner {
+		margin: 0 auto;
+		position: relative;
+	}
+
+	#header .logo {
+		color: #ffffff;
+		display: inline-block;
+		font-weight: 400;
+		margin: 0;
+		padding: 0;
+		top: 0;
+	}
+
+
+	#header a {
+		-moz-transition: color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out;
+		display: inline-block;
+		padding: 0 0.75em;
+		color: inherit;
+		text-decoration: none;
+		font-size: 1em;
+	}
+
+		/* -- custom highlighting -- */
+
+		#header a.med_knights:hover {
+			color: #a853bd;
+		}
+
+		#header a.med_knights {
+			margin: 0;
+			padding: 0;
+		}
+
+
+		#header a.facebook_link:hover {
+			color: #1f57cf;
+		}
+
+		#header a.facebook_link {
+			margin: 0;
+			padding: 0;
+		}
+
+
+		@media screen and (max-width: 736px) {
+
+			#header a {
+				padding: 0 0.5em;
+			}
+
+		}
+
+@media screen and (max-width: 980px) {
+
+	#header {
+		top: 1em;
+	}
+
+}
+
+@media screen and (max-width: 736px) {
+
+	#header {
+		top: .5em;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	#header {
+		font-size: .9em;
+	}
+
+}
+
+.bold {
+	font-weight: bold;
+}
