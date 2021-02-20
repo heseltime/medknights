@@ -31,7 +31,7 @@
 
         <b-col>
 
-        <p>Es geht hier nur um die Basics, aber es ist wichtig sie abzudecken, damit sich niemand misversteht. Der blau unterlegte Punkt ist am wichtigsten.</p>
+        <!--<p>Es geht hier nur um die Basics, aber es ist wichtig sie abzudecken, damit sich niemand misversteht. Der blau unterlegte Punkt ist am wichtigsten.</p>-->
 
         </b-col>
 
