@@ -8,67 +8,140 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 		
 		<!--[if lte IE 8]><script src="{% static '' %}js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="{% static '' %}css/main.css" />
+		<!--<link rel="stylesheet" href="{% static '' %}css/main.css" />-->
 
-		<link rel="stylesheet" href="{% static '' %}css/main_mC.css" />
+		<!--<link rel="stylesheet" href="{% static '' %}css/main_mC.css" />-->
         <!--[if lte IE 9]><link rel="stylesheet" href="{% static '' %}css/ie9.css" /><![endif]-->
-		<link rel="stylesheet" href="{% static '' %}css/jack.css" />
+		<!--<link rel="stylesheet" href="{% static '' %}css/jack.css" />-->
 
 		<link rel="stylesheet" href="{% static '' %}css/font-awesome.min.css" />
 		<link rel="stylesheet" href="{% static '' %}css/brands.min.css" />
 		<link rel="stylesheet" href="{% static '' %}css/all.min.css" />
+
+		<link rel="stylesheet" href="{% static '' %}css/main2.css" />
+		<link rel="stylesheet" href="{% static '' %}css/noscript.css" />
 	</head>
-	<body>
 
-		<!-- Banner Test -->
-		<section id="banner">
+	<body class="is-preload">
 
-			<h1 class="banner_icon"><a href="/" alt="Home"><i class="fa fa-chess-knight magnify"></i></a></h1>
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-		</section>
+				<!-- Wrapper -->
+					<div id="wrapper">
 
-		<!-- Contact -->
-		<section id="contact" class="wrapper">
+						<!-- Panel (Banner) -->
+							<section class="panel banner right">
+								<div class="content color0 span-3-75">
+									<h1 class="major">Willkommen<br />
+									<span style="color: #000;">in der Tafelrunde</span></h1>
+									<p>Hier wird dein Erfolg als <a href="/" alt="medKnights"><strong>medKnight</strong></a>, also als erfolgreicher MedAT-Anwärter und Studienplatz-Ergatterer der Humanmedizin in Österreich, für die folgenden Generationen, in einer Art <strong>Hall of Fame</strong>, gewahrt</p> 
+									
+									<p><strong>Im Speziellen:</strong> Wir vom <a href="https://medcastle.at" alt="medCastle">medCastle</a> wollen von dir über deine Strategie erfahren! Liefere im <a href="/accounts/login" alt="Login"><strong>file_chooser</strong></a> deine alten Materialien nach, um der nächsten Generation zu helfen. So kommst auch Du in die Tafelrunde!</strong></p>
+									<ul class="actions">
+										<li><a href="#first" class="button primary color1 circle icon solid fa-angle-right">Next</a></li>
+									</ul>
+								</div>
+								<div class="image filtered span-1-75" data-position="25% 40%">
+									<img src="{% static '' %}/img/tafelrunde_woodcut.jpg" alt="" />
+								</div>
+							</section>
 
-			<div class="inner split">
-				<section>
-					<h2>Noch Fragen?</h2>
-					<p>MedCastle ist eine Art <strong>Open Source MedAT Community</strong> mit einer App und ausgeprägten Meinungen zu finanziellen Barrieren im österreichischen MedAT-Prozess.</p>
-					
-					<p>Wir haben einen gut betreuten Desk, der dich gerne zum medKnights-Konzept und unseren anderen Projekten berät und für Fragen offen ist.</p>
-					<form action="#" class="alt" method="POST">
-						<div class="row uniform">
-							<div class="6u 12u$(xsmall)">
-								<input name="name" placeholder="Name" type="text">
-							</div>
-							<div class="6u$ 12u$(xsmall)">
-								<input name="email" placeholder="Email" type="email">
-							</div>
-							<div class="12u$">
-								<textarea name="message" placeholder="Message" rows="4"></textarea>
-							 </div>
-						 </div>
-						 <ul class="actions">
-							 <li><input class="alt" value="Send message" type="submit"></li>
-						 </ul>
-					 </form>
-				</section>
-				<section>
-					<ul class="contact">
-						<li class="fa-facebook"><a href="https://www.facebook.com/groups/252411336109045/">facebook <span class="strong">medKnights-Gruppe!</span></a></li>
-						<li class="fa-instagram"><a href="#">instagram.com/medcastle.at</a></li>
-						<li class="fa-envelope"><a href="mailto:desk@medcastle.at">desk@medcastle.at</a></li>
-					</ul>
-				</section>
+						<!-- Panel (Spotlight) -->
+							<section class="panel spotlight medium right" id="first">
+								<div class="content span-7">
+									<h2 class="major">King Jack</h2>
+									<p>Der an King Arthur angelehnte Title ist ein Spaß, denn ich studiere nicht Medizin, bin aber an der Redaktion und Entwicklung des medCastle/medKnight-Angebots beteiligt. Von mir gibt es aber sehrwohl einen <a href="https://medcastle.at/skript/ee_merk" alt="Jack's Merk-Guide">Merk-Guide</a>, zum Thema Materialien. Scroll gleich weiter, und du bist in der <strong>echten</strong> Runde!</p>
+								</div>
+								<div class="image filtered tinted" data-position="top left">
+									<img src="{% static '' %}/img/entries/jack.png" alt="Jack">
+								</div>
+							</section>
+
+						<!-- Panel -->
+							<section class="panel color1">
+								<div class="intro joined">
+									<h2 class="major">Die Kombination Machts Aus</h2>
+									<p>Stell dir vor, du könntest dir von jedem medKnight ein Stück Ausrüstung mitnehmen. Den Merkguide von Jack vielleicht: und dann je nach deinen Stärken oder Schwächen vielleicht ...</p>
+								</div>
+								<div class="inner">
+									<ul class="grid-icons three connected">
+										<li><span class="icon fa-atom"><span class="label">BMS Physik</span></span></li>
+										<li><span class="icon solid fa-capsules"><span class="label">BMS Bio</span></span></li>
+										<li><span class="icon solid fa-vial"><span class="label">BMS Chemie</span></span></li>
+										<li><span class="icon solid fa-square-root-alt"><span class="label">BMS Mathe</span></span></li>
+										<li><span class="icon solid fa-book-open"><span class="label">KFF Textverständnis</span></span></li>
+										<li><span class="icon solid fa-code"><span class="label">KFF xy</span></span></li>
+									</ul>
+								</div>
+							</section>
+
+						<!-- Panel (Spotlight) -->
+							<section class="panel spotlight large left">
+								<div class="content span-5">
+									<h2 class="major">Hallo, ich bin Taryn.</h2>
+									<p><strong>Ich bin Medizinstudentin in Wien und finde, dass die überteuerten Präsenzkurse, die es v.a. hier-zu-Stadte gibt, zum einen (finanziell) ausgrenzend, zum anderen auch unnütze sind: jeder, der wirklich Medizin studieren will, und das auch kann, kann und soll sich denn Stoff selber aneignen: wie im Studium!</strong>
+									</p><p><strong>Nur das macht Sinn.</strong></p>
+								</div>
+								<div class="image filtered tinted" data-position="top right">
+									<img src="{% static '' %}/img/entries/taryn.png" alt="" />
+								</div>
+							</section>
+
+						<!-- Panel -->
+							<section class="panel">
+								<div class="intro color2">
+									<h2 class="major">Worauf Wartest Du!</h2>
+									<p>Wir wollen viele hübsche Gesichter in die Taferunde holen, <a href="/" alt="Registrierung"><strong>komm zu den medKnights</strong></a> um deine Materialien zu teilen, als 1. Schritt. Dannach sind wir bald per Email mit Dir in Kontakt.</p>
+								</div>
+							</section>
+
+						<!-- Panel -->
+							<section class="panel color4-alt">
+								<div class="intro color4">
+									<h2 class="major">Noch Fragen?</h2>
+									<p>Mehr infos auch unter <a href="/" alt="medknights">medKnights</a>!</p>
+								</div>
+								<div class="inner columns divided">
+									<div class="span-3-25">
+										<form method="post" action="#">
+											<div class="fields">
+												<div class="field half">
+													<label for="name">Name</label>
+													<input type="text" name="name" id="name" />
+												</div>
+												<div class="field half">
+													<label for="email">Email</label>
+													<input type="email" name="email" id="email" />
+												</div>
+												<div class="field">
+													<label for="message">Message</label>
+													<textarea name="message" id="message" rows="4"></textarea>
+												</div>
+											</div>
+											<ul class="actions">
+												<li><input type="submit" value="Send Message" class="button primary" /></li>
+											</ul>
+										</form>
+									</div>
+									<div class="span-1-5">
+										<ul class="contact-icons color1">
+											<li class="icon brands fa-facebook-f"><a href="https://www.facebook.com/groups/252411336109045/"><span class="strong">medKnights-Gruppe!</span></a></li>
+											<li class="icon brands fa-instagram"><a href="#">instagram.com/medcastle.at</a></li>
+											<li class="icon fa-envelope"><a href="mailto:desk@medcastle.at">desk@medcastle.at</a></li>
+										</ul>
+									</div>
+								</div>
+							</section>
+
+						
+
+						<!-- Copyright/Footer -->
+							<div class="copyright">&copy; <a href="https://medcastle.at">medCastle {% now "Y" %}</a></div>
+
+					</div>
+
 			</div>
-		</section>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="copyright">
-					&copy; medCastle 2021
-				</div>
-			</footer>
 
 		<!-- Scripts -->
 			<script src="{% static '' %}js/jquery.min.js"></script>
@@ -76,6 +149,10 @@
 			<script src="{% static '' %}js/util.js"></script>
 			<!--[if lte IE 8]><script src="{% static '' %}js/ie/respond.min.js"></script><![endif]-->
 			<script src="{% static '' %}js/main.js"></script>
+
+			<script src="{% static '' %}js/browser.min.js"></script>
+			<script src="{% static '' %}js/breakpoints.min.js"></script>
+			<script src="{% static '' %}js/main2.js"></script>
 
 	</body>
 </html>
