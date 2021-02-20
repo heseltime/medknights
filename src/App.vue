@@ -17,18 +17,21 @@
     
     <Header />
     <fileChooser />
+    <infoSection />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import fileChooser from './components/fileChooser.vue'
+import infoSection from './components/infoSection.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    fileChooser
+    fileChooser,
+    infoSection
   }
 }
 </script>

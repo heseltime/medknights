@@ -30,4 +30,6 @@ urlpatterns = [
     path('accounts', include('accounts.urls')),
     path('app/', app),
     path('dropbox_links', include('dropbox_links.urls')),
+    url(r'^roundtable$', TemplateView.as_view(template_name='roundtable.html')),
+    url(r'^info$', TemplateView.as_view(template_name='info.html')),
 ]
