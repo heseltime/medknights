@@ -63,6 +63,7 @@
 <style scoped>
 
 img {
+    width: 100%;
     max-width: 570px;
     max-height: 483px;
 }
