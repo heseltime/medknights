@@ -48,7 +48,7 @@
 
             <b-col>
 
-                <img src="/static/img/filechooser_logo-01.png" alt="medKnights file_chooser" width="570" height="483"/>
+                <img src="/static/img/filechooser_logo-01.png" alt="medKnights file_chooser" />
 
             </b-col>
 
@@ -59,6 +59,15 @@
     </div>
 
 </template>
+
+<style scoped>
+
+img {
+    max-width: 570px;
+    max-height: 483px;
+}
+
+</style>
 
 <script>
 
