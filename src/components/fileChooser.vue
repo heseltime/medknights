@@ -11,6 +11,7 @@
         <b-jumbotron header="File-Upload" lead="Teile deine MedAT-Materialien mit DropBox.">
         <p>Für diesen Schritt benötigst du einen <a href="https://www.dropbox.com/" alt="DropBox Account Anlegen" target="_BLANK">DropBox-Account</a>.</p>
         <b-button id="tooltip-target-1" variant="primary" href="#" @click="dropboxIconClicked()">DropBox-Dateien Wählen</b-button>
+        <p>Mit dem Upload willigst du den unten angeführten Vereinbarungen ein. Wenn deine Materialien von der Redaktion geprüft wurden und bereit zur Veröffentlichung sind, erhältst du eine Einladung zur <b>Tafelrunde</b> an deine Anmeldungs-Emailadresse zugeschickt.</p>
 
         <b-tooltip target="tooltip-target-1" triggers="hover">
             Auswählbar sind ".pdf",  ".doc", ".docx" Dateien.
