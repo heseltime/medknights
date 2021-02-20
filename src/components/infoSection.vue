@@ -2,7 +2,7 @@
 
     <div>
 
-        <b-container class="card">
+        <b-container class="card" id="contract">
 
         <b-row>
 

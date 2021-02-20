@@ -8,10 +8,10 @@
 
         <b-col>
 
-        <b-jumbotron header="File-Upload" lead="Teile deine MedAT-Materialien mit DropBox.">
+        <b-jumbotron header="file_chooser" lead="Teile deine MedAT-Materialien mit DropBox.">
         <p>Für diesen Schritt benötigst du einen <a href="https://www.dropbox.com/" alt="DropBox Account Anlegen" target="_BLANK">DropBox-Account</a>.</p>
         <b-button id="tooltip-target-1" variant="primary" href="#" @click="dropboxIconClicked()">DropBox-Dateien Wählen</b-button>
-        <p class="mt-3"><i>Mit dem Upload willigst du den unten angeführten <b>Vereinbarungen</b> ein. </i></p> 
+        <p class="mt-3"><i>Mit dem Upload willigst du den unten angeführten <a href="#contract" alt="Vereinbarungen"><b>Vereinbarungen</b></a> ein. </i></p> 
 
         <b-tooltip target="tooltip-target-1" triggers="hover">
             Auswählbar sind ".pdf",  ".doc", ".docx" Dateien.
