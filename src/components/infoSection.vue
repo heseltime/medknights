@@ -2,40 +2,30 @@
 
     <div>
 
-        <b-container>
+        <b-container class="card">
 
         <b-row>
 
-        <b-col>
-
-        <h2>
-           <i class="fas fa-arrow-right"></i> Deine Vereinbarungen mit MedCastle
-        </h2>
-
-         </b-col>
+            <b-col><h4><i class="fas fa-file-contract"></i> Deine Vereinbarungen mit MedCastle</h4></b-col>
 
         </b-row>
 
-        <b-row>
+        <div class="card-body">
 
-            <b-col>
+        <b-row
 
             <p><b>Du bist der Eigentümer des Inhalts.</b> </p>
             <p>Mit dem Bereitstellen des Links gibst du den Inhalt zur Benutzung durch MedCastle frei. MedCastle teilt diese Inhalte nicht vorsätzlich mit Dritte.</p>
             <p>Der Inhalt darf durch MedCastle oder Dritte nicht verkauft werden.</p>
             <p>Der Inhalt darf Online gestellt werden: Damit lässt sich die Weiterverbreitung durch Dritte nicht ausschließen.</p>
             <p>Es gelten die MedCastle Datenschutzrichtlinie und die AGB.</p>
-            
 
-            </b-col>
-
-        <b-col>
-
-        <!--<p>Es geht hier nur um die Basics, aber es ist wichtig sie abzudecken, damit sich niemand misversteht. Der blau unterlegte Punkt ist am wichtigsten.</p>-->
-
-        </b-col>
+            <a href="#" class="card-link">Datenschutz</a>
+            <a href="#" class="card-link">AGB</a>
 
         </b-row>
+
+        </div>
 
         </b-container>
         
@@ -53,15 +43,24 @@ export default {
 
 <style scoped>
 
-h2 {
+h4 {
     float: left;
     margin-top: 40px;
+    font-weight: bold;
 }
 
 p {
-    float: left;
     text-align: left;
     font-style: italic;
+}
+
+a {
+    float: left;
+    text-align: left;
+}
+
+.card {
+    margin: 20px auto;
 }
 
 </style>
