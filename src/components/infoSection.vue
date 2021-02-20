@@ -9,7 +9,7 @@
         <b-col>
 
         <h2>
-           <i class="fas fa-chess-knight"></i> <b>Deine Vereinbarungen mit MedCastle</b>
+           <i class="fas fa-arrow-right"></i> Deine Vereinbarungen mit MedCastle
         </h2>
 
          </b-col>
@@ -18,18 +18,16 @@
 
         <b-row>
 
-        <b-col>
+            <b-col>
 
-        <b-list-group>
-            <b-list-group-item active>Mit dem Bereitstellen des Links gibst du den Inhalt zur Benutzung durch MedCastle frei. </b-list-group-item>
-            <b-list-group-item active><b>Du bist der Eigentümer des Inhalts.</b> </b-list-group-item>
-            <b-list-group-item>Der Inhalt darf durch MedCastle oder Dritte nicht verkauft werden.</b-list-group-item>
-            <b-list-group-item>Der Inhalt darf Online gestellt werden. Damit lässt sich die Weiterverbreitung durch Dritte nicht ausschließen.</b-list-group-item>
-            <b-list-group-item>Es gelten </b-list-group-item>
-        </b-list-group>
-        
+            <p><b>Du bist der Eigentümer des Inhalts.</b> </p>
+            <p>Mit dem Bereitstellen des Links gibst du den Inhalt zur Benutzung durch MedCastle frei. MedCastle teilt diese Inhalte nicht vorsätzlich mit Dritte.</p>
+            <p>Der Inhalt darf durch MedCastle oder Dritte nicht verkauft werden.</p>
+            <p>Der Inhalt darf Online gestellt werden: Damit lässt sich die Weiterverbreitung durch Dritte nicht ausschließen.</p>
+            <p>Es gelten die MedCastle Datenschutzrichtlinie und die AGB.</p>
+            
 
-        </b-col>
+            </b-col>
 
         <b-col>
 
@@ -57,10 +55,12 @@ export default {
 
 h2 {
     float: left;
+    margin-top: 40px;
 }
 
 p {
     float: left;
+    text-align: left;
     font-style: italic;
 }
 
