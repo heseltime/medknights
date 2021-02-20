@@ -43,7 +43,7 @@ ALLOWED_HOSTS = ['medknights.herokuapp.com','localhost', '127.0.0.1']
 
 INSTALLED_APPS = [
     'rest_framework',
-    'corsheaders','
+    'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
