@@ -34,5 +34,6 @@ urlpatterns = [
     url(r'^info$', TemplateView.as_view(template_name='info.html')),
     url(r'^$', TemplateView.as_view(template_name='lander.html')),
     url(r'^lander$', TemplateView.as_view(template_name='lander.html')),
+    url(r'^lander/whitepaper$', TemplateView.as_view(template_name='lander_info.html')),
     url(r'', include('pages.urls'))
 ]
