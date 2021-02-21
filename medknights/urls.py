@@ -26,10 +26,12 @@ from .views import app
 urlpatterns = [
     path('admin/', admin.site.urls),
     #url(r'^$', TemplateView.as_view(template_name='storefront.html')),
-    path('', account_views.register),
+    #path('', account_views.register),
     path('accounts', include('accounts.urls')),
     path('app/', app),
     path('dropbox_links', include('dropbox_links.urls')),
     url(r'^roundtable$', TemplateView.as_view(template_name='roundtable.html')),
     url(r'^info$', TemplateView.as_view(template_name='info.html')),
+    url(r'^$', TemplateView.as_view(template_name='lander.html')),
+    url(r'^lander$', TemplateView.as_view(template_name='lander.html')),
 ]
