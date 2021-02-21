@@ -1,0 +1,464 @@
+{% extends "base_content_with_shop_link.html" %}
+
+
+{% load static %}
+
+
+{% block title %}
+
+Textverständnis: Turnier
+
+{% endblock %} 
+
+{% block custom_og %}
+
+	<meta property="og:url"                content="https://medcastle.at{{ request.path }}" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Ich hab die MedKnight-Karte für diesen Teil des Mediziner-Tests Erhalten!" />
+	<meta property="og:description"        content="Das heißt, den Übungstest für diesen Teil des MedAT habe ich statistisch geschafft: medCastle.at ist meine gratis Vorbereitung und online-Lernplattform für den MedAT. " />
+	<meta property="og:image"              content="https://medcastle.at{% static 'img/ritterkarten/2x/tv.png' %}" />
+	
+	<meta property="fb:app_id"              content="667140217484992" />
+
+{% endblock %}
+
+{% block social_scripts %}
+
+{% endblock %}
+
+
+{% block add_assets %}
+
+<script src="{% static 'js/quiz.js' %}"></script>
+
+{% endblock %}
+
+
+{% block content %}
+
+		<!-- Three -->
+		<div id="fb-root"></div>
+		
+		
+		<section id="three" class="wrapper tv">
+			
+			<div class="inner">
+				
+				<header class="align-center">
+					
+					<img src="{% static 'img/heros/1x/tv.png' %}" alt="Textverständnis" width="250" />
+					
+					<h2><b>T</b>ext<b>V</b>erständnis-<strong>Turnier</strong></h2>
+					
+					<p>Werde Turniermeister und komm ins medCastle durch richtige Beantwortung mehrer <strong>MedAT Alt- und Neufragen zu Fachtexten.</strong> </p>
+					
+					<p><i>Dem MedAT angepasst findest du hier eine  Auswahl aus <strong>Bio-Fachliteratur</strong> (bevorzugt Genetik und Geburt, fällt uns auf), <strong>aber auch Geschichte und Politik</strong>.</i></p>
+					
+					<!--<p class="italics">Übe am Besten Set-weise, wie hier vorgegeben: <strong>12 Aufgaben</strong> (mit Bearbeitungszeit: 35 min) sind ein Set.</p>-->
+										
+					
+					<ul class="actions">
+						<li><a href="" class="button dead">Bearbeitungsmethoden</a></li>
+						<li><a href="/tv/turnier_01" class="button special">Text 1</a></li>
+						<li><a href="/tv/turnier_02" class="button">Text 2</a></li>
+						<li><a href="/tv/turnier_03" class="button">Text 3</a></li>
+						<li><a href="/tv/turnier_04" class="button">Text 4</a></li>
+						<li><a href="/tv/turnier_05" class="button">Text 5</a></li>
+					</ul>
+												
+					
+					<!--<p id="analysis-note"><i><i class="fas fa-exclamation-circle"></i> Beachte auch die <strong>Fragen-Analyse</strong> wenn du zunächst eine Frage falsch beantwortest: Im Gegensatz zum MedAT kannst du beliebig viele Mini-Turniere an einem Tag machen!</i></p> -->
+										
+				</header>
+				
+				
+				<!-- Content -->	
+					
+				<div class="row">
+					
+					<div class="12u 12u$(medium) ">
+						
+						
+					<!--<div id="analysis" class="invisible">
+				
+				<h5><strong><i class="fa fa-exclamation-circle"></i> Fragen-Analyse</strong></h5>
+				
+				<p></p>
+				
+					</div>-->
+				
+				
+						<form class="box" action="/turnier" method="post">		
+							<ul>
+								
+							
+								<li>
+									<p class="ask"><strong><i class="fa fa-book"></i> Text</strong></p>
+										
+										<p>Der Mensch verfügt über 22 paarige Autosomen und zwei Geschlechtschromosomen, insgesamt also über 46 Chromosomen. Die beiden Geschlechtschromosomen einer Frau setzen sich aus zwei X-Chromosomen zusammen, während ein Mann über je ein X- und ein Y-Chromosom verfügt. Bei der Zeugung eines neuen Lebens erhält das Kind von beiden Elternteilen je 22 Autosomen und ein Geschlechtschromosom.
+Ein Gen ist die kleinste Organisationseinheit auf jedem Chromosom und codiert normalerweise für ein Protein. Da jedes Chromosom (mit Ausnahme der Geschlechtschromosomen beim Mann) paarig vorhanden ist, existieren von jedem Gen zwei Kopien. Eines der beiden Gene stammt dabei vom Vater, das andere von der Mutter. Es besteht jedoch die Möglichkeit, dass sich ein Gen in seiner Basensequenz leicht unterscheidet. Diese unterschiedlichen Ausprägungen bezeichnet man als Allel. Eine  Ausnahme sind hier die Gene auf dem X-Chromosom beim Mann, da sie nur einmal vorkommen.
+Beide Gene können unterschiedlich, aber auch identisch sein. Besitzt ein Mensch für ein Gen auf beiden Chromosomen dasselbe Allel, so bezeichnet man ihn in Bezug auf dieses Gen als homozygot (reinerbig). Besitzt er hingen zwei unterschiedliche Allele, so bezeichnet man ihn als heterozygot (mischerbig).</p>
+
+										<p>
+										Die Analyse von Erbgängen geht auf Gregor Mendel zurück, der im Jahre 1866 erkannte, dass beobachtete Unterschiede im Phänotyp (Aussehen und Funktion) durch unterschiedliche Allele der Gene eines Lebewesens verursacht sind. Während seiner Untersuchungen entdeckte er einen wesentlichen Aspekt der Genetik: es immer nur eines der zwei vorhandenen Allele aktiv, da das zweite abgeschaltet wird. Hierbei ist die Unterscheidung zwischen einem dominanten und rezessiven Allel von entscheidender Bedeutung. Während sich ein dominantes Allel immer im Phänotyp manifestiert, kommt ein rezessives Allel nur dann zum Vorschein, wenn es sich auf beiden Chromosomen befindet.
+										</p>
+
+										<p>
+										Dieses Wissen lässt sich für die Berechnung des Wiederholungsrisikos bei Erbkrankheiten nutzen. Da die Vererbung keinen festen Regeln folgt, sondern zufällig geschieht, kann man lediglich statistische Aussagen darüber treffen, welche Allele ein Kind von seinen beiden Elternteilen erhalten wird. Ein krankmachendes Allel wird im weiteren Text als mutiert bezeichnet.</p>
+
+										<p>
+										Bei Erbkrankheiten unterscheidet man nun grundsätzlich drei verschiedene Vererbungsmuster.</p>
+
+										<p>
+										Beim autosomal dominanten Erbgang ist das mutierte Allel dominant und befindet sich auf einem Autosom. Das bedeutet, dass die Erkrankung beim betroffenen Kind ausbricht, sobald nur ein mutiertes Allel vererbt wurde. Bei dieser Art der Vererbung muss mindestens ein Elternteil von der Erkrankung betroffen sein. Ist nun beispielsweise der Vater des Kindes erkrankt und heterozygot für das mutierte Allel, so beträgt das Wiederholungsrisiko für die Erkrankung 50 %, da der erkrankte Elternteil über ein gesundes und ein mutiertes Allel verfügt und statistisch gesehen in etwa der Hälfte der Fälle das gesunde und in der anderen Hälfte das mutierte Allel vererbt wird.</p>
+
+										<p>
+										Beim autosomal rezessiven Erbgang ist das mutierte Allel rezessiv und befindet sich ebenfalls auf einem Autosom. Bei diesem Vererbungsschema bricht die Erkrankung beim Kind nur dann aus,  wenn es zwei mutierte Allele erhält.  Jeweils eines von der Mutter und eines vom Vater. In diesem Fall können die Eltern vollkommen gesund sein, da sie als Heterozygoten beide über ein gesundes und ein mutiertes Allel verfügen und sich bei Ihnen das dominante, gesunde Allel durchsetzt. Die Eltern würde man in dem Fall als Träger bezeichnen.</p>
+
+										<p>
+										Der dritte Erbgang ist der X-Chromosal rezessive Erbgang. In diesem Fall sitzt das mutierte Allel auf dem X-Chromosom und ist rezessiv.  Als Besonderheit bei diesem Erbgang ist anzumerken, dass bei Männern jedes Allel auf dem X-Chromosom dominant ist, da der Mann im Gegensatz zur Frau lediglich über ein X-Chromosom verfügt.
+																			</p>
+																			
+									<p class="ask"><strong><i class="fa fa-question"></i> Frage zum Text</strong></p> 
+									
+									<p class="ask"><strong>Der Vater eines Kindes leidet an einer autosomal dominant vererbten Krankheit. Die Mutter ist von dieser Krankheit nicht betroffen.</strong><strong class="new_line"> Wird sich die Krankheit beim Kind ausprägen, wenn der Vater über ein mutierten Allel verfügt?</strong></p>								
+										
+
+									
+									<!--<p class="analysis invisible"></p>-->
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a" class"swatch_g">
+											<li class"swatch_g">
+												<input type="radio" value="0" />
+												<label style"">Es müssen zwei mutierte Allele verfügbar sein, damit die Erkrankung sich vererbt.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>In jedem Fall wird das Kind von der Krankheit betroffen sein.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Es gibt überhaupt kein Risiko. Die Mutter ist ja kerngesund.</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Zu 50% wird das Kind an der Krankheit leiden.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Zu 25% wir das Kind gesund sein.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-book"></i> Text</strong></p>
+										
+										<p>Der Mensch verfügt über 22 paarige Autosomen und zwei Geschlechtschromosomen, insgesamt also über 46 Chromosomen. Die beiden Geschlechtschromosomen einer Frau setzen sich aus zwei X-Chromosomen zusammen, während ein Mann über je ein X- und ein Y-Chromosom verfügt. Bei der Zeugung eines neuen Lebens erhält das Kind von beiden Elternteilen je 22 Autosomen und ein Geschlechtschromosom.
+Ein Gen ist die kleinste Organisationseinheit auf jedem Chromosom und codiert normalerweise für ein Protein. Da jedes Chromosom (mit Ausnahme der Geschlechtschromosomen beim Mann) paarig vorhanden ist, existieren von jedem Gen zwei Kopien. Eines der beiden Gene stammt dabei vom Vater, das andere von der Mutter. Es besteht jedoch die Möglichkeit, dass sich ein Gen in seiner Basensequenz leicht unterscheidet. Diese unterschiedlichen Ausprägungen bezeichnet man als Allel. Eine  Ausnahme sind hier die Gene auf dem X-Chromosom beim Mann, da sie nur einmal vorkommen.
+Beide Gene können unterschiedlich, aber auch identisch sein. Besitzt ein Mensch für ein Gen auf beiden Chromosomen dasselbe Allel, so bezeichnet man ihn in Bezug auf dieses Gen als homozygot (reinerbig). Besitzt er hingen zwei unterschiedliche Allele, so bezeichnet man ihn als heterozygot (mischerbig).</p>
+
+										<p>
+										Die Analyse von Erbgängen geht auf Gregor Mendel zurück, der im Jahre 1866 erkannte, dass beobachtete Unterschiede im Phänotyp (Aussehen und Funktion) durch unterschiedliche Allele der Gene eines Lebewesens verursacht sind. Während seiner Untersuchungen entdeckte er einen wesentlichen Aspekt der Genetik: es ist immer nur eines der zwei vorhandenen Allele aktiv, da das zweite abgeschaltet wird. Hierbei ist die Unterscheidung zwischen einem dominanten und rezessiven Allel von entscheidender Bedeutung. Während sich ein dominantes Allel immer im Phänotyp manifestiert, kommt ein rezessives Allel nur dann zum Vorschein, wenn es sich auf beiden Chromosomen befindet.
+										</p>
+
+										<p>
+										Dieses Wissen lässt sich für die Berechnung des Wiederholungsrisikos bei Erbkrankheiten nutzen. Da die Vererbung keinen festen Regeln folgt, sondern zufällig geschieht, kann man lediglich statistische Aussagen darüber treffen, welche Allele ein Kind von seinen beiden Elternteilen erhalten wird. Ein krankmachendes Allel wird im weiteren Text als mutiert bezeichnet.</p>
+
+										<p>
+										Bei Erbkrankheiten unterscheidet man nun grundsätzlich drei verschiedene Vererbungsmuster.</p>
+
+										<p>
+										Beim autosomal dominanten Erbgang ist das mutierte Allel dominant und befindet sich auf einem Autosom. Das bedeutet, dass die Erkrankung beim betroffenen Kind ausbricht, sobald nur ein mutiertes Allel vererbt wurde. Bei dieser Art der Vererbung muss mindestens ein Elternteil von der Erkrankung betroffen sein. Ist nun beispielsweise der Vater des Kindes erkrankt und heterozygot für das mutierte Allel, so beträgt das Wiederholungsrisiko für die Erkrankung 50 %, da der erkrankte Elternteil über ein gesundes und ein mutiertes Allel verfügt und statistisch gesehen in etwa der Hälfte der Fälle das gesunde und in der anderen Hälfte das mutierte Allel vererbt wird.</p>
+
+										<p>
+										Beim autosomal rezessiven Erbgang ist das mutierte Allel rezessiv und befindet sich ebenfalls auf einem Autosom. Bei diesem Vererbungsschema bricht die Erkrankung beim Kind nur dann aus,  wenn es zwei mutierte Allele erhält.  Jeweils eines von der Mutter und eines vom Vater. In diesem Fall können die Eltern vollkommen gesund sein, da sie als Heterozygoten beide über ein gesundes und ein mutiertes Allel verfügen und sich bei Ihnen das dominante, gesunde Allel durchsetzt. Die Eltern würde man in dem Fall als Träger bezeichnen.</p>
+
+										<p>
+										Der dritte Erbgang ist der X-Chromosal rezessive Erbgang. In diesem Fall sitzt das mutierte Allel auf dem X-Chromosom und ist rezessiv.  Als Besonderheit bei diesem Erbgang ist anzumerken, dass bei Männern jedes Allel auf dem X-Chromosom dominant ist, da der Mann im Gegensatz zur Frau lediglich über ein X-Chromosom verfügt.
+																			</p>
+																			
+									<p class="ask"><strong><i class="fa fa-question"></i> Frage zum Text</strong></p> 
+									
+									<p class="ask"><strong>Beide Eltern eines Kindes tragen ein mutierten Allel eines Gens. Die Krankheit wird autosomal rezessiv vererbt. </strong><strong class="new_line"> Wie hoch ist das Risiko, dass sich die Krankheit bei dem Kind manifestiert?</strong></p>								
+										
+
+									
+									<!--<p class="analysis invisible"></p>-->
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a" class"swatch_g">
+											<li class"swatch_g">
+												<input type="radio" value="0" />
+												<label style"">100%</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>75%</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>50%</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>25%</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>0</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-book"></i> Text</strong></p>
+										
+										<p>Der Mensch verfügt über 22 paarige Autosomen und zwei Geschlechtschromosomen, insgesamt also über 46 Chromosomen. Die beiden Geschlechtschromosomen einer Frau setzen sich aus zwei X-Chromosomen zusammen, während ein Mann über je ein X- und ein Y-Chromosom verfügt. Bei der Zeugung eines neuen Lebens erhält das Kind von beiden Elternteilen je 22 Autosomen und ein Geschlechtschromosom.
+Ein Gen ist die kleinste Organisationseinheit auf jedem Chromosom und codiert normalerweise für ein Protein. Da jedes Chromosom (mit Ausnahme der Geschlechtschromosomen beim Mann) paarig vorhanden ist, existieren von jedem Gen zwei Kopien. Eines der beiden Gene stammt dabei vom Vater, das andere von der Mutter. Es besteht jedoch die Möglichkeit, dass sich ein Gen in seiner Basensequenz leicht unterscheidet. Diese unterschiedlichen Ausprägungen bezeichnet man als Allel. Eine  Ausnahme sind hier die Gene auf dem X-Chromosom beim Mann, da sie nur einmal vorkommen.
+Beide Gene können unterschiedlich, aber auch identisch sein. Besitzt ein Mensch für ein Gen auf beiden Chromosomen dasselbe Allel, so bezeichnet man ihn in Bezug auf dieses Gen als homozygot (reinerbig). Besitzt er hingen zwei unterschiedliche Allele, so bezeichnet man ihn als heterozygot (mischerbig).</p>
+
+										<p>
+										Die Analyse von Erbgängen geht auf Gregor Mendel zurück, der im Jahre 1866 erkannte, dass beobachtete Unterschiede im Phänotyp (Aussehen und Funktion) durch unterschiedliche Allele der Gene eines Lebewesens verursacht sind. Während seiner Untersuchungen entdeckte er einen wesentlichen Aspekt der Genetik: es ist immer nur eines der zwei vorhandenen Allele aktiv, da das zweite abgeschaltet wird. Hierbei ist die Unterscheidung zwischen einem dominanten und rezessiven Allel von entscheidender Bedeutung. Während sich ein dominantes Allel immer im Phänotyp manifestiert, kommt ein rezessives Allel nur dann zum Vorschein, wenn es sich auf beiden Chromosomen befindet.
+										</p>
+
+										<p>
+										Dieses Wissen lässt sich für die Berechnung des Wiederholungsrisikos bei Erbkrankheiten nutzen. Da die Vererbung keinen festen Regeln folgt, sondern zufällig geschieht, kann man lediglich statistische Aussagen darüber treffen, welche Allele ein Kind von seinen beiden Elternteilen erhalten wird. Ein krankmachendes Allel wird im weiteren Text als mutiert bezeichnet.</p>
+
+										<p>
+										Bei Erbkrankheiten unterscheidet man nun grundsätzlich drei verschiedene Vererbungsmuster.</p>
+
+										<p>
+										Beim autosomal dominanten Erbgang ist das mutierte Allel dominant und befindet sich auf einem Autosom. Das bedeutet, dass die Erkrankung beim betroffenen Kind ausbricht, sobald nur ein mutiertes Allel vererbt wurde. Bei dieser Art der Vererbung muss mindestens ein Elternteil von der Erkrankung betroffen sein. Ist nun beispielsweise der Vater des Kindes erkrankt und heterozygot für das mutierte Allel, so beträgt das Wiederholungsrisiko für die Erkrankung 50 %, da der erkrankte Elternteil über ein gesundes und ein mutiertes Allel verfügt und statistisch gesehen in etwa der Hälfte der Fälle das gesunde und in der anderen Hälfte das mutierte Allel vererbt wird.</p>
+
+										<p>
+										Beim autosomal rezessiven Erbgang ist das mutierte Allel rezessiv und befindet sich ebenfalls auf einem Autosom. Bei diesem Vererbungsschema bricht die Erkrankung beim Kind nur dann aus,  wenn es zwei mutierte Allele erhält.  Jeweils eines von der Mutter und eines vom Vater. In diesem Fall können die Eltern vollkommen gesund sein, da sie als Heterozygoten beide über ein gesundes und ein mutiertes Allel verfügen und sich bei Ihnen das dominante, gesunde Allel durchsetzt. Die Eltern würde man in dem Fall als Träger bezeichnen.</p>
+
+										<p>
+										Der dritte Erbgang ist der X-Chromosal rezessive Erbgang. In diesem Fall sitzt das mutierte Allel auf dem X-Chromosom und ist rezessiv.  Als Besonderheit bei diesem Erbgang ist anzumerken, dass bei Männern jedes Allel auf dem X-Chromosom dominant ist, da der Mann im Gegensatz zur Frau lediglich über ein X-Chromosom verfügt.
+																			</p>
+																			
+									<p class="ask"><strong><i class="fa fa-question"></i> Frage zum Text</strong></p> 
+									
+									<p class="ask"><strong>Die Mutter eines Kindes leidet an einer X-chromosomal rezessiven Rot-Grün-Blindheit. Der Vater leidet nicht an dieser Krankheit.</strong><strong class="new_line"> Wie hoch ist das Risiko, dass sich die Krankheit bei einem weiblichen Kind manifestiert?</strong></p>								
+										
+
+									
+									<!--<p class="analysis invisible"></p>-->
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a" class"swatch_g">
+											<li class"swatch_g">
+												<input type="radio" value="0" />
+												<label style"">100%</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>75%</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>50%</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>25%</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>0</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-book"></i> Text</strong></p>
+										
+										<p>Der Mensch verfügt über 22 paarige Autosomen und zwei Geschlechtschromosomen, insgesamt also über 46 Chromosomen. Die beiden Geschlechtschromosomen einer Frau setzen sich aus zwei X-Chromosomen zusammen, während ein Mann über je ein X- und ein Y-Chromosom verfügt. Bei der Zeugung eines neuen Lebens erhält das Kind von beiden Elternteilen je 22 Autosomen und ein Geschlechtschromosom.
+Ein Gen ist die kleinste Organisationseinheit auf jedem Chromosom und codiert normalerweise für ein Protein. Da jedes Chromosom (mit Ausnahme der Geschlechtschromosomen beim Mann) paarig vorhanden ist, existieren von jedem Gen zwei Kopien. Eines der beiden Gene stammt dabei vom Vater, das andere von der Mutter. Es besteht jedoch die Möglichkeit, dass sich ein Gen in seiner Basensequenz leicht unterscheidet. Diese unterschiedlichen Ausprägungen bezeichnet man als Allel. Eine  Ausnahme sind hier die Gene auf dem X-Chromosom beim Mann, da sie nur einmal vorkommen.
+Beide Gene können unterschiedlich, aber auch identisch sein. Besitzt ein Mensch für ein Gen auf beiden Chromosomen dasselbe Allel, so bezeichnet man ihn in Bezug auf dieses Gen als homozygot (reinerbig). Besitzt er hingen zwei unterschiedliche Allele, so bezeichnet man ihn als heterozygot (mischerbig).</p>
+
+										<p>
+										Die Analyse von Erbgängen geht auf Gregor Mendel zurück, der im Jahre 1866 erkannte, dass beobachtete Unterschiede im Phänotyp (Aussehen und Funktion) durch unterschiedliche Allele der Gene eines Lebewesens verursacht sind. Während seiner Untersuchungen entdeckte er einen wesentlichen Aspekt der Genetik: es ist immer nur eines der zwei vorhandenen Allele aktiv, da das zweite abgeschaltet wird. Hierbei ist die Unterscheidung zwischen einem dominanten und rezessiven Allel von entscheidender Bedeutung. Während sich ein dominantes Allel immer im Phänotyp manifestiert, kommt ein rezessives Allel nur dann zum Vorschein, wenn es sich auf beiden Chromosomen befindet.
+										</p>
+
+										<p>
+										Dieses Wissen lässt sich für die Berechnung des Wiederholungsrisikos bei Erbkrankheiten nutzen. Da die Vererbung keinen festen Regeln folgt, sondern zufällig geschieht, kann man lediglich statistische Aussagen darüber treffen, welche Allele ein Kind von seinen beiden Elternteilen erhalten wird. Ein krankmachendes Allel wird im weiteren Text als mutiert bezeichnet.</p>
+
+										<p>
+										Bei Erbkrankheiten unterscheidet man nun grundsätzlich drei verschiedene Vererbungsmuster.</p>
+
+										<p>
+										Beim autosomal dominanten Erbgang ist das mutierte Allel dominant und befindet sich auf einem Autosom. Das bedeutet, dass die Erkrankung beim betroffenen Kind ausbricht, sobald nur ein mutiertes Allel vererbt wurde. Bei dieser Art der Vererbung muss mindestens ein Elternteil von der Erkrankung betroffen sein. Ist nun beispielsweise der Vater des Kindes erkrankt und heterozygot für das mutierte Allel, so beträgt das Wiederholungsrisiko für die Erkrankung 50 %, da der erkrankte Elternteil über ein gesundes und ein mutiertes Allel verfügt und statistisch gesehen in etwa der Hälfte der Fälle das gesunde und in der anderen Hälfte das mutierte Allel vererbt wird.</p>
+
+										<p>
+										Beim autosomal rezessiven Erbgang ist das mutierte Allel rezessiv und befindet sich ebenfalls auf einem Autosom. Bei diesem Vererbungsschema bricht die Erkrankung beim Kind nur dann aus,  wenn es zwei mutierte Allele erhält.  Jeweils eines von der Mutter und eines vom Vater. In diesem Fall können die Eltern vollkommen gesund sein, da sie als Heterozygoten beide über ein gesundes und ein mutiertes Allel verfügen und sich bei Ihnen das dominante, gesunde Allel durchsetzt. Die Eltern würde man in dem Fall als Träger bezeichnen.</p>
+
+										<p>
+										Der dritte Erbgang ist der X-Chromosal rezessive Erbgang. In diesem Fall sitzt das mutierte Allel auf dem X-Chromosom und ist rezessiv.  Als Besonderheit bei diesem Erbgang ist anzumerken, dass bei Männern jedes Allel auf dem X-Chromosom dominant ist, da der Mann im Gegensatz zur Frau lediglich über ein X-Chromosom verfügt.
+																			</p>
+																			
+									<p class="ask"><strong><i class="fa fa-question"></i> Frage zum Text</strong></p> 
+									
+									<p class="ask"><strong>Die Eltern eines Kindes sind beide von einer autosomal dominanten Erbkrankheit betroffen.</strong><strong class="new_line"> Sie sind beide in Bezug auf diese Merkmal heterozygot. Wie hoch ist das Wiederholungsrisiko, wenn sie ein Kind bekämen?</strong></p>								
+										
+
+									
+									<!--<p class="analysis invisible"></p>-->
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a" class"swatch_g">
+											<li class"swatch_g">
+												<input type="radio" value="0" />
+												<label style"">100%</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>75%</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>50%</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>25%</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>0</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-book"></i> Text</strong></p>
+										
+										<p>Der Mensch verfügt über 22 paarige Autosomen und zwei Geschlechtschromosomen, insgesamt also über 46 Chromosomen. Die beiden Geschlechtschromosomen einer Frau setzen sich aus zwei X-Chromosomen zusammen, während ein Mann über je ein X- und ein Y-Chromosom verfügt. Bei der Zeugung eines neuen Lebens erhält das Kind von beiden Elternteilen je 22 Autosomen und ein Geschlechtschromosom.
+Ein Gen ist die kleinste Organisationseinheit auf jedem Chromosom und codiert normalerweise für ein Protein. Da jedes Chromosom (mit Ausnahme der Geschlechtschromosomen beim Mann) paarig vorhanden ist, existieren von jedem Gen zwei Kopien. Eines der beiden Gene stammt dabei vom Vater, das andere von der Mutter. Es besteht jedoch die Möglichkeit, dass sich ein Gen in seiner Basensequenz leicht unterscheidet. Diese unterschiedlichen Ausprägungen bezeichnet man als Allel. Eine  Ausnahme sind hier die Gene auf dem X-Chromosom beim Mann, da sie nur einmal vorkommen.
+Beide Gene können unterschiedlich, aber auch identisch sein. Besitzt ein Mensch für ein Gen auf beiden Chromosomen dasselbe Allel, so bezeichnet man ihn in Bezug auf dieses Gen als homozygot (reinerbig). Besitzt er hingen zwei unterschiedliche Allele, so bezeichnet man ihn als heterozygot (mischerbig).</p>
+
+										<p>
+										Die Analyse von Erbgängen geht auf Gregor Mendel zurück, der im Jahre 1866 erkannte, dass beobachtete Unterschiede im Phänotyp (Aussehen und Funktion) durch unterschiedliche Allele der Gene eines Lebewesens verursacht sind. Während seiner Untersuchungen entdeckte er einen wesentlichen Aspekt der Genetik: es ist immer nur eines der zwei vorhandenen Allele aktiv, da das zweite abgeschaltet wird. Hierbei ist die Unterscheidung zwischen einem dominanten und rezessiven Allel von entscheidender Bedeutung. Während sich ein dominantes Allel immer im Phänotyp manifestiert, kommt ein rezessives Allel nur dann zum Vorschein, wenn es sich auf beiden Chromosomen befindet.
+										</p>
+
+										<p>
+										Dieses Wissen lässt sich für die Berechnung des Wiederholungsrisikos bei Erbkrankheiten nutzen. Da die Vererbung keinen festen Regeln folgt, sondern zufällig geschieht, kann man lediglich statistische Aussagen darüber treffen, welche Allele ein Kind von seinen beiden Elternteilen erhalten wird. Ein krankmachendes Allel wird im weiteren Text als mutiert bezeichnet.</p>
+
+										<p>
+										Bei Erbkrankheiten unterscheidet man nun grundsätzlich drei verschiedene Vererbungsmuster.</p>
+
+										<p>
+										Beim autosomal dominanten Erbgang ist das mutierte Allel dominant und befindet sich auf einem Autosom. Das bedeutet, dass die Erkrankung beim betroffenen Kind ausbricht, sobald nur ein mutiertes Allel vererbt wurde. Bei dieser Art der Vererbung muss mindestens ein Elternteil von der Erkrankung betroffen sein. Ist nun beispielsweise der Vater des Kindes erkrankt und heterozygot für das mutierte Allel, so beträgt das Wiederholungsrisiko für die Erkrankung 50 %, da der erkrankte Elternteil über ein gesundes und ein mutiertes Allel verfügt und statistisch gesehen in etwa der Hälfte der Fälle das gesunde und in der anderen Hälfte das mutierte Allel vererbt wird.</p>
+
+										<p>
+										Beim autosomal rezessiven Erbgang ist das mutierte Allel rezessiv und befindet sich ebenfalls auf einem Autosom. Bei diesem Vererbungsschema bricht die Erkrankung beim Kind nur dann aus,  wenn es zwei mutierte Allele erhält.  Jeweils eines von der Mutter und eines vom Vater. In diesem Fall können die Eltern vollkommen gesund sein, da sie als Heterozygoten beide über ein gesundes und ein mutiertes Allel verfügen und sich bei Ihnen das dominante, gesunde Allel durchsetzt. Die Eltern würde man in dem Fall als Träger bezeichnen.</p>
+
+										<p>
+										Der dritte Erbgang ist der X-Chromosal rezessive Erbgang. In diesem Fall sitzt das mutierte Allel auf dem X-Chromosom und ist rezessiv.  Als Besonderheit bei diesem Erbgang ist anzumerken, dass bei Männern jedes Allel auf dem X-Chromosom dominant ist, da der Mann im Gegensatz zur Frau lediglich über ein X-Chromosom verfügt.
+																			</p>
+																			
+									<p class="ask"><strong><i class="fa fa-question"></i> Frage zum Text</strong></p> 
+									
+									<p class="ask"><strong>Wenn sich bei beiden Elternteilen eine autosomal rezessiv vererbte Erkrankung nicht im Phänotyp ausprägt, obwohl sie jeweils ein mutiertes Allel tragen, kann das Kind an dieser Erkrankung leiden?</strong></p>								
+										
+
+									
+									<!--<p class="analysis invisible"></p>-->
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a" class"swatch_g">
+											<li class"swatch_g">
+												<input type="radio" value="0" />
+												<label style"">Zu mindestens 50% wird sich die Krankheit beim Kind im Phänotyp ausprägen.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Das Kind wird gesund sein.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Das Kind wird nur Überträger der Krankheit sein und nich selbst daran leiden.</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Es wird zu 25% an der Erkrankung leiden.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Es gibt kein Risiko, da beide jeweils nur ein mutiertes Allel besitzen.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								
+							
+							</ul>
+							
+							
+						<div id="result" class="no_display">
+							
+					<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><img srcset="{% static 'img/ritterkarten/1x/tv.png' %} 277w, {% static 'img/ritterkarten/2x/tv.png' %} 554w" alt="Gewebe" width="277" /></a>
+				
+					<h3><i class="fas fa-thumbs-up"></i><b> Fertig! Dein Ergebnis?</b></h3>
+					
+					<h1></h1>
+					
+					<h5 class="labelo white"> </h5>
+					
+					<div><h2>Du erhältst eine MedKnight-Karte!</h2>
+					
+						<h5 class="white"><i class="fab fa-facebook-f"></i> <i>Teile sie mit Freunden und Feinden, die ebenfalls für den MedAT lernern</i></h5>
+					
+						<div class="fb-share-button" data-href="https://medcastle.at{{ request.path }}" data-layout="box_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmedcastle.at%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+					</div>
+					
+					<!--<h5 class="space-top">Hier nochmal die Analysen zu deinen Fragen, zum Mitschreiben –</h5>
+					
+					<p><b>Nein wirklich! Am Besten du schreibst dir gleich alle rot unterlegten Analysen</b> (Wie war nochmal die dazugehörige Frage?) <b>auf Karteikarten.</b></p>	-->									
+						</div>	
+						
+							
+							<p id="questionsLeft" class=""></p>
+							
+						</form>
+						
+						<p><i><i class="fas fa-exclamation-circle"></i> Wie auch beim echten MedAT wird dir hier erlaubt deine Antwort <strong>ab</strong>zuändern (vgl. auf Papier: altes Kästchen ausmalen, neues Kreuz setzen), nicht aber <strong>zurück</strong>zuändern: ist beim MedAT das Kästchen einmal ausgemalt, kannst du es nicht wieder ankreuzen. <strong>Eine Abänderung ist also endgültig.</strong></i></p> 
+						
+							
+					</div>
+				
+				</div>
+					
+				
+			<!--<hr/>-->
+
+
+{% endblock %}

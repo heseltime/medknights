@@ -23,6 +23,35 @@
 	</head>
 	<body class="is-preload">
 
+		<!-- fb script rec location -->
+		<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0&appId=667140217484992&autoLogAppEvents=1" nonce="A4aRY8Mx"></script>
+
+		<!-- fb analytics -->
+				
+				
+			<script>
+			  window.fbAsyncInit = function() {
+			    FB.init({
+			      appId      : '667140217484992',
+			      cookie     : true,
+			      xfbml      : true,
+			      version    : 'v8.0'
+			    });
+			      
+			    FB.AppEvents.logPageView();   
+			      
+			  };
+			
+			  (function(d, s, id){
+			     var js, fjs = d.getElementsByTagName(s)[0];
+			     if (d.getElementById(id)) {return;}
+			     js = d.createElement(s); js.id = id;
+			     js.src = "https://connect.facebook.net/en_US/sdk.js";
+			     fjs.parentNode.insertBefore(js, fjs);
+			   }(document, 'script', 'facebook-jssdk'));
+			</script>
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -33,6 +62,10 @@
 						<p>Die erste AI-Enhanced App für den Success beim MedAT<br />
 						nur <a href="#first">@med<b>Castle <i class="fab fa-fort-awesome"></i></b></a>, bei den <a href="/accounts/register"><i class="fa fa-chess-knight"></i> med<b>Knights</b></a>.</p>
 					</header>
+
+					<div style="" class="outside-div">
+						<div class="fb-like" data-href="https://medcastle.at" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+					</div>
 
 				<!-- Nav -->
 					<nav id="nav">
@@ -75,7 +108,7 @@
 									<li>
 										<span class="icon solid major style1 fa-code"></span>
 										<h3>Turniere und Skripten</h3>
-										<p>Die med<b>Castle</b> <i class="fab fa-fort-awesome"></i> Redaktion sammelt intelligente <b>medKnight-Skripten</b>, die du im <b>Turnier-Modus</b> abtesten kannst.</p>
+										<p>Die med<b>Castle</b> <i class="fab fa-fort-awesome"></i> Redaktion sammelt intelligente <a href="/skript/gewebe" alt="Skript Beispiel"><b>medKnight-Skripten</b></a>, die du im <a href="/turnier/gewebe" alt="Turnier Beispiel"><b>Turnier-Modus</b></a> abtesten kannst.</p>
 									</li>
 									<li>
 										<span class="icon major style3 fa-copy"></span>
@@ -85,7 +118,7 @@
 									<li>
 										<span class="icon major style5 fa-gem"></span>
 										<h3><b>Goodies</b></h3>
-										<p>Die medKnights und das medCastle bieten noch vieles Mehr, etwa eine kurz-MedAT-Simulation, hilfreiche Guides, und eine Gruppe zum Austausch.
+										<p>Die medKnights und das medCastle bieten noch vieles Mehr, etwa eine <a href="/pages/maxi" alt="Maxi">kurz-MedAT-Simulation</a>, hilfreiche <a href="/turnier/ee_merk" alt="Guides">Guides</a>, und eine <a href="https://www.facebook.com/groups/252411336109045/" alt="medKnights Unter Sich">Facebook-Gruppe</a> zum Austausch.
 										</p>
 									</li>
 								</ul>

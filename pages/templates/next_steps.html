@@ -1,0 +1,67 @@
+{% extends "base_content.html" %}
+
+{% load static %}
+
+{% block title %}EE und Merk-Turniere{% endblock %} 
+
+{% block add_assets %}
+
+<script src="{% static 'js/ee_merk.js' %}"></script>
+
+{% endblock %}
+
+{% block content %}
+
+			<!-- Banner -->
+			<section id="banner_2">
+				<div class="inner">
+					<header>
+						<h1>unsere <b>Next Steps</b></h1>
+						<h2 class="white"><a href="/pages/jack" alt="Über uns" class="bold swatch_green">Wir</a> haben viel vor.</h2>
+						<p class="analysis labelo_red white invisible">Falsches Passwort! <strong class="white">Bitte im jeweiligen Guide nachschauen.</strong></p>
+					</header>
+
+					<div class="flex ">
+						
+						<h3 class="magnify italics">Am Plan stehen neben einem vollen Bio-Skript weitere Papier-Produkte und Digital-Anwendungen, um alle Lerntypen und Arbeitsweisen bei der MedAT Vorbereitung abzudecken: und das zum bestmöglichen Preis, mit <strong class="white">Community</strong>Faktor.</h3>
+						
+						<div class="row">
+							
+							<section class="8u 12u$(medium) align-right space-top">
+						
+							<a href="https://shop.medcastle.at" alt="zum Shop"><img src="{% static 'img/shop/1x/bio_wissen.png' %}" class="scale" width="640" alt="Bio-Skript" /></a>
+							<p>Ein Skript, das bald kommt.</strong></p>
+							
+							</section>
+						</div>
+						
+						<!--<h2 class="white italics space-top magnify_3">Jeder Gewinn, den das Maxi-Turnier (unser einziges kostenpflichtiges Produkt) erzielt, dient dieser <strong class="white">Weiterentwicklung</strong>.</h2>-->
+
+					</div>
+
+					<footer>
+						<p><i class="fa fa-star"></i><i class="fa fa-star"></i><b class="swatch_g"> Derzeit </b> bieten wir auch viele Komponenten, v.a. sog. Short Guides, als <b class="swatch_g">Bonus-Material</b> für die Community</p>
+						<a href="/skript/ee_merk" alt="zum Guide" class="button"><i class="fa fa-arrow-left"></i> Durch <b class="swatch_g">Engagement in der Community</b> kommst du zu den Guides</a>
+					</footer>
+				</div>
+			</section>
+
+			<!-- Three -->
+			<!--<section id="three" class="wrapper">
+				
+				
+				
+				
+					
+					
+					
+			</section>-->
+			
+			<script>
+			function sendMail() {
+				document.getElementById("collapsible2").checked = "checked";
+			}
+
+			</script>
+
+{% endblock %}

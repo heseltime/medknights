@@ -1,0 +1,338 @@
+{% extends "base_content_with_shop_link.html" %}
+
+
+{% load static %}
+
+
+{% block title %}
+
+Textverständnis: Turnier
+
+{% endblock %} 
+
+{% block custom_og %}
+
+	<meta property="og:url"                content="https://medcastle.at{{ request.path }}" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Ich hab die MedKnight-Karte für diesen Teil des Mediziner-Tests Erhalten!" />
+	<meta property="og:description"        content="Das heißt, den Übungstest für diesen Teil des MedAT habe ich statistisch geschafft: medCastle.at ist meine gratis Vorbereitung und online-Lernplattform für den MedAT. " />
+	<meta property="og:image"              content="https://medcastle.at{% static 'img/ritterkarten/2x/tv.png' %}" />
+	
+	<meta property="fb:app_id"              content="667140217484992" />
+
+{% endblock %}
+
+
+{% block social_scripts %}
+
+{% endblock %}
+
+
+{% block add_assets %}
+
+<script src="{% static 'js/quiz.js' %}"></script>
+
+{% endblock %}
+
+
+{% block content %}
+
+		<!-- Three -->
+		<div id="fb-root"></div>
+		
+		
+		<section id="three" class="wrapper tv">
+			
+			<div class="inner">
+				
+				<header class="align-center">
+					
+					<img src="{% static 'img/heros/1x/tv.png' %}" alt="Textverständnis" width="250" />
+					
+					<h2><b>T</b>ext<b>V</b>erständnis-<strong>Turnier</strong></h2>
+					
+					<p>Werde Turniermeister und komm ins medCastle durch richtige Beantwortung mehrer <strong>MedAT Alt- und Neufragen zu Fachtexten.</strong> </p>
+					
+					<p><i>Dem MedAT angepasst findest du hier eine  Auswahl aus <strong>Bio-Fachliteratur</strong> (bevorzugt Genetik und Geburt, fällt uns auf), <strong>aber auch Geschichte und Politik</strong>.</i></p>
+					
+					<!--<p class="italics">Übe am Besten Set-weise, wie hier vorgegeben: <strong>12 Aufgaben</strong> (mit Bearbeitungszeit: 35 min) sind ein Set.</p>-->
+										
+					
+					<ul class="actions">
+						<li><a href="" class="button dead">Bearbeitungsmethoden</a></li>
+						<li><a href="/tv/turnier_01" class="button">Text 1</a></li>
+						<li><a href="/tv/turnier_02" class="button">Text 2</a></li>
+						<li><a href="/tv/turnier_03" class="button">Text 3</a></li>
+						<li><a href="/tv/turnier_04" class="button special">Text 4</a></li>
+						<li><a href="/tv/turnier_05" class="button">Text 5</a></li>
+					</ul>
+												
+					
+					<!--<p id="analysis-note"><i><i class="fas fa-exclamation-circle"></i> Beachte auch die <strong>Fragen-Analyse</strong> wenn du zunächst eine Frage falsch beantwortest: Im Gegensatz zum MedAT kannst du beliebig viele Mini-Turniere an einem Tag machen!</i></p> -->
+										
+				</header>
+				
+				
+				<!-- Content -->	
+					
+				<div class="row">
+					
+					<div class="12u 12u$(medium) ">
+						
+						
+					<!--<div id="analysis" class="invisible">
+				
+				<h5><strong><i class="fa fa-exclamation-circle"></i> Fragen-Analyse</strong></h5>
+				
+				<p></p>
+				
+					</div>-->
+				
+				
+						<form class="box" action="/turnier" method="post">		
+							<ul>
+								
+							
+								<li>
+									<p class="ask"><strong><i class="fa fa-book"></i> Text</strong></p>
+										
+										<p>Die Fetogenese (ein Kompositum aus dem lateinischen Fetus und der griechischen Genese) is die beginnende Entwicklung der Leibesfrucht (Fetus) bis zur Geburt, in der die Weiterentwicklung der Organe (Organmorphogenese) und die Ausdifferenzierung des Gewebes (Histogenese) erfolgt. Sie beginnt beim Menschen mit dem 61. Schwangerschaftstag und löst damit die Embryogenese ab. Die Fetalperiode ist durch schnelles Wachstum des Körpers gekennzeichnet. Entwicklungsverzögerungen in dieser Zeit können später noch aufgeholt werden. In dieser Phase wird das Risiko für Fehlgebruten und Missbildungen gegenüber früheren Schwangerschaftsstadien vermindert. Während des 3. Monats verändern sich die Gesichtsproportionen, denn Augen und Ohren erreichen allmählich ihre endgültige Länge. Die Gliemaßen verlängern sich und erste Muskelaktivitäten werden möglich, welche aber noch nicht von der Mutter wahrgenommen werden. Im 4. und 5. Monat findet ein starkes Längswachstum statt. An der Körperoberfläche wir die Lanugo-Behaarung ausgebildet. Bis heute ist man sich nicht ganz im Klaren, ob diese Behaarung ein evolutionäres Relikt ist oder eine funktionelle Bedeutung hat. Außerdem werden die Talgdrüsen aktiv und die Herztöne werden hörbar. Spätestens mit dem 5. Monat werden die Bewegungen des Kindes von der Mutter deutlich wahrgenommen. Im 6. Monat ist der Fetus etwas "runzelig"; das hängt damit zusammen, dass due Haut verstärkt wächst, die unter det Haut liegende Fettschicht jedoch nur langsam gebildet wird. Die etwa 50 Zentimeter lange Nabelschnur ist spiralförmig eingedreht, sodass der Fetus genügend Bewegungsfreiheit in der Fruchtblase hat. Vor allem das WAchstum steht nun im Vordergrund, da die Differenzierung der Organe weitgehend abgeschlossen ist.</p>
+										
+										<p>In diesem Monat beginnt auch die Reifung des Gleichgewichtssinns. Im 7. Monat wird die Lunge funktionstüchtig, damit ist der Fetus mit der 28. Woche als Frühgeburt lebensfähig. Im 8. Monat erfolg eine starke Fettvermehrung im Unterbindehautgewebe, dadurch strafft sich die Haut. Auch findet nun die Reifung des Geruchssinns statt. Die Leber weist ein stärkeres Wachstum auf und speichert eisenhaltige Verbindungen. Im 9. Monat sinkt der Fetus tiefer ins mütterliche Becken und gelangt dabei in die enstsprechende Geburtslage.</p>
+										<p>Die normale Geburt (auch "Spontangeburt") des Menschen beginnt mit der Eröffnungsphase, dem ersten Stadium der Wehen (vom vegetativen Nervensystem gesteuerte Kontraktionen der Gebärmuttermuskulatur, die nicht der bewussten Steuerung der Gebärenden unterliegen). Ziel der Eröffnungswehen ist die Verkürzung des Gebärmutterhalses und Erweiterung des Muttermundes. Sie beginnt mit  unregelmäßigen Wehen der Rhythmus regelmäßiger wird. Die Dauer jeder Wehe in der Eröffnungsphase beträgt 30-60 Sekunden. Im letzten Abschnitt der Eröffnungsphase, der Übergangsphase, werden die Wehenfrequenz schneller und die Schmerzen intensiver. Der kopf des Kindes gelangt durch das Becken der Mutter. Wenn der Muttermund vollständig eröffnet ist (ca. 10 cm), beginnt die Austreibungsphase, das zweite Stadium der Geburt. In ihr ändert sich der Charakter der Wehen erneut. Es kommt zu einer Frequenz von 6-7 Wehen in 15 Minuten. Wenn der kindliche Kopf enstprechend tief im Geburtskanal steckt, wird bei der gebärenden Frau reflektorisch ein Pressdrang ausgelöst. Sie unterstützt die Wehen aktiv mit ihrer Bauchmuskulatur. Nach der Geburt wird das gesunde Neugeborene normalerweise sofort von der Mutter zu sich genommen und warm zugedeckt. Jetzt sollte das erste Anlege an der Brust der Mutter erfolgen. Das Durchtrennen der Nabelschnur ist nur in Ausnahmefällen notwendig, is aber nach deren Auspulsieren ohne Gefahr möglich. Das letzte Stadium der Geburt ist die Plazentarphase (Nachgeburtsphase). In Abhängigkeit von Stärke und Dauer der Nachgeburtswehen beansprucht sie im Schnitt 10-30 Minuten. Mit der Ausstoßung der Plazenta (Nachgeburt) ist die Geburt beendet. Die Dauer der Geburt ist sehr unterschiedlich. Man rechnet durchschnittlich 13 Stunden für Erstgebärende (lat. Primiparae) und 8 Stunden für Frauen, die bereits ein Kind geboren haben, wobei die längste Phase mit ca. 7-10 Stunden die Eröffnungsphase ist. Der Grund ist, dass sich bei Erstgebärenden zuerst der Gebärmutterhals verkürzt und danach der Muttermund öffnet, währen ab der 2. Geburt beide Vorgänge gleichzeitig ablaufen.</p>
+																			
+									<p class="ask"><strong><i class="fa fa-question"></i> Frage zum Text</strong></p> 
+									
+									<p class="ask"><strong>Welche der nachfolgenden Aussagen zur Entwicklung eines ungeborenen Kindes ist richtig?</strong></p>								
+										
+
+									
+									<!--<p class="analysis invisible"></p>-->
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a" class"swatch_g">
+											<li class"swatch_g">
+												<input type="radio" value="0" />
+												<label style"">Die Entwicklung der Organe bezeichnet man als Histogenese.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Die Lunge ist aber der 23. Schwangerschaftswoche funktionsfähig.</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Der Gleichgewichtssinn beginnt vor dem 8. Schwangerschaftsmonat zu reifen.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Da die Muskulatur des Fetus ab dem 3. Monat funktionsfähig ist, kann die Mutter ab diesem Zeitpunkt Bewegungen des Kindes wahrnehmen.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Entwicklungsdefizite in der Fetogenese können später kaum aufgeholt werden.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-book"></i> Text</strong></p>
+										
+										<p>Die Fetogenese (ein Kompositum aus dem lateinischen Fetus und der griechischen Genese) is die beginnende Entwicklung der Leibesfrucht (Fetus) bis zur Geburt, in der die Weiterentwicklung der Organe (Organmorphogenese) und die Ausdifferenzierung des Gewebes (Histogenese) erfolgt. Sie beginnt beim Menschen mit dem 61. Schwangerschaftstag und löst damit die Embryogenese ab. Die Fetalperiode ist durch schnelles Wachstum des Körpers gekennzeichnet. Entwicklungsverzögerungen in dieser Zeit können später noch aufgeholt werden. In dieser Phase wird das Risiko für Fehlgebruten und Missbildungen gegenüber früheren Schwangerschaftsstadien vermindert. Während des 3. Monats verändern sich die Gesichtsproportionen, denn Augen und Ohren erreichen allmählich ihre endgültige Länge. Die Gliemaßen verlängern sich und erste Muskelaktivitäten werden möglich, welche aber noch nicht von der Mutter wahrgenommen werden. Im 4. und 5. Monat findet ein starkes Längswachstum statt. An der Körperoberfläche wir die Lanugo-Behaarung ausgebildet. Bis heute ist man sich nicht ganz im Klaren, ob diese Behaarung ein evolutionäres Relikt ist oder eine funktionelle Bedeutung hat. Außerdem werden die Talgdrüsen aktiv und die Herztöne werden hörbar. Spätestens mit dem 5. Monat werden die Bewegungen des Kindes von der Mutter deutlich wahrgenommen. Im 6. Monat ist der Fetus etwas "runzelig"; das hängt damit zusammen, dass due Haut verstärkt wächst, die unter det Haut liegende Fettschicht jedoch nur langsam gebildet wird. Die etwa 50 Zentimeter lange Nabelschnur ist spiralförmig eingedreht, sodass der Fetus genügend Bewegungsfreiheit in der Fruchtblase hat. Vor allem das WAchstum steht nun im Vordergrund, da die Differenzierung der Organe weitgehend abgeschlossen ist.</p>
+										
+										<p>In diesem Monat beginnt auch die Reifung des Gleichgewichtssinns. Im 7. Monat wird die Lunge funktionstüchtig, damit ist der Fetus mit der 28. Woche als Frühgeburt lebensfähig. Im 8. Monat erfolg eine starke Fettvermehrung im Unterbindehautgewebe, dadurch strafft sich die Haut. Auch findet nun die Reifung des Geruchssinns statt. Die Leber weist ein stärkeres Wachstum auf und speichert eisenhaltige Verbindungen. Im 9. Monat sinkt der Fetus tiefer ins mütterliche Becken und gelangt dabei in die enstsprechende Geburtslage.</p>
+										<p>Die normale Geburt (auch "Spontangeburt") des Menschen beginnt mit der Eröffnungsphase, dem ersten Stadium der Wehen (vom vegetativen Nervensystem gesteuerte Kontraktionen der Gebärmuttermuskulatur, die nicht der bewussten Steuerung der Gebärenden unterliegen). Ziel der Eröffnungswehen ist die Verkürzung des Gebärmutterhalses und Erweiterung des Muttermundes. Sie beginnt mit  unregelmäßigen Wehen der Rhythmus regelmäßiger wird. Die Dauer jeder Wehe in der Eröffnungsphase beträgt 30-60 Sekunden. Im letzten Abschnitt der Eröffnungsphase, der Übergangsphase, werden die Wehenfrequenz schneller und die Schmerzen intensiver. Der kopf des Kindes gelangt durch das Becken der Mutter. Wenn der Muttermund vollständig eröffnet ist (ca. 10 cm), beginnt die Austreibungsphase, das zweite Stadium der Geburt. In ihr ändert sich der Charakter der Wehen erneut. Es kommt zu einer Frequenz von 6-7 Wehen in 15 Minuten. Wenn der kindliche Kopf enstprechend tief im Geburtskanal steckt, wird bei der gebärenden Frau reflektorisch ein Pressdrang ausgelöst. Sie unterstützt die Wehen aktiv mit ihrer Bauchmuskulatur. Nach der Geburt wird das gesunde Neugeborene normalerweise sofort von der Mutter zu sich genommen und warm zugedeckt. Jetzt sollte das erste Anlege an der Brust der Mutter erfolgen. Das Durchtrennen der Nabelschnur ist nur in Ausnahmefällen notwendig, is aber nach deren Auspulsieren ohne Gefahr möglich. Das letzte Stadium der Geburt ist die Plazentarphase (Nachgeburtsphase). In Abhängigkeit von Stärke und Dauer der Nachgeburtswehen beansprucht sie im Schnitt 10-30 Minuten. Mit der Ausstoßung der Plazenta (Nachgeburt) ist die Geburt beendet. Die Dauer der Geburt ist sehr unterschiedlich. Man rechnet durchschnittlich 13 Stunden für Erstgebärende (lat. Primiparae) und 8 Stunden für Frauen, die bereits ein Kind geboren haben, wobei die längste Phase mit ca. 7-10 Stunden die Eröffnungsphase ist. Der Grund ist, dass sich bei Erstgebärenden zuerst der Gebärmutterhals verkürzt und danach der Muttermund öffnet, währen ab der 2. Geburt beide Vorgänge gleichzeitig ablaufen.</p>
+																			
+									<p class="ask"><strong><i class="fa fa-question"></i> Frage zum Text</strong></p> 
+									
+									<p class="ask"><strong>Welche der nachfolgenden Aussagen zur Chronologie der Entwicklung des Kindes in der Schwangerschaft lässt sich/lassen sich aus dem Text ableiten?</strong></p>		
+									
+									<ol type="I" class"">
+										<li class="">
+											<p>Die 10. Schwangerschaftswoche zählt noch zur Embryogenese.</p>										
+										</li>
+										
+										<li class="">
+											<p>Im 3. Schwangerschaftsmonat verändern sich die Gesichtsproportionen der schwangeren Frau.</p>										
+										</li>
+										
+										<li class="">
+											<p>Im 5. Schwangerschaftsmonat fällt die Leber durch verstärktes Wachstum und Eiseneinspeicherung auf.</p>										
+										</li>
+										
+										<li class="">
+											<p>Der Geruchssinn des Kindes entwickelt sich vor der Reifung des Gleichgewichtssinnes.</p>										
+										</li>
+									</ol>					
+
+									
+									<!--<p class="analysis invisible"></p>-->
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a" class"swatch_g">
+											<li class"swatch_g">
+												<input type="radio" value="0" />
+												<label style"">Nur Aussage I lässt sich ableiten.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Nur Aussage III lässt sich ableiten..</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Nur Aussagen I und II lassen sich ableiten.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Nur Aussagen I und IV lassen sich ableiten.</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Keine der Aussagen lässt sich ableiten.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>	
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-book"></i> Text</strong></p>
+										
+										<p>Die Fetogenese (ein Kompositum aus dem lateinischen Fetus und der griechischen Genese) is die beginnende Entwicklung der Leibesfrucht (Fetus) bis zur Geburt, in der die Weiterentwicklung der Organe (Organmorphogenese) und die Ausdifferenzierung des Gewebes (Histogenese) erfolgt. Sie beginnt beim Menschen mit dem 61. Schwangerschaftstag und löst damit die Embryogenese ab. Die Fetalperiode ist durch schnelles Wachstum des Körpers gekennzeichnet. Entwicklungsverzögerungen in dieser Zeit können später noch aufgeholt werden. In dieser Phase wird das Risiko für Fehlgebruten und Missbildungen gegenüber früheren Schwangerschaftsstadien vermindert. Während des 3. Monats verändern sich die Gesichtsproportionen, denn Augen und Ohren erreichen allmählich ihre endgültige Länge. Die Gliemaßen verlängern sich und erste Muskelaktivitäten werden möglich, welche aber noch nicht von der Mutter wahrgenommen werden. Im 4. und 5. Monat findet ein starkes Längswachstum statt. An der Körperoberfläche wir die Lanugo-Behaarung ausgebildet. Bis heute ist man sich nicht ganz im Klaren, ob diese Behaarung ein evolutionäres Relikt ist oder eine funktionelle Bedeutung hat. Außerdem werden die Talgdrüsen aktiv und die Herztöne werden hörbar. Spätestens mit dem 5. Monat werden die Bewegungen des Kindes von der Mutter deutlich wahrgenommen. Im 6. Monat ist der Fetus etwas "runzelig"; das hängt damit zusammen, dass due Haut verstärkt wächst, die unter det Haut liegende Fettschicht jedoch nur langsam gebildet wird. Die etwa 50 Zentimeter lange Nabelschnur ist spiralförmig eingedreht, sodass der Fetus genügend Bewegungsfreiheit in der Fruchtblase hat. Vor allem das WAchstum steht nun im Vordergrund, da die Differenzierung der Organe weitgehend abgeschlossen ist.</p>
+										
+										<p>In diesem Monat beginnt auch die Reifung des Gleichgewichtssinns. Im 7. Monat wird die Lunge funktionstüchtig, damit ist der Fetus mit der 28. Woche als Frühgeburt lebensfähig. Im 8. Monat erfolg eine starke Fettvermehrung im Unterbindehautgewebe, dadurch strafft sich die Haut. Auch findet nun die Reifung des Geruchssinns statt. Die Leber weist ein stärkeres Wachstum auf und speichert eisenhaltige Verbindungen. Im 9. Monat sinkt der Fetus tiefer ins mütterliche Becken und gelangt dabei in die enstsprechende Geburtslage.</p>
+										<p>Die normale Geburt (auch "Spontangeburt") des Menschen beginnt mit der Eröffnungsphase, dem ersten Stadium der Wehen (vom vegetativen Nervensystem gesteuerte Kontraktionen der Gebärmuttermuskulatur, die nicht der bewussten Steuerung der Gebärenden unterliegen). Ziel der Eröffnungswehen ist die Verkürzung des Gebärmutterhalses und Erweiterung des Muttermundes. Sie beginnt mit  unregelmäßigen Wehen der Rhythmus regelmäßiger wird. Die Dauer jeder Wehe in der Eröffnungsphase beträgt 30-60 Sekunden. Im letzten Abschnitt der Eröffnungsphase, der Übergangsphase, werden die Wehenfrequenz schneller und die Schmerzen intensiver. Der kopf des Kindes gelangt durch das Becken der Mutter. Wenn der Muttermund vollständig eröffnet ist (ca. 10 cm), beginnt die Austreibungsphase, das zweite Stadium der Geburt. In ihr ändert sich der Charakter der Wehen erneut. Es kommt zu einer Frequenz von 6-7 Wehen in 15 Minuten. Wenn der kindliche Kopf enstprechend tief im Geburtskanal steckt, wird bei der gebärenden Frau reflektorisch ein Pressdrang ausgelöst. Sie unterstützt die Wehen aktiv mit ihrer Bauchmuskulatur. Nach der Geburt wird das gesunde Neugeborene normalerweise sofort von der Mutter zu sich genommen und warm zugedeckt. Jetzt sollte das erste Anlege an der Brust der Mutter erfolgen. Das Durchtrennen der Nabelschnur ist nur in Ausnahmefällen notwendig, is aber nach deren Auspulsieren ohne Gefahr möglich. Das letzte Stadium der Geburt ist die Plazentarphase (Nachgeburtsphase). In Abhängigkeit von Stärke und Dauer der Nachgeburtswehen beansprucht sie im Schnitt 10-30 Minuten. Mit der Ausstoßung der Plazenta (Nachgeburt) ist die Geburt beendet. Die Dauer der Geburt ist sehr unterschiedlich. Man rechnet durchschnittlich 13 Stunden für Erstgebärende (lat. Primiparae) und 8 Stunden für Frauen, die bereits ein Kind geboren haben, wobei die längste Phase mit ca. 7-10 Stunden die Eröffnungsphase ist. Der Grund ist, dass sich bei Erstgebärenden zuerst der Gebärmutterhals verkürzt und danach der Muttermund öffnet, währen ab der 2. Geburt beide Vorgänge gleichzeitig ablaufen.</p>
+																			
+									<p class="ask"><strong><i class="fa fa-question"></i> Frage zum Text</strong></p> 
+									
+									<p class="ask"><strong>Die Haut des sich entwickelnden Fetus mach im Mutterleib unterschiedliche Entwicklungssschritte mit. Welche der Aussagen ist richtig?</strong></p>								
+										
+
+									
+									<!--<p class="analysis invisible"></p>-->
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a" class"swatch_g">
+											<li class"swatch_g">
+												<input type="radio" value="0" />
+												<label style"">Die Lanugo-Behaarung kompensiert die Wärmefunktion des noch fehlenden Unterhautfetts.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Das anfänglich runzelige Aussehen des Fetus und die spätere Glättung seiner Haut erklärt sich durch unterschiedliche Wachstumsraten der Haut und des darunterliegenden Unterhautfettgewebes.</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Im 6. Schwangerschaftsmonat vermehrt sich das Unterhautfettgewebe des Fetus stark.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Im 7. Schwangerschaftsmonat werden die Talgdrüsen aktiv.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Im 8. Schwangerschaftsmonat wächst die Haut verstärkt.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-book"></i> Text</strong></p>
+										
+										<p>Die Fetogenese (ein Kompositum aus dem lateinischen Fetus und der griechischen Genese) is die beginnende Entwicklung der Leibesfrucht (Fetus) bis zur Geburt, in der die Weiterentwicklung der Organe (Organmorphogenese) und die Ausdifferenzierung des Gewebes (Histogenese) erfolgt. Sie beginnt beim Menschen mit dem 61. Schwangerschaftstag und löst damit die Embryogenese ab. Die Fetalperiode ist durch schnelles Wachstum des Körpers gekennzeichnet. Entwicklungsverzögerungen in dieser Zeit können später noch aufgeholt werden. In dieser Phase wird das Risiko für Fehlgebruten und Missbildungen gegenüber früheren Schwangerschaftsstadien vermindert. Während des 3. Monats verändern sich die Gesichtsproportionen, denn Augen und Ohren erreichen allmählich ihre endgültige Länge. Die Gliemaßen verlängern sich und erste Muskelaktivitäten werden möglich, welche aber noch nicht von der Mutter wahrgenommen werden. Im 4. und 5. Monat findet ein starkes Längswachstum statt. An der Körperoberfläche wir die Lanugo-Behaarung ausgebildet. Bis heute ist man sich nicht ganz im Klaren, ob diese Behaarung ein evolutionäres Relikt ist oder eine funktionelle Bedeutung hat. Außerdem werden die Talgdrüsen aktiv und die Herztöne werden hörbar. Spätestens mit dem 5. Monat werden die Bewegungen des Kindes von der Mutter deutlich wahrgenommen. Im 6. Monat ist der Fetus etwas "runzelig"; das hängt damit zusammen, dass due Haut verstärkt wächst, die unter det Haut liegende Fettschicht jedoch nur langsam gebildet wird. Die etwa 50 Zentimeter lange Nabelschnur ist spiralförmig eingedreht, sodass der Fetus genügend Bewegungsfreiheit in der Fruchtblase hat. Vor allem das WAchstum steht nun im Vordergrund, da die Differenzierung der Organe weitgehend abgeschlossen ist.</p>
+										
+										<p>In diesem Monat beginnt auch die Reifung des Gleichgewichtssinns. Im 7. Monat wird die Lunge funktionstüchtig, damit ist der Fetus mit der 28. Woche als Frühgeburt lebensfähig. Im 8. Monat erfolg eine starke Fettvermehrung im Unterbindehautgewebe, dadurch strafft sich die Haut. Auch findet nun die Reifung des Geruchssinns statt. Die Leber weist ein stärkeres Wachstum auf und speichert eisenhaltige Verbindungen. Im 9. Monat sinkt der Fetus tiefer ins mütterliche Becken und gelangt dabei in die enstsprechende Geburtslage.</p>
+										<p>Die normale Geburt (auch "Spontangeburt") des Menschen beginnt mit der Eröffnungsphase, dem ersten Stadium der Wehen (vom vegetativen Nervensystem gesteuerte Kontraktionen der Gebärmuttermuskulatur, die nicht der bewussten Steuerung der Gebärenden unterliegen). Ziel der Eröffnungswehen ist die Verkürzung des Gebärmutterhalses und Erweiterung des Muttermundes. Sie beginnt mit  unregelmäßigen Wehen der Rhythmus regelmäßiger wird. Die Dauer jeder Wehe in der Eröffnungsphase beträgt 30-60 Sekunden. Im letzten Abschnitt der Eröffnungsphase, der Übergangsphase, werden die Wehenfrequenz schneller und die Schmerzen intensiver. Der kopf des Kindes gelangt durch das Becken der Mutter. Wenn der Muttermund vollständig eröffnet ist (ca. 10 cm), beginnt die Austreibungsphase, das zweite Stadium der Geburt. In ihr ändert sich der Charakter der Wehen erneut. Es kommt zu einer Frequenz von 6-7 Wehen in 15 Minuten. Wenn der kindliche Kopf enstprechend tief im Geburtskanal steckt, wird bei der gebärenden Frau reflektorisch ein Pressdrang ausgelöst. Sie unterstützt die Wehen aktiv mit ihrer Bauchmuskulatur. Nach der Geburt wird das gesunde Neugeborene normalerweise sofort von der Mutter zu sich genommen und warm zugedeckt. Jetzt sollte das erste Anlege an der Brust der Mutter erfolgen. Das Durchtrennen der Nabelschnur ist nur in Ausnahmefällen notwendig, is aber nach deren Auspulsieren ohne Gefahr möglich. Das letzte Stadium der Geburt ist die Plazentarphase (Nachgeburtsphase). In Abhängigkeit von Stärke und Dauer der Nachgeburtswehen beansprucht sie im Schnitt 10-30 Minuten. Mit der Ausstoßung der Plazenta (Nachgeburt) ist die Geburt beendet. Die Dauer der Geburt ist sehr unterschiedlich. Man rechnet durchschnittlich 13 Stunden für Erstgebärende (lat. Primiparae) und 8 Stunden für Frauen, die bereits ein Kind geboren haben, wobei die längste Phase mit ca. 7-10 Stunden die Eröffnungsphase ist. Der Grund ist, dass sich bei Erstgebärenden zuerst der Gebärmutterhals verkürzt und danach der Muttermund öffnet, währen ab der 2. Geburt beide Vorgänge gleichzeitig ablaufen.</p>
+																			
+									<p class="ask"><strong><i class="fa fa-question"></i> Frage zum Text</strong></p> 
+									
+									<p class="ask"><strong>Welche der im Folgenden beschriebenen Aussagen zum Geburtsverlauf bei Menschen ist dem Text zufolge falsch?</strong></p>								
+										
+
+									
+									<!--<p class="analysis invisible"></p>-->
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a" class"swatch_g">
+											<li class"swatch_g">
+												<input type="radio" value="0" />
+												<label style"">Die Plazentarphase schließt die Geburt ab.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Während der Eröffnungswehen beginnt bereits die Erweiterung des Muttermundes.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Die Öffnung des Muttermundes und des Gebärmutterhalses kann nacheinander aber auch gleichzeitg erfolgen.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Die Gebärende unterstützt die Eröffnung des Muttermundes reflektorisch mithilfe ihrer Bauchmuskulatur.</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Im Schnitt beträgt die Dauer jeder Wehe in der Eröffnungsphase 45 Sekunden.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+							
+							</ul>
+							
+							
+						<div id="result" class="no_display">
+							
+					<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><img srcset="{% static 'img/ritterkarten/1x/tv.png' %} 277w, {% static 'img/ritterkarten/2x/tv.png' %} 554w" alt="Gewebe" width="277" /></a>
+				
+					<h3><i class="fas fa-thumbs-up"></i><b> Fertig! Dein Ergebnis?</b></h3>
+					
+					<h1></h1>
+					
+					<h5 class="labelo white"> </h5>
+					
+					<div><h2>Du erhältst eine MedKnight-Karte!</h2>
+					
+						<h5 class="white"><i class="fab fa-facebook-f"></i> <i>Teile sie mit Freunden und Feinden, die ebenfalls für den MedAT lernern</i></h5>
+					
+						<div class="fb-share-button" data-href="https://medcastle.at{{ request.path }}" data-layout="box_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmedcastle.at%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+					</div>
+					
+					<h5 class="space-top"></h5>
+					
+					<!--<p><b>Nein wirklich! Am Besten du schreibst dir gleich alle rot unterlegten Analysen</b> (Wie war nochmal die dazugehörige Frage?) <b>auf Karteikarten.</b></p>	-->									
+						</div>	
+						
+							
+							<p id="questionsLeft" class=""></p>
+							
+						</form>
+						
+						<p><i><i class="fas fa-exclamation-circle"></i> Wie auch beim echten MedAT wird dir hier erlaubt deine Antwort <strong>ab</strong>zuändern (vgl. auf Papier: altes Kästchen ausmalen, neues Kreuz setzen), nicht aber <strong>zurück</strong>zuändern: ist beim MedAT das Kästchen einmal ausgemalt, kannst du es nicht wieder ankreuzen. <strong>Eine Abänderung ist also endgültig.</strong></i></p> 
+						
+							
+					</div>
+				
+				</div>
+					
+				
+			<!--<hr/>-->
+
+
+{% endblock %}

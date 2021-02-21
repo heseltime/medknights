@@ -1,0 +1,315 @@
+{% extends "base_content_with_shop_link.html" %}
+
+
+{% load static %}
+
+
+{% block title %}
+
+Textverständnis: Turnier
+
+{% endblock %} 
+
+{% block custom_og %}
+
+	<meta property="og:url"                content="https://medcastle.at{{ request.path }}" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Ich hab die MedKnight-Karte für diesen Teil des Mediziner-Tests Erhalten!" />
+	<meta property="og:description"        content="Das heißt, den Übungstest für diesen Teil des MedAT habe ich statistisch geschafft: medCastle.at ist meine gratis Vorbereitung und online-Lernplattform für den MedAT. " />
+	<meta property="og:image"              content="https://medcastle.at{% static 'img/ritterkarten/2x/tv.png' %}" />
+	
+	<meta property="fb:app_id"              content="667140217484992" />
+
+{% endblock %}
+
+
+{% block social_scripts %}
+
+{% endblock %}
+
+
+{% block add_assets %}
+
+<script src="{% static 'js/quiz.js' %}"></script>
+
+{% endblock %}
+
+
+{% block content %}
+
+		<!-- Three -->
+		<div id="fb-root"></div>
+		
+		
+		<section id="three" class="wrapper tv">
+			
+			<div class="inner">
+				
+				<header class="align-center">
+					
+					<img src="{% static 'img/heros/1x/tv.png' %}" alt="Textverständnis" width="250" />
+					
+					<h2><b>T</b>ext<b>V</b>erständnis-<strong>Turnier</strong></h2>
+					
+					<p>Werde Turniermeister und komm ins medCastle durch richtige Beantwortung mehrer <strong>MedAT Alt- und Neufragen zu Fachtexten.</strong> </p>
+					
+					<p><i>Dem MedAT angepasst findest du hier eine  Auswahl aus <strong>Bio-Fachliteratur</strong> (bevorzugt Genetik und Geburt, fällt uns auf), <strong>aber auch Geschichte und Politik</strong>.</i></p>
+					
+					<!--<p class="italics">Übe am Besten Set-weise, wie hier vorgegeben: <strong>12 Aufgaben</strong> (mit Bearbeitungszeit: 35 min) sind ein Set.</p>-->
+										
+					
+					<ul class="actions">
+						<li><a href="" class="button dead">Bearbeitungsmethoden</a></li>
+						<li><a href="/tv/turnier_01" class="button">Text 1</a></li>
+						<li><a href="/tv/turnier_02" class="button special">Text 2</a></li>
+						<li><a href="/tv/turnier_03" class="button">Text 3</a></li>
+						<li><a href="/tv/turnier_04" class="button">Text 4</a></li>
+						<li><a href="/tv/turnier_05" class="button">Text 5</a></li>
+					</ul>
+												
+					
+					<!--<p id="analysis-note"><i><i class="fas fa-exclamation-circle"></i> Beachte auch die <strong>Fragen-Analyse</strong> wenn du zunächst eine Frage falsch beantwortest: Im Gegensatz zum MedAT kannst du beliebig viele Mini-Turniere an einem Tag machen!</i></p> -->
+										
+				</header>
+				
+				
+				<!-- Content -->	
+					
+				<div class="row">
+					
+					<div class="12u 12u$(medium) ">
+						
+						
+					<!--<div id="analysis" class="invisible">
+				
+				<h5><strong><i class="fa fa-exclamation-circle"></i> Fragen-Analyse</strong></h5>
+				
+				<p></p>
+				
+					</div>-->
+				
+				
+						<form class="box" action="/turnier" method="post">		
+							<ul>
+								
+							
+								<li>
+									<p class="ask"><strong><i class="fa fa-book"></i> Text</strong></p>
+										
+										<p>Üblicherweise wird eine Schwangerschaft in Österreich von einem/einer Frauenarzt/Frauenärztin nach Richtlinien des Mutter-Kind-Passes betreut, was eine gute Überwachung von Mutter und Kind gewährleistet. Zusätzlich zur normalen Schwangerenvorsorge gibt es vorbehaltliche Untersuchungen, die sogenannte Pränataldiagnostik (pränatal = vorgeburtlich), mit den ausgeschlossen werden soll, ob bestimmte Fehlbildungen, Erkrankungen oder Behinderungen beim ungeborenen Kind vorliegen. Insgesamt kommen bei der Geburt 96-97% aller Kinder ohne Behinderung oder Fehlbildung zur Welt.
+</p>
+
+										<p>In den meisten Fällen sind die Ergebnisse vorgeburtlicher Untersuchungen unauffällig und somit für die werdenden Eltern beruhigend, auch wenn es keine Garantie für ein gesundes Kind gibt. Mit Hilfe pränataler Diagnostik ist es in manchen Fällen möglich Erkrankungen bereits während der Schwangerschaft positive zu beeinflussen oder sich auf den Geburtsverlauf vorzubereiten. Vorgeburtliche Untersuchungen können aber auch Verunsicherung oder überfordern, wenn etwa eine erhöhte Wahrscheinlichkeit für genetisch bedingte Behinderung vorliegt. Such wenn die Pränatalmedizin laufend neue Methoden entwickelt, gibt es keine Untersuchung, die alle möglichen genetischen Erkrankungen überprüft und für einen großen Teil der feststellbaren Diagnosen keine Therapiemöglichkeiten.
+</p>
+
+										<p>Nach der 12. Schwangerschaftswoche (SSW) sind alle Anlagen für Organe und Gewebe des ungeboren Kindes im Mutterleib bereits voll entwickelt und reifen täglich weiter. Mit einer genauen Ultraschalluntersuchung können nun (im Ersten Trimester – erstes Drittel der Schwangerschaft) größere Auffälligkeiten und Fehlbildungen des Fötus entdeckt werden. So kann in der 11.-13. SSW mit der Messeng der Nackentransparenz die Wahrscheinlichkeit für eine Chromosomenstörung (z.B. Trisomie 13, 18 oder 21) errechnet werden. Werden zusätzlich bestimmte Blutwerte der Schwangeren für die Berechnung berücksichtigt (Combined Test), ist das Ergebnis genauer, auch das Alter der werdenden Mutter ist ein Risikofaktor. Von 100 Frauen, die bei der Geburt 40 Jahre alt sind, erwarte statistisch gesehen eine Frau ein Kind mit Down-Syndrom (Trisomie 21), bei jüngeren Frauen ist das Risiko geringer. Diese Untersuchungen (sog. Erst-Trimester Screening) ist für Frau und Kind ohne Risiko, da nicht in den Körper eingegriffen wird. Bei auffälligen Ergebnissen kann eine mögliche Chromosomenstörung mot einer Amniozentese (Fruchtwasseruntersuchung) ab der 16. SSW genauer bestimmt oder ausgeschlossen werden. Der dafür nötige Eingriff birg jedoch ein Risiko von 0,5 – 1% das Kind durch eine Fehlgeburt zu verlieren. Unter Umständen kann ein solcher Eingriff mit dem seit kurzem verfügbaren Down-Syndrom-Test aus dem mütterlichen Blut vermieden werden. Die Natur selbst versucht, mögliche Behinderungen oder Erkrankungen durch natürliche Fehlgeburten zu vermeiden. Diese Fehlgeburtenrate liegt in den ersten 3 – 4 Schwangerschaftsmonaten bei ca. 20%. 
+</p>
+
+										<p>Das Organ-Screening wird zwischen 20. und 24. SSW durchgeführt. Im Rahmen einer detaillierten Ultraschalluntersuchung werden die inneren Organe sowie Gliedmaßen, der Körperbau und die wesentlichen Funktionen es Kindes auf Auffälligkeiten untersucht. Diese Untersuchung kann wichtig sein, wenn bekannte Erkrankungen dieser Organe in der Familie vorliegen. Bei 5% aller Untersuchungen wird eine Erkrankung oder eine Fehlbildung eines Organs erkannt. Herzfehler, z.B. Herzklappeninsuffizienz, sind die häufigsten angeborenen Fehlbildungen (ungefähr 4 von 1000 Kindern sind betroffen), hier kann die Geburt unter Beisein von Herzspezialisten stattfinden. Zusätzlich kann durch eine Messung der Länge des Gebärmutterhalses die Gefahr für eine Frühgeburt eingeschätzt werden. Auch in diesem Stadium der Schwangerschaft können die investiven (in Gewebe eingreifenden) Untersuchungen wie Amniozentese, Chorionzottenbiopsie oder die Entnahme von kindlichem Blut (mittels Nabelschnurpunktion) Aufschluss über den gesundheitlichen Zustand des Kindes geben.
+</p>
+
+										<p>In der 30. bis 34. SSW kann neuerlich mittels Ultraschall die Entwicklung des Kindes (Wachstumsgeschwindigkeit und Gewichtszunahme) beobachtet werden. Besonders achtet man auf die kindlichen Bewegungsmuster, die Fruchtwassermenge und die Lage und Erscheinungsbild der Plazenta. Die genaue Messung der kindlichen und mütterlichen Durchblutung über die Nabelschnur (mittels Doppler-Ultraschall) liefert wichtige Parameter um die Sauerstoff- und Nährstoffversorgung des Fötus zu beurteilen. Anhand dieser Methoden kann auch der mütterliche Bluthochdruck und somit das Risiko der Präeklampsie (früher Schwangerschaftsvergiftung genannt) beurteilt werden, welche die Schwangerschaft komplizieren und eine mögliche vorzeitige Entbindung bedingen kann. Neben den Leitsymptomen (Bluthochdruck und vermehrte Proteinausscheidung im Harn) berichten Betroffene über Schwindel, Übelkeit und Erbrechen.</p>
+																			
+									<p class="ask"><strong><i class="fa fa-question"></i> Frage zum Text</strong></p> 
+									
+									<p class="ask"><strong>Welche der nachfolgenden Aussagen zum Text ist richtig?</strong></p>								
+										
+
+									
+									<!--<p class="analysis invisible"></p>-->
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a" class"swatch_g">
+											<li class"swatch_g">
+												<input type="radio" value="0" />
+												<label style"">Eine Erkrankung der Organe kann ab der 3. SSW beurteilt werden.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Mit dem neuen Down-Syndrom-Test können auch anderer Trisomien (z.B. Trisomie 18) ausgeschlossen werden.</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Die Pränataldiagnostik ermöglicht die Berechnung der Wahrscheinlichkeit für eine Chromosomenstörung des Fötus. Dabei ist auch das Alter der Mutter entscheidend. Zum Beispiel liegt das Risiko einer 40-jährigen Mutter ein Kind mit Trisomie 21 zu bekommen bei 1%.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Ein auffälliges Ergebnis im Erst-Trimester Screening kann durch keine nachfolgenden invasiven Methoden genauer bestimmt werden.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Der Combined Test ist die Routine-Methode zur Feststellung einer möglichen Herzklappeninsuffizienz des Neugeborenen.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-book"></i> Text</strong></p>
+										
+										<p>Üblicherweise wird eine Schwangerschaft in Österreich von einem/einer Frauenarzt/Frauenärztin nach Richtlinien des Mutter-Kind-Passes betreut, was eine gute Überwachung von Mutter und Kind gewährleistet. Zusätzlich zur normalen Schwangerenvorsorge gibt es vorbehaltliche Untersuchungen, die sogenannte Pränataldiagnostik (pränatal = vorgeburtlich), mit den ausgeschlossen werden soll, ob bestimmte Fehlbildungen, Erkrankungen oder Behinderungen beim ungeborenen Kind vorliegen. Insgesamt kommen bei der Geburt 96-97% aller Kinder ohne Behinderung oder Fehlbildung zur Welt.
+</p>
+
+										<p>In den meisten Fällen sind die Ergebnisse vorgeburtlicher Untersuchungen unauffällig und somit für die werdenden Eltern beruhigend, auch wenn es keine Garantie für ein gesundes Kind gibt. Mit Hilfe pränataler Diagnostik ist es in manchen Fällen möglich Erkrankungen bereits während der Schwangerschaft positive zu beeinflussen oder sich auf den Geburtsverlauf vorzubereiten. Vorgeburtliche Untersuchungen können aber auch Verunsicherung oder überfordern, wenn etwa eine erhöhte Wahrscheinlichkeit für genetisch bedingte Behinderung vorliegt. Such wenn die Pränatalmedizin laufend neue Methoden entwickelt, gibt es keine Untersuchung, die alle möglichen genetischen Erkrankungen überprüft und für einen großen Teil der feststellbaren Diagnosen keine Therapiemöglichkeiten.
+</p>
+
+										<p>Nach der 12. Schwangerschaftswoche (SSW) sind alle Anlagen für Organe und Gewebe des ungeboren Kindes im Mutterleib bereits voll entwickelt und reifen täglich weiter. Mit einer genauen Ultraschalluntersuchung können nun (im Ersten Trimester – erstes Drittel der Schwangerschaft) größere Auffälligkeiten und Fehlbildungen des Fötus entdeckt werden. So kann in der 11.-13. SSW mit der Messeng der Nackentransparenz die Wahrscheinlichkeit für eine Chromosomenstörung (z.B. Trisomie 13, 18 oder 21) errechnet werden. Werden zusätzlich bestimmte Blutwerte der Schwangeren für die Berechnung berücksichtigt (Combined Test), ist das Ergebnis genauer, auch das Alter der werdenden Mutter ist ein Risikofaktor. Von 100 Frauen, die bei der Geburt 40 Jahre alt sind, erwarte statistisch gesehen eine Frau ein Kind mit Down-Syndrom (Trisomie 21), bei jüngeren Frauen ist das Risiko geringer. Diese Untersuchungen (sog. Erst-Trimester Screening) ist für Frau und Kind ohne Risiko, da nicht in den Körper eingegriffen wird. Bei auffälligen Ergebnissen kann eine mögliche Chromosomenstörung mot einer Amniozentese (Fruchtwasseruntersuchung) ab der 16. SSW genauer bestimmt oder ausgeschlossen werden. Der dafür nötige Eingriff birg jedoch ein Risiko von 0,5 – 1% das Kind durch eine Fehlgeburt zu verlieren. Unter Umständen kann ein solcher Eingriff mit dem seit kurzem verfügbaren Down-Syndrom-Test aus dem mütterlichen Blut vermieden werden. Die Natur selbst versucht, mögliche Behinderungen oder Erkrankungen durch natürliche Fehlgeburten zu vermeiden. Diese Fehlgeburtenrate liegt in den ersten 3 – 4 Schwangerschaftsmonaten bei ca. 20%. 
+</p>
+
+										<p>Das Organ-Screening wird zwischen 20. und 24. SSW durchgeführt. Im Rahmen einer detaillierten Ultraschalluntersuchung werden die inneren Organe sowie Gliedmaßen, der Körperbau und die wesentlichen Funktionen es Kindes auf Auffälligkeiten untersucht. Diese Untersuchung kann wichtig sein, wenn bekannte Erkrankungen dieser Organe in der Familie vorliegen. Bei 5% aller Untersuchungen wird eine Erkrankung oder eine Fehlbildung eines Organs erkannt. Herzfehler, z.B. Herzklappeninsuffizienz, sind die häufigsten angeborenen Fehlbildungen (ungefähr 4 von 1000 Kindern sind betroffen), hier kann die Geburt unter Beisein von Herzspezialisten stattfinden. Zusätzlich kann durch eine Messung der Länge des Gebärmutterhalses die Gefahr für eine Frühgeburt eingeschätzt werden. Auch in diesem Stadium der Schwangerschaft können die investiven (in Gewebe eingreifenden) Untersuchungen wie Amniozentese, Chorionzottenbiopsie oder die Entnahme von kindlichem Blut (mittels Nabelschnurpunktion) Aufschluss über den gesundheitlichen Zustand des Kindes geben.
+</p>
+
+										<p>In der 30. bis 34. SSW kann neuerlich mittels Ultraschall die Entwicklung des Kindes (Wachstumsgeschwindigkeit und Gewichtszunahme) beobachtet werden. Besonders achtet man auf die kindlichen Bewegungsmuster, die Fruchtwassermenge und die Lage und Erscheinungsbild der Plazenta. Die genaue Messung der kindlichen und mütterlichen Durchblutung über die Nabelschnur (mittels Doppler-Ultraschall) liefert wichtige Parameter um die Sauerstoff- und Nährstoffversorgung des Fötus zu beurteilen. Anhand dieser Methoden kann auch der mütterliche Bluthochdruck und somit das Risiko der Präeklampsie (früher Schwangerschaftsvergiftung genannt) beurteilt werden, welche die Schwangerschaft komplizieren und eine mögliche vorzeitige Entbindung bedingen kann. Neben den Leitsymptomen (Bluthochdruck und vermehrte Proteinausscheidung im Harn) berichten Betroffene über Schwindel, Übelkeit und Erbrechen.</p>
+																			
+									<p class="ask"><strong><i class="fa fa-question"></i> Frage zum Text</strong></p> 
+									
+									<p class="ask"><strong>Welche der nachfolgenden Aussagen lassen sich aus dem Text ableiten?</strong></p>								
+									<ol>
+										<li>Nicht-invasive pränatale Untersuchungen per Ultraschall und Blutanalyse liefern einen sicheren Befund für das Risiko einer Fehlbildung des Kindes.</li>
+										<li>Mittels Chorionzottenbiopsie, Amniozentese oder Nabelschnurpunktion kann gegen Ende des ersten Trimesters ein genauer Befund einer möglichen Fehlbildung erstellt werden. Diese Tests können allerdings zu einer Fehlgeburt führen. Das Risiko liegt bei 5%.</li>
+										<li>Der Doppler-Ultraschall untersucht, ob das Kind ausreichend mit Nährstoffen und Sauerstoff über die Nabelschnur versorgt wird.</li>
+										<li>Nur etwa 3-4% aller Kinder kommen bei der Geburt mit Behinderung oder Fehlbildung zur Welt.</li>
+									</ol>
+
+									
+									<!--<p class="analysis invisible"></p>-->
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a" class"swatch_g">
+											<li class"swatch_g">
+												<input type="radio" value="0" />
+												<label style"">Nur Aussagen 1 und 2 lassen sich ableiten.</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Nur Aussagen 1 und 3 lassen sich ableiten.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Nur Aussagen 2 und 3 lassen sich ableiten.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Nur Aussagen 3 und 4 lassen sich ableiten.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Alle Aussagen lassen sich ableiten.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-book"></i> Text</strong></p>
+										
+										<p>Üblicherweise wird eine Schwangerschaft in Österreich von einem/einer Frauenarzt/Frauenärztin nach Richtlinien des Mutter-Kind-Passes betreut, was eine gute Überwachung von Mutter und Kind gewährleistet. Zusätzlich zur normalen Schwangerenvorsorge gibt es vorbehaltliche Untersuchungen, die sogenannte Pränataldiagnostik (pränatal = vorgeburtlich), mit den ausgeschlossen werden soll, ob bestimmte Fehlbildungen, Erkrankungen oder Behinderungen beim ungeborenen Kind vorliegen. Insgesamt kommen bei der Geburt 96-97% aller Kinder ohne Behinderung oder Fehlbildung zur Welt.
+</p>
+
+										<p>In den meisten Fällen sind die Ergebnisse vorgeburtlicher Untersuchungen unauffällig und somit für die werdenden Eltern beruhigend, auch wenn es keine Garantie für ein gesundes Kind gibt. Mit Hilfe pränataler Diagnostik ist es in manchen Fällen möglich Erkrankungen bereits während der Schwangerschaft positive zu beeinflussen oder sich auf den Geburtsverlauf vorzubereiten. Vorgeburtliche Untersuchungen können aber auch Verunsicherung oder überfordern, wenn etwa eine erhöhte Wahrscheinlichkeit für genetisch bedingte Behinderung vorliegt. Such wenn die Pränatalmedizin laufend neue Methoden entwickelt, gibt es keine Untersuchung, die alle möglichen genetischen Erkrankungen überprüft und für einen großen Teil der feststellbaren Diagnosen keine Therapiemöglichkeiten.
+</p>
+
+										<p>Nach der 12. Schwangerschaftswoche (SSW) sind alle Anlagen für Organe und Gewebe des ungeboren Kindes im Mutterleib bereits voll entwickelt und reifen täglich weiter. Mit einer genauen Ultraschalluntersuchung können nun (im Ersten Trimester – erstes Drittel der Schwangerschaft) größere Auffälligkeiten und Fehlbildungen des Fötus entdeckt werden. So kann in der 11.-13. SSW mit der Messeng der Nackentransparenz die Wahrscheinlichkeit für eine Chromosomenstörung (z.B. Trisomie 13, 18 oder 21) errechnet werden. Werden zusätzlich bestimmte Blutwerte der Schwangeren für die Berechnung berücksichtigt (Combined Test), ist das Ergebnis genauer, auch das Alter der werdenden Mutter ist ein Risikofaktor. Von 100 Frauen, die bei der Geburt 40 Jahre alt sind, erwarte statistisch gesehen eine Frau ein Kind mit Down-Syndrom (Trisomie 21), bei jüngeren Frauen ist das Risiko geringer. Diese Untersuchungen (sog. Erst-Trimester Screening) ist für Frau und Kind ohne Risiko, da nicht in den Körper eingegriffen wird. Bei auffälligen Ergebnissen kann eine mögliche Chromosomenstörung mot einer Amniozentese (Fruchtwasseruntersuchung) ab der 16. SSW genauer bestimmt oder ausgeschlossen werden. Der dafür nötige Eingriff birg jedoch ein Risiko von 0,5 – 1% das Kind durch eine Fehlgeburt zu verlieren. Unter Umständen kann ein solcher Eingriff mit dem seit kurzem verfügbaren Down-Syndrom-Test aus dem mütterlichen Blut vermieden werden. Die Natur selbst versucht, mögliche Behinderungen oder Erkrankungen durch natürliche Fehlgeburten zu vermeiden. Diese Fehlgeburtenrate liegt in den ersten 3 – 4 Schwangerschaftsmonaten bei ca. 20%. 
+</p>
+
+										<p>Das Organ-Screening wird zwischen 20. und 24. SSW durchgeführt. Im Rahmen einer detaillierten Ultraschalluntersuchung werden die inneren Organe sowie Gliedmaßen, der Körperbau und die wesentlichen Funktionen es Kindes auf Auffälligkeiten untersucht. Diese Untersuchung kann wichtig sein, wenn bekannte Erkrankungen dieser Organe in der Familie vorliegen. Bei 5% aller Untersuchungen wird eine Erkrankung oder eine Fehlbildung eines Organs erkannt. Herzfehler, z.B. Herzklappeninsuffizienz, sind die häufigsten angeborenen Fehlbildungen (ungefähr 4 von 1000 Kindern sind betroffen), hier kann die Geburt unter Beisein von Herzspezialisten stattfinden. Zusätzlich kann durch eine Messung der Länge des Gebärmutterhalses die Gefahr für eine Frühgeburt eingeschätzt werden. Auch in diesem Stadium der Schwangerschaft können die investiven (in Gewebe eingreifenden) Untersuchungen wie Amniozentese, Chorionzottenbiopsie oder die Entnahme von kindlichem Blut (mittels Nabelschnurpunktion) Aufschluss über den gesundheitlichen Zustand des Kindes geben.
+</p>
+
+										<p>In der 30. bis 34. SSW kann neuerlich mittels Ultraschall die Entwicklung des Kindes (Wachstumsgeschwindigkeit und Gewichtszunahme) beobachtet werden. Besonders achtet man auf die kindlichen Bewegungsmuster, die Fruchtwassermenge und die Lage und Erscheinungsbild der Plazenta. Die genaue Messung der kindlichen und mütterlichen Durchblutung über die Nabelschnur (mittels Doppler-Ultraschall) liefert wichtige Parameter um die Sauerstoff- und Nährstoffversorgung des Fötus zu beurteilen. Anhand dieser Methoden kann auch der mütterliche Bluthochdruck und somit das Risiko der Präeklampsie (früher Schwangerschaftsvergiftung genannt) beurteilt werden, welche die Schwangerschaft komplizieren und eine mögliche vorzeitige Entbindung bedingen kann. Neben den Leitsymptomen (Bluthochdruck und vermehrte Proteinausscheidung im Harn) berichten Betroffene über Schwindel, Übelkeit und Erbrechen.</p>
+																			
+									<p class="ask"><strong><i class="fa fa-question"></i> Frage zum Text</strong></p> 
+									
+									<p class="ask"><strong>Welche der nachfolgenden Aussagen zum Text ist/sind dem Text zufolge falsch?</strong></p>								
+									<ol>
+										<li>0,4% der im Organscreening untersuchten Föten weisen Fehlbildungen des Herzens auf.</li>
+										<li>Durch Messung von Nacktentransparenz, Combined Test und dem Alter der werdenden Mutter kann das Risiko einer Trisomie 21 errechnet werden. Der dafür nötige Eingriff erhöht jedoch das Risiko einer Fehlgeburt.</li>
+										<li>Eine Fehlgeburt kann ein Hinweis auf eine Fehlbildung des Kindes sein.</li>
+										<li>Bei der Chorionzottenbiopsie wird Gewebe aus der Plazenta (Mutterkuchen) entnommen.</li>
+									</ol>	
+
+									
+									<!--<p class="analysis invisible"></p>-->
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a" class"swatch_g">
+											<li class"swatch_g">
+												<input type="radio" value="0" />
+												<label style"">Nur Aussagen 1 und  3 sind falsch.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Nur Aussage 2 ist falsch.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Nur Aussage 1 ist falsch.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Nur Aussagen 3 und 4 sind falsch.</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Keine der Aussagen ist falsch.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								
+							
+							</ul>
+							
+							
+						<div id="result" class="no_display">
+							
+					<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><img srcset="{% static 'img/ritterkarten/1x/tv.png' %} 277w, {% static 'img/ritterkarten/2x/tv.png' %} 554w" alt="Gewebe" width="277" /></a>
+				
+					<h3><i class="fas fa-thumbs-up"></i><b> Fertig! Dein Ergebnis?</b></h3>
+					
+					<h1></h1>
+					
+					<h5 class="labelo white"> </h5>
+					
+					<div><h2>Du erhältst eine MedKnight-Karte!</h2>
+					
+						<h5 class="white"><i class="fab fa-facebook-f"></i> <i>Teile sie mit Freunden und Feinden, die ebenfalls für den MedAT lernern</i></h5>
+					
+						<div class="fb-share-button" data-href="https://medcastle.at{{ request.path }}" data-layout="box_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmedcastle.at%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+					</div>
+					
+					<h5 class="space-top"></h5>
+					
+					<!--<p><b>Nein wirklich! Am Besten du schreibst dir gleich alle rot unterlegten Analysen</b> (Wie war nochmal die dazugehörige Frage?) <b>auf Karteikarten.</b></p>	-->									
+						</div>	
+						
+							
+							<p id="questionsLeft" class=""></p>
+							
+						</form>
+						
+						<p><i><i class="fas fa-exclamation-circle"></i> Wie auch beim echten MedAT wird dir hier erlaubt deine Antwort <strong>ab</strong>zuändern (vgl. auf Papier: altes Kästchen ausmalen, neues Kreuz setzen), nicht aber <strong>zurück</strong>zuändern: ist beim MedAT das Kästchen einmal ausgemalt, kannst du es nicht wieder ankreuzen. <strong>Eine Abänderung ist also endgültig.</strong></i></p> 
+						
+							
+					</div>
+				
+				</div>
+					
+				
+			<!--<hr/>-->
+
+
+{% endblock %}

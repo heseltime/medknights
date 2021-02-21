@@ -1,0 +1,122 @@
+{% extends "base_content.html" %}
+
+{% load static %}
+
+{% block title %}BMS-Kanone{% endblock %} 
+
+{% block add_assets %}
+
+<script src="{% static 'js/canon.js' %}"></script>
+
+{% endblock %}
+
+{% block content %}
+
+			<!-- Three -->
+			<section id="three" class="wrapper">
+				
+				<div class="inner">
+					
+					<header class="align-center">
+						
+						<img id="canon_img" srcset="{% static 'img/heros/1x/canon.png' %} 500w, {% static 'img/heros/2x/canon.png' %} 1000w" alt="Stichwortliste-Kanone" class="scale" width="250" />
+							
+							<h2 class=""><i class="fas fa-exclamation-circle"></i> die BMS <strong>Kanone</strong> <i class="fas fa-exclamation-circle"></i></h2>
+						
+						<p>Prüfe dich ab mit einer <b>zufälligen Auswahl and Stichworten aus der offiziellen MedAT-Liste</b><!--, <i>inkl. <b class="magnify">Unter-Stichworten</b>!</i>-->	</p>			
+						
+						<p id=""><i><i class="fa fa-lightbulb"></i> <strong>Die Idee</strong> Gib alles wieder, was du zum zufällig ausgewählten Begriff aus den Fächern deiner Wahl weißt. Mach Zeichnungen und schreib Formeln an. Komm as aus dem kategorischen Denken raus und mische Themen und Fächer wild durcheinander!</i></p>		
+					</header>
+					
+					<!-- Intro -->
+						<div class="row bomber">
+							
+							<div id="result" class="invisible 12u 12u$(medium) align-center">
+								
+								<h2 class="align-center" style="">Stichwort</h2>
+								
+								<p id="verfuegbarkeit"class="align-center"><a href="/skript/gewebe" alt="Skript-Link" class="labelo white" style="text-decoration: none; margin-left: 320px;">zum Skript <i class="fa fa-arrow-right green_link"></i></a></p>
+							</div>
+							
+							<div id="analysis" class="invisible 12u 12u$(medium)">
+				
+								<h5><strong><i class="fa fa-exclamation-circle"></i> Kanonen-Bedienungsanleitung-Meldung</strong></h5>
+								
+								<p class="labelo_red white">Bitte Fach auswählen!</p>
+								
+							</div>
+							
+							<section class="4u 12u$(medium)">
+								<h2>Kanone-<strong>Einstellung</strong></h2>
+								
+								<p>Wähle die <b>Fächer</b>, in denen du geprüft werden möchtest! <i>Kanone Laden</i> ...</p>
+																
+								<h4><strong><i class="fa fa-hand-pointer-o "></i></strong> 
+										
+									<ul id="canon">
+										<li>
+											<input type="checkbox" class="white" value="0" id="bio"/>
+											<label for="bio"><b>Bio</b></label>
+										</li>
+										<li>
+											<input type="checkbox" class="white" value="0" id="chemie" />
+											<label for="chemie"><b>Chemie </b></label>
+										</li>
+										<li>
+											<input type="checkbox" class="white" value="0" id="physik" />
+											<label for="physik"><b>Physik</b></label>
+										</li>
+										<li>
+											<input type="checkbox" class="white" value="0" id="mathe" />
+											<label for="mathe"><b>Mathe </b></label>
+										</li>
+									</ul>
+									
+								</h4>
+							</section>
+							
+							<section class="5u 6u$(medium) 12u$(small)">
+								
+								<ul class="actions align-center">
+									<p><b>... Feuer Frei?</b></p>
+									
+									<li><a id="fire" href="#canon_img" class="button special big">Kanone Laden</a></li>
+																		
+									<a href="/" class="button ">Zurück</a>
+								</ul>
+								
+								<p id="analysis-note"><i><i class="fas fa-exclamation-circle"></i> <strong>Quellenangabe</strong> Stichwörter basierend auf der <b class="magnify">2020</b> Stichwortliste des VMC (Virtueller Med. Campus, von der Med. Uni Graz: von den Med. Unis gemeinsam herausgegeben!)</i></p> 
+								
+							</section>
+							
+							<section class="3u$ 6u(medium) 12u$(small)">
+								<h3 class="labelo white"><i class="fa fa-arrow-right"></i> Gewichtung</h3>
+								
+								<h2>H <strong>40%</strong> | Z <strong>30%</strong></h2>
+								
+								<p><i>sprich: Basiskenntnistest gesamt</i></p>
+								
+							</section>
+						</div>
+						
+						<div class="row">
+							
+							<section class="8u 12u$(medium) align-right">
+						
+						<h3><i class="fas fa-plus"></i> <i class="fas fa-plus"></i> mehr <b>Skript!</b></h3>
+							<a href="https://shop.medcastle.at" alt="zum Shop"><img src="{% static 'img/shop/1x/bio_wissen.png' %}" class="scale" width="640" alt="Bio-Skript" /></a>
+							<p><a href="/pages/next_steps" alt="Next Steps">kommt bald</a></p>
+							
+							</section>
+						</div>
+						
+					
+
+					<!-- Content -->
+					
+						
+
+					
+			</section>
+
+{% endblock %}

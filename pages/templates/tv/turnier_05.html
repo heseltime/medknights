@@ -1,0 +1,242 @@
+{% extends "base_content_with_shop_link.html" %}
+
+
+{% load static %}
+
+
+{% block title %}
+
+Textverständnis: Turnier
+
+{% endblock %} 
+
+{% block custom_og %}
+
+	<meta property="og:url"                content="https://medcastle.at{{ request.path }}" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Ich hab die MedKnight-Karte für diesen Teil des Mediziner-Tests Erhalten!" />
+	<meta property="og:description"        content="Das heißt, den Übungstest für diesen Teil des MedAT habe ich statistisch geschafft: medCastle.at ist meine gratis Vorbereitung und online-Lernplattform für den MedAT. " />
+	<meta property="og:image"              content="https://medcastle.at{% static 'img/ritterkarten/2x/tv.png' %}" />
+	
+	<meta property="fb:app_id"              content="667140217484992" />
+
+{% endblock %}
+
+
+{% block social_scripts %}
+
+{% endblock %}
+
+
+{% block add_assets %}
+
+<script src="{% static 'js/quiz.js' %}"></script>
+
+{% endblock %}
+
+
+{% block content %}
+
+		<!-- Three -->
+		<div id="fb-root"></div>
+		
+		
+		<section id="three" class="wrapper tv">
+			
+			<div class="inner">
+				
+				<header class="align-center">
+					
+					<img src="{% static 'img/heros/1x/tv.png' %}" alt="Textverständnis" width="250" />
+					
+					<h2><b>T</b>ext<b>V</b>erständnis-<strong>Turnier</strong></h2>
+					
+					<p>Werde Turniermeister und komm ins medCastle durch richtige Beantwortung mehrer <strong>MedAT Alt- und Neufragen zu Fachtexten.</strong> </p>
+					
+					<p><i>Dem MedAT angepasst findest du hier eine  Auswahl aus <strong>Bio-Fachliteratur</strong> (bevorzugt Genetik und Geburt, fällt uns auf), <strong>aber auch Geschichte und Politik</strong>.</i></p>
+					
+					<!--<p class="italics">Übe am Besten Set-weise, wie hier vorgegeben: <strong>12 Aufgaben</strong> (mit Bearbeitungszeit: 35 min) sind ein Set.</p>-->
+										
+					
+					<ul class="actions">
+						<li><a href="" class="button dead">Bearbeitungsmethoden</a></li>
+						<li><a href="/tv/turnier_01" class="button">Text 1</a></li>
+						<li><a href="/tv/turnier_02" class="button">Text 2</a></li>
+						<li><a href="/tv/turnier_03" class="button">Text 3</a></li>
+						<li><a href="/tv/turnier_04" class="button">Text 4</a></li>
+						<li><a href="/tv/turnier_05" class="button special">Text 5</a></li>
+					</ul>
+												
+					
+					<!--<p id="analysis-note"><i><i class="fas fa-exclamation-circle"></i> Beachte auch die <strong>Fragen-Analyse</strong> wenn du zunächst eine Frage falsch beantwortest: Im Gegensatz zum MedAT kannst du beliebig viele Mini-Turniere an einem Tag machen!</i></p> -->
+										
+				</header>
+				
+				
+				<!-- Content -->	
+					
+				<div class="row">
+					
+					<div class="12u 12u$(medium) ">
+						
+						
+					<!--<div id="analysis" class="invisible">
+				
+				<h5><strong><i class="fa fa-exclamation-circle"></i> Fragen-Analyse</strong></h5>
+				
+				<p></p>
+				
+					</div>-->
+				
+				
+						<form class="box" action="/turnier" method="post">		
+							<ul>
+								
+							
+								<li>
+									<p class="ask"><strong><i class="fa fa-book"></i> Text</strong></p>
+										
+										<p>Die griechische Mythologie weist mehrere charakteristische Merkmale auf. Die griechischen Götter ähneln den Menschen in Gestalt und Charakter. Im Gegensatz zu anderen alten Religionen wie dem Hinduismus oder Judentum enthält die griechische Mythologie keine Offenbarungen wie spirituelle Lehren. Auch fehlt den Praktiken und Glaubensvorstellungen eine formale Struktur wie etwa eine religiöse Institution oder schriftlich festgehaltene Regeln wie ein heiliges Buch.</p>
+										
+										<p>Die griechische Mythologie entstand aus einer Vermischung der Glaubensvorstellungen der vorgriechischen Bevölkerung mit denen der eingewanderten griechischen Kolonisten. In dieser Volksreligion mischten sich Vorstellungen lokaler Gottheiten mit der Personifizierung von Naturkräften. Die Kreter glaubten, dass alle Dinge beseelt seien und bestimmte Gegenstände über besondere magische Kräfte verfügen. Im Laufe der Zeit führten diese Überzeugungen zu einer Reihe von Legenden, die Gegenstände, Tiere und Götter in Menschengestalt zum Thema hatten.</p>
+										<p>Die ersten Mythen entstanden aus dem Bedürfnis der Menschen, die täglich erlebten unerklärlichen Phänomene zu deuten, um sich so gegen sie zu wappnen bzw. sich an die Umwelt anzupassen. Das Unvermögen der Menschen, eine logische Erklärung für erlebtes zu finden führte sie dazu, das Unerklärliche höheren Gewalten zuzuschreiben, denen sie die Gestalt von Göttern oder Heroen verliehen. Weil ihre Götter nicht nur mit dem Aussehen, sondern auch mit den Schwächen der Menschen ausgestattet waren, berichten zahlreiche Mythen von Verfehlungen und Verbrechen der Götter.</p>
+																			
+									<p class="ask"><strong><i class="fa fa-question"></i> Frage zum Text</strong></p> 
+									
+									<p class="ask"><strong>Welche der nachfolgenden Aussagen ist dem Text zufolge richtig?</strong></p>								
+										
+
+									
+									<!--<p class="analysis invisible"></p>-->
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a" class"swatch_g">
+											<li class"swatch_g">
+												<input type="radio" value="0" />
+												<label style"">In der griechischen Mythologie gibt es religiöse Institutionen, jedoch keine schriftlich festgehaltenen Regeln.</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Die griechische Mythologie ist eine Mischung aus Glaubensvorstellungen der Urbevölkerung und griechischer Kolonisten.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Götter der griechischen Mythologie sind mit Aussehen, Stärken und Schwächen der Menschen ausgestattet, ähneln ihnen aber nicht im Character.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Die Kreter glaubten, dass bestimmte Menschen über besondere magische Kräfte verfügten.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Die Offenbarungen aus Hinduismus und Judentum haben gewisse Ähnlichkeit mit denen der griechischen Mythologie.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-book"></i> Text</strong></p>
+										
+										<p>Die griechische Mythologie weist mehrere charakteristische Merkmale auf. Die griechischen Götter ähneln den Menschen in Gestalt und Charakter. Im Gegensatz zu anderen alten Religionen wie dem Hinduismus oder Judentum enthält die griechische Mythologie keine Offenbarungen wie spirituelle Lehren. Auch fehlt den Praktiken und Glaubensvorstellungen eine formale Struktur wie etwa eine religiöse Institution oder schriftlich festgehaltene Regeln wie ein heiliges Buch.</p>
+										
+										<p>Die griechische Mythologie entstand aus einer Vermischung der Glaubensvorstellungen der vorgriechischen Bevölkerung mit denen der eingewanderten griechischen Kolonisten. In dieser Volksreligion mischten sich Vorstellungen lokaler Gottheiten mit der Personifizierung von Naturkräften. Die Kreter glaubten, dass alle Dinge beseelt seien und bestimmte Gegenstände über besondere magische Kräfte verfügen. Im Laufe der Zeit führten diese Überzeugungen zu einer Reihe von Legenden, die Gegenstände, Tiere und Götter in Menschengestalt zum Thema hatten.</p>
+										<p>Die ersten Mythen entstanden aus dem Bedürfnis der Menschen, die täglich erlebten unerklärlichen Phänomene zu deuten, um sich so gegen sie zu wappnen bzw. sich an die Umwelt anzupassen. Das Unvermögen der Menschen, eine logische Erklärung für erlebtes zu finden führte sie dazu, das Unerklärliche höheren Gewalten zuzuschreiben, denen sie die Gestalt von Göttern oder Heroen verliehen. Weil ihre Götter nicht nur mit dem Aussehen, sondern auch mit den Schwächen der Menschen ausgestattet waren, berichten zahlreiche Mythen von Verfehlungen und Verbrechen der Götter.</p>
+																			
+									<p class="ask"><strong><i class="fa fa-question"></i> Frage zum Text</strong></p> 
+									
+									<p class="ask"><strong>Überprüfen Sie die folgenden Aussagen auf ihre Richtigkeit.</strong></p>		
+									
+									<ol type="I" class"">
+										<li class="">
+											<p>Zahlreiche Mythen berichten über Verfehlungen und Verbrechen der Götter.</p>										
+										</li>
+										
+										<li class="">
+											<p>In der griechischen Mythologie mischen sich Vorstellungen lokaler Gottheiten mit der Personifizierung von Naturkräften.</p>										
+										</li>
+									
+										
+										<li class="">
+											<p>Ein Drang der Menschen nach Erklärungen führte nach einiger Zeit zu einer Reihe von Legenden.</p>										
+										</li>
+									</ol>					
+
+									
+									<!--<p class="analysis invisible"></p>-->
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a" class"swatch_g">
+											<li class"swatch_g">
+												<input type="radio" value="0" />
+												<label style"">Nur Aussage I ist richtig.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Nur Aussage II ist richtig.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Nur Aussagen I und II sind richtig.<li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Nur Aussagen I und III sind richtig.</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Alle Aussagen sind richtig.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>	
+							
+							</ul>
+							
+							
+						<div id="result" class="no_display">
+							
+					<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><img srcset="{% static 'img/ritterkarten/1x/tv.png' %} 277w, {% static 'img/ritterkarten/2x/tv.png' %} 554w" alt="Gewebe" width="277" /></a>
+				
+					<h3><i class="fas fa-thumbs-up"></i><b> Fertig! Dein Ergebnis?</b></h3>
+					
+					<h1></h1>
+					
+					<h5 class="labelo white"> </h5>
+					
+					<div><h2>Du erhältst eine MedKnight-Karte!</h2>
+					
+						<h5 class="white"><i class="fab fa-facebook-f"></i> <i>Teile sie mit Freunden und Feinden, die ebenfalls für den MedAT lernern</i></h5>
+					
+						<div class="fb-share-button" data-href="https://medcastle.at{{ request.path }}" data-layout="box_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmedcastle.at%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+					</div>
+					
+					<h5 class="space-top"></h5>
+					
+					<!--<p><b>Nein wirklich! Am Besten du schreibst dir gleich alle rot unterlegten Analysen</b> (Wie war nochmal die dazugehörige Frage?) <b>auf Karteikarten.</b></p>	-->									
+						</div>	
+						
+							
+							<p id="questionsLeft" class=""></p>
+							
+						</form>
+						
+						<p><i><i class="fas fa-exclamation-circle"></i> Wie auch beim echten MedAT wird dir hier erlaubt deine Antwort <strong>ab</strong>zuändern (vgl. auf Papier: altes Kästchen ausmalen, neues Kreuz setzen), nicht aber <strong>zurück</strong>zuändern: ist beim MedAT das Kästchen einmal ausgemalt, kannst du es nicht wieder ankreuzen. <strong>Eine Abänderung ist also endgültig.</strong></i></p> 
+						
+							
+					</div>
+				
+				</div>
+					
+				
+			<!--<hr/>-->
+
+
+{% endblock %}

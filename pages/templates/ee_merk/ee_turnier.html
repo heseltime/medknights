@@ -1,0 +1,608 @@
+{% extends "base_content_with_shop_link.html" %}
+
+
+{% load static %}
+
+
+{% block title %}
+
+Emotionen Erkennen: Turnier
+
+{% endblock %} 
+
+{% block custom_og %}
+
+	<meta property="og:url"                content="https://medcastle.at{{ request.path }}" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Ich hab die MedKnight-Karte für diesen Teil des Mediziner-Tests Erhalten!" />
+	<meta property="og:description"        content="Das heißt, den Übungstest für diesen Teil des MedAT habe ich statistisch geschafft: medCastle.at ist meine gratis Vorbereitung und online-Lernplattform für den MedAT. " />
+	<meta property="og:image"              content="https://medcastle.at{% static 'img/ritterkarten/2x/ee.png' %}" />
+	
+	<meta property="fb:app_id"              content="667140217484992" />
+
+{% endblock %}
+
+
+{% block social_scripts %}
+
+{% endblock %}
+
+
+{% block add_assets %}
+
+<script src="{% static 'js/quiz_ee.js' %}"></script>
+
+{% endblock %}
+
+
+{% block content %}
+
+		<!-- Three -->
+		<div id="fb-root"></div>
+		
+		
+		<section id="three" class="wrapper bg_g">
+			
+			<div class="inner">
+				
+				<header class="align-center">
+					
+					<h2>Emotionen Erkennen: <strong>Das Turnier</strong></h2>
+					
+					<p>Werde Turniermeister und komm ins medCastle durch richtige Beantwortung aller <strong>MedAT Alt- und Neufragen!</strong></p>
+										
+					
+					<ul class="actions">
+						<li><a href="/turnier/ee_merk" class="button">Vorheriges Bonus Mini-Turnier</a></li>
+						<li><a href="/skript/ee_merk" class="button special">Guide Hierzu Holen</a></li>
+						<li><a href="#" class="button dead">Nächstes Bonus Mini-Turnier</a></li>
+					</ul>
+					
+					<!--<p id="analysis-note"><i><i class="fas fa-exclamation-circle"></i> Beachte auch die <strong>Fragen-Analyse</strong> wenn du zunächst eine Frage falsch beantwortest: Im Gegensatz zum MedAT kannst du beliebig viele Mini-Turniere an einem Tag machen!</i></p>-->
+										
+				</header>
+				
+				
+				<!-- Content -->	
+					
+				<div class="row">
+					
+					<div class="12u 12u$(medium) ">
+						
+						
+					<div id="analysis" class="invisible">
+				
+				<h5><strong><i class="fa fa-exclamation-circle"></i> Fragen-Analyse</strong></h5>
+				
+				<p></p>
+				
+					</div>
+				
+				
+						<form class="box" action="/turnier" method="post">		
+							<ul>
+								
+							
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Mini-Mediane spielt seit vielen Jahren regelmäßig Lotto, hat aber bisher noch nie mehr als 50 Euro gewonnen. Sie weiß, dass ihre beste Freundin nur Lotto spielt, wenn es einen sehr hohen Jackpot gibt. In einem Telefonat erfährt sie von ihrer Freundin, dass diese einen Gewinn in Höhe von mehreren Tausend Euro gemacht hat. Mini-Mediane findet dies ungerecht und hätte viel lieber selbst einen Gewinn gehabt. Jetzt überlegt sie sogar mit dem Spielen aufzuhören. Wie fühlt sicht Mini-Mediane in dieser Situation?</strong>
+						
+										
+									</p>
+									
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="checkbox" value="1" />
+												<h3 class="minify">Sie ist neidisch.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="1" />
+												<h3 class="minify">Sie ist frustriert.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Sie ist eifersüchtig.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Sie ist zuversichtlich.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Sie freut sich.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Mini-Medi geht jeden Abend mit seinem Hund eine Runde im Wald hinter dem Elternhaus spazieren. Als er heute gerade auf dem Heimweg ist, hört er ein ungewöhnliches Geräusch nur wenige Meter von sich entfernt. Spontan muss er an einen Artikel über Wölfe denken, die nicht weit von seinem Dorf gesichtet wurden. Auch sein Hund verhält sich untypisch und wirkt aufgeregt. Wie fühlt sich Toni in dieser Situation?</strong>
+						
+										
+									</p>
+									
+									
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Er ärgert sich.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Er bereut etwas.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="1" />
+												<h3 class="minify">Er hat Angst.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Er schämt sich.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Er fühlt sich schuldig.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Mini-Mediane war gestern auf einer Semesterparty und hat, wie alle anderen, auch sehr viel Alkohol getrunken. Sie achtet üblicherweise immer sehr darauf, was andere von ihr halten, aber gestern hat ihr wohl der Alkohol einen Strich durch dire Rechnung gemacht. Sie kann sich kaum an den Abend erinnern. Heute morgen wacht sich zu allem Überfluss auch noch in einer fremden Wohnung auf. So etwas ist ihr noch nie passiert. Als sie einen Blick auf den Wecker wirft, wird ihr klar, dass ih heutiges Seminar in Kürze beginnt. Da keine Zeit mehr bleibt nach Haus zu fahren und sich umzuziehen, muss sie wohl mit der Kleidung von gestern das Seminar besuchen und sich den Fragen ihrer Freunde stellen. Wie fühlt sich Mini-Mediane in dieser Situation></strong>
+						
+										
+									</p>
+									
+									
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="checkbox" value="1" />
+												<h3 class="minify">Sie ekelt sich</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="1" />
+												<h3 class="minify">Sie ist überrascht.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="1" />
+												<h3 class="minify">Sie schämt sich.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Sie hat Angst.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Sie freut sich.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Mini-Mediane hat ihr gesamtes erspartes Geld in ein hervorragendes Pferd gesteckt, um in Zukunft im Rennsport groß herauskommen. Sie hat eine hervorragende Trainerin und das Pferd eine vielversprechende Abstammung. Sie erwartet viel von ihrem Pferd. Mini-Mediane rechnet damit, dass sie schon bald ganz oben bei den Profis mitreiten kann. Im Training verletzt sich das Tier allerdings dann und der Tierarzt prognostiziert, dass dieses Pferd nie wieder im großen Sport laufen wird. Wie fühlt sich Mini-Mediane in dieser Situation?</strong>
+						
+										
+									</p>
+									
+									
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Sie liebt ihr Pferd.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Sie empfindet Mitleid.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="1" />
+												<h3 class="minify">Sie ist traurig.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Sie ist hoffnungsvoll.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="1" />
+												<h3 class="minify">Sie ist enttäuscht.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Mater-Meda ist Mutter von vier Kindern. Sie und ihr Mann arbeiten seit Jahren hart, um ihren Kindern jeden Wunsch zu erfüllen. Zum 18. Geburtstag wünscht such Mater-Medas älteste Tochter ein Auto. Da Mater-Medas Firma gerade Stellen abbaut, hat Luisa vor kurzem ihren Job verloren und ist gerade auf Arbeitssuche. Bis jetzt hat sie noch keinen neuen Job gefunden und daher muss das Paar mit dem Erspartem und dem Gehalt des Ehemanns gut haushalten, um die Familie zu ernähren. Im Freundeskreis ihrer Tochter bekommen allerdings fast alle Teenager ein Auto zum 18. Geburtstag und Mater-Meda weiß, dass ihre Tochter sehr enttäuscht sein wird, wenn sie kein Auto bekommt. Mater-Meda weiß nicht, wie sie dieses Problem lösen soll. Wie fühlt sich Luisa in dieser Situation?</strong>
+						
+										
+									</p>
+									
+									
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="checkbox" value="1" />
+												<h3 class="minify">Sie ist traurig.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="1" />
+												<h3 class="minify">Sie empfindet Mitleid.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Sie fühlt sich schuldig.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Sie bereut etwas.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="1" />
+												<h3 class="minify">Sie liebt ihre Kinder.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Mini-Medatte hatte eine Mitschülerin in ihrer Klasse, die sie immer wieder gemobbt hat. Dies beeinträchtigte ihre Lebensqualität merklich. Nun erfährt sie, dass diese Mitschülerin nicht in die nächste Klasse versetzt wird, da deren Noten zu schlecht sind. Das bedeutet, Mini-Medatte muss ihre Mitschülerin im nächsten Schuljahr nicht mehr täglich begegnen und alle anderen Mitschüler sind nett. Wie fühlt sich Mini-Medatte in dieser Situation?</strong>
+						
+										
+									</p>
+									
+									
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Sie ist herausgefordert und motiviert.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Sie ist ausgeglichen.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Sie ist mit ihrem Leben zufrieden.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Sie ist glücklich.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="1" />
+												<h3 class="minify">Sie ist erleichtert.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Maxi-Medi hat am Wochenende ein Mädchen beim Ausgehen kennengelernt. Da sie sich beide sehr sympathisch waren, haben sie sich auf ein Date verabredet. Das hat er sich schon lange gewünscht und da Maxi-Medi lange kein Date mehr hatte, ist er nun aufgeregt. Er hat sich ein Outfit gekauft, um einen guten Eindruch zu machen und freut sich schon sehr auf den Abend. Wie fühlt sich Maxi-Medi in dieser Situation?</strong>
+						
+										
+									</p>
+									
+									
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Er ist stolz.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Er liebt das Mädchen.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="1" />
+												<h3 class="minify">Er ist zuversichtlich.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Er ist dankbar.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="1" />
+												<h3 class="minify">Er fühlt sich glücklich.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Mittel-Medi hat gerade sein Traumauto gesehen, welches gerade zu einem wirklich günstigen Preis zum Verkauf steht. Da er aber gerade umgezogen ist und sich ebenfalls einen neuen Fernseher gekauft hat, ist das Geld etwas knapp. Daher möchte er schnell einen Kredit bei der Bank aufnehmen, damit ihm niemand dieses gute Angebot vor der Nase wegschnappen kann. Die Bank lehnt aber seinen Kreditantrag ab, da er kein regelmäßiges Einkommen hat. Wie fühlt sich Mittel-Medi in dieser Situation?</strong>
+						
+										
+									</p>
+									
+									
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Er ist zuversichtlich</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Er ist erleichtert.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Er hat Angst.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Er ist besorgt.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Er schämt sich.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Mini-Mediane ist unterwegs zu einem wichtigen Meeting und hat es sehr eilig. Sie hat sich die vergangenen Wochen sehr intensiv darauf vorbereitet und freut sich darauf, die Präsentation ihren KollegInnen jetzt vorführen zu dürfen. Sie schon etwas spät dran, also ihr auffällt, dass sie ihren Laptop mit der Präsentation darauf vergessen hat. Die Zeit, den Laptop mir der Präsentation zu holen, hat sie nicht mehr und nun muss sie sie ohne Hilfsmittel halten. Wie fühlt sich Mini-Mediane in dieser Situation?</strong>
+						
+										
+									</p>
+									
+									
+									
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="checkbox" value="1" />
+												<h3 class="minify">Sie ist verärgert.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="1" />
+												<h3 class="minify">Sie bereut etwas.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Sie ist entmutigt.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Sie ist ängstlich.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Sie schämt sich.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Mini-Medi fährt für gewöhnlich täglich mit dem Fahrrad zur Arbeit. Er hängt sehr an seinem Fahrrad und achtet darauf, es gut instand zu halten, da er es von seinem Vater geschenkt bekommen hat. Aufgrund seines verspäteten Aufstehens hat es Mini-Medi heute sehr eilig. Deshalb wird das Fahrrad nicht wie üblich abgesperrt, sondern einfach nur schnell neben dem Büro abgestellt. Als er zurückkommt, muss er feststellen, dass das Fahrrad nicht mehr da ist. Wie fühlt sich Mini-Medi in dieser Situation?</strong>
+						
+										
+									</p>
+									
+									
+									
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="checkbox" value="1" />
+												<h3 class="minify">Er bereut etwas.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="0" />
+												<h3 class="minify">Er fühlt Verachtung.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="1" />
+												<h3 class="minify">Er fühlt sich schuldig.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="1" />
+												<h3 class="minify">Er ist überrascht.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+											<li>
+												<input type="checkbox" value="1" />
+												<h3 class="minify">Sie ärgert sich.</h3>
+												<label>eher wahrscheinlich</label>
+												<label>eher unwahrscheinlich</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+							
+							</ul>
+							
+							
+						<div id="result" class="no_display">
+							
+					<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><img srcset="{% static 'img/ritterkarten/1x/ee.png' %} 277w, {% static 'img/ritterkarten/2x/ee.png' %} 554w" alt="Gewebe" width="277" /></a>
+				
+					<h3><i class="fas fa-thumbs-up"></i><b> Fertig! Dein Ergebnis?</b></h3>
+					
+					<h1></h1>
+					
+					<h5 class="labelo white"> </h5>
+					
+					<div><h2>Du erhältst eine MedKnight-Karte!</h2>
+					
+						<h5 class="white"><i class="fab fa-facebook-f"></i> <i>Teile sie mit Freunden und Feinden, die ebenfalls für den MedAT lernern</i></h5>
+					
+						<div class="fb-share-button" data-href="https://medcastle.at{{ request.path }}" data-layout="box_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmedcastle.at%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+					</div>
+					
+					<!--<h5 class="space-top">Hier nochmal die Analysen zu deinen Fragen, zum Mitschreiben –</h5>
+					
+					<p><b>Nein wirklich! Am Besten du schreibst dir gleich alle rot unterlegten Analysen</b> (Wie war nochmal die dazugehörige Frage?) <b>auf Karteikarten.</b></p>-->										
+						</div>	
+						
+							
+							<p id="questionsLeft" class=""></p>
+							
+						</form>
+						
+						<p><i><i class="fas fa-exclamation-circle"></i> Wie auch beim echten MedAT wird dir hier erlaubt deine Antwort <strong>ab</strong>zuändern (vgl. auf Papier: altes Kästchen ausmalen, neues Kreuz setzen), nicht aber <strong>zurück</strong>zuändern: ist beim MedAT das Kästchen einmal ausgemalt, kannst du es nicht wieder ankreuzen. <strong>Eine Abänderung ist also endgültig.</strong></i></p> 
+						
+							
+					</div>
+				
+				</div>
+					
+				
+			<!--<hr/>-->
+
+
+{% endblock %}

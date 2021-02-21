@@ -1,0 +1,749 @@
+{% extends "base_content_with_shop_link.html" %}
+
+
+{% load static %}
+
+
+{% block title %}
+
+Merkfähigkeit: Turnier
+
+{% endblock %} 
+
+{% block custom_og %}
+
+	<meta property="og:url"                content="https://medcastle.at{{ request.path }}" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Ich hab die MedKnight-Karte für diesen Teil des Mediziner-Tests Erhalten!" />
+	<meta property="og:description"        content="Das heißt, den Übungstest für diesen Teil des MedAT habe ich statistisch geschafft: medCastle.at ist meine gratis Vorbereitung und online-Lernplattform für den MedAT. " />
+	<meta property="og:image"              content="https://medcastle.at{% static 'img/ritterkarten/2x/merk.png' %}" />
+	
+	<meta property="fb:app_id"              content="667140217484992" />
+
+{% endblock %}
+
+
+{% block social_scripts %}
+
+{% endblock %}
+
+
+{% block add_assets %}
+
+<script src="{% static 'js/quiz_merk.js' %}"></script>
+
+{% endblock %}
+
+
+{% block content %}
+
+		<!-- Three -->
+		<div id="fb-root"></div>
+		
+		
+		<section id="three" class="wrapper bg_g">
+			
+			<div class="inner">
+				
+				<header class="align-center">
+					
+					<h2>Merkfähigkeit: <strong>Das Turnier</strong></h2>
+					
+					<p>Werde Turniermeister und komm ins medCastle durch richtige Beantwortung aller <strong>MedAT Alt- und Neufragen!</strong></p>
+					
+					<p><i>Derzeit 1 Set im med<strong>Castle</strong> – vgl. den Merk-Guide auf Facebook!</i></p>
+										
+					
+					<ul class="actions">
+						<li><a href="#" class="button dead">Vorheriges Bonus Mini-Turnier</a></li>
+						<li><a href="/skript/ee_merk" class="button special">Guide Hierzu Holen</a></li>
+						<li><a href="/turnier/ee_merk" class="button">Nächstes Bonus Mini-Turnier</a></li>
+					</ul>
+					
+					<!--<p id="analysis-note"><i><i class="fas fa-exclamation-circle"></i> Beachte auch die <strong>Fragen-Analyse</strong> wenn du zunächst eine Frage falsch beantwortest: Im Gegensatz zum MedAT kannst du beliebig viele Mini-Turniere an einem Tag machen!</i></p>-->
+										
+				</header>
+				
+				
+				<!-- Content -->	
+					
+				<div class="row">
+					
+					<div class="12u 12u$(medium) ">
+						
+						
+					<div id="analysis" class="invisible">
+				
+				<!--<h5><strong><i class="fa fa-exclamation-circle"></i> Fragen-Analyse</strong></h5>
+				
+				<p></p>-->
+				
+					</div>
+				
+				
+						<form class="box" action="/turnier" method="post">		
+							<ul>
+								
+							
+								<li class="cover">
+									<p class="ask"><strong><i class="fa fa-exclamation-circle"></i>Dein Allergieausweis-Set.</strong>
+										Es geht darum, dir möglichst viele Informationen einzuprägen. Zeit dafür: <strong>8 Minuten!</strong>
+										
+									</p>
+									
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a" class="allergycards">
+											<li>
+											
+											<figure class="float_left"><img src="{% static 'img/merkePhotoSets/1Init/0.jpeg' %}" alt="Person" width="300" /></figure>
+											
+												<h3 class="minify"><strong>Name:</strong> Binoage</h3>
+												<h4 class="minify2"><strong>Geburtstag:</strong> 02 Januar</h4>
+												<h4 class="minify2"><strong>Medikamenteneinnahme:</strong> Nein</h4>
+												<h4 class="minify2"><strong>Blutgruppe:</strong> A</h4>
+												<h4 class="minify2"><strong>Allergien:</strong> Kürbis</h4>
+												<h4 class="minify2"><strong>Ausweisnummer:</strong> 27133</h4>
+												<h4 class="minify2"><strong>Ausstellungsland:</strong> Fiji</h4>
+												
+											</li>
+											<li>
+												
+												<figure class="float_left"><img src="{% static 'img/merkePhotoSets/1Init/1.jpeg' %}" alt="Person" width="300" /></figure>
+											
+												<h3 class="minify"><strong>Name:</strong> Myintu</h3>
+												<h4 class="minify2"><strong>Geburtstag:</strong> 01 Februar</h4>
+												<h4 class="minify2"><strong>Medikamenteneinnahme:</strong> Nein</h4>
+												<h4 class="minify2"><strong>Blutgruppe:</strong> A</h4>
+												<h4 class="minify2"><strong>Allergien:</strong> Reis</h4>
+												<h4 class="minify2"><strong>Ausweisnummer:</strong> 63494</h4>
+												<h4 class="minify2"><strong>Ausstellungsland:</strong> Palästina</h4>
+												
+											</li>
+											<li>
+												
+												<figure class="float_left"><img src="{% static 'img/merkePhotoSets/1Init/2.jpeg' %}" alt="Person" width="300" /></figure>
+											
+												<h3 class="minify"><strong>Name:</strong> Macdonald</h3>
+												<h4 class="minify2"><strong>Geburtstag:</strong> 10 Novemeber</h4>
+												<h4 class="minify2"><strong>Medikamenteneinnahme:</strong> Ja</h4>
+												<h4 class="minify2"><strong>Blutgruppe:</strong> B</h4>
+												<h4 class="minify2"><strong>Allergien:</strong> Aspirin</h4>
+												<h4 class="minify2"><strong>Ausweisnummer:</strong> 38146</h4>
+												<h4 class="minify2"><strong>Ausstellungsland:</strong> Sri Lanka</h4>
+												
+											</li>
+											<li>
+												
+												<figure class="float_left"><img src="{% static 'img/merkePhotoSets/1Init/3.jpeg' %}" alt="Person" width="300" /></figure>
+											
+												<h3 class="minify"><strong>Name:</strong> Fidelity</h3>
+												<h4 class="minify2"><strong>Geburtstag:</strong> 04 August</h4>
+												<h4 class="minify2"><strong>Medikamenteneinnahme:</strong> Ja</h4>
+												<h4 class="minify2"><strong>Blutgruppe:</strong> B</h4>
+												<h4 class="minify2"><strong>Allergien:</strong> Ampfer</h4>
+												<h4 class="minify2"><strong>Ausweisnummer:</strong> 69506</h4>
+												<h4 class="minify2"><strong>Ausstellungsland:</strong> Finnland</h4>
+												
+											</li>
+											<li>
+												
+												<figure class="float_left"><img src="{% static 'img/merkePhotoSets/1Init/4.jpeg' %}" alt="Person" width="300" /></figure>
+											
+												<h3 class="minify"><strong>Name:</strong> Cassie</h3>
+												<h4 class="minify2"><strong>Geburtstag:</strong> 14 August</h4>
+												<h4 class="minify2"><strong>Medikamenteneinnahme:</strong> Ja</h4>
+												<h4 class="minify2"><strong>Blutgruppe:</strong> AB</h4>
+												<h4 class="minify2"><strong>Allergien:</strong> Löwenzahn</h4>
+												<h4 class="minify2"><strong>Ausweisnummer:</strong> 72867</h4>
+												<h4 class="minify2"><strong>Ausstellungsland:</strong> Macau</h4>
+												
+											</li>
+											<li>
+												
+												<figure class="float_left"><img src="{% static 'img/merkePhotoSets/1Init/5.jpeg' %}" alt="Person" width="300" /></figure>
+											
+												<h3 class="minify"><strong>Name:</strong> Brok</h3>
+												<h4 class="minify2"><strong>Geburtstag:</strong> 16 April</h4>
+												<h4 class="minify2"><strong>Medikamenteneinnahme:</strong> Ja</h4>
+												<h4 class="minify2"><strong>Allergien:</strong> B</h4>
+												<h4 class="minify2"><strong>Blutgruppe:</strong> Paprika</h4>
+												<h4 class="minify2"><strong>Ausweisnummer:</strong> 45851</h4>
+												<h4 class="minify2"><strong>Ausstellungsland:</strong> Thailand</h4>
+												
+											</li>
+											<li>
+												
+												<figure class="float_left"><img src="{% static 'img/merkePhotoSets/1Init/6.jpeg' %}" alt="Person" width="300" /></figure>
+											
+												<h3 class="minify"><strong>Name:</strong> Thomasine</h3>
+												<h4 class="minify2"><strong>Geburtstag:</strong> 04 Februar</h4>
+												<h4 class="minify2"><strong>Medikamenteneinnahme:</strong> Ja</h4>
+												<h4 class="minify2"><strong>Blutgruppe:</strong> A</h4>
+												<h4 class="minify2"><strong>Allergien:</strong> Jod</h4>
+												<h4 class="minify2"><strong>Ausweisnummer:</strong> 50751</h4>
+												<h4 class="minify2"><strong>Ausstellungsland:</strong> Dänemark</h4>
+												
+											</li>
+											<li>
+												
+												<figure class="float_left"><img src="{% static 'img/merkePhotoSets/1Init/7.jpeg' %}" alt="Person" width="300" /></figure>
+											
+												<h3 class="minify"><strong>Name:</strong> Lowell</h3>
+												<h4 class="minify2"><strong>Geburtstag:</strong> 04 Juni</h4>
+												<h4 class="minify2"><strong>Medikamenteneinnahme:</strong> Ja</h4>
+												<h4 class="minify2"><strong>Blutgruppe:</strong> 0</h4>
+												<h4 class="minify2"><strong>Allergien:</strong> Senf</h4>
+												<h4 class="minify2"><strong>Ausweisnummer:</strong> 63015</h4>
+												<h4 class="minify2"><strong>Ausstellungsland:</strong> Katar</h4>
+												
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								<!--/set images >> question set-->								
+								
+								<li>
+								
+								<figure class="float_left q"><img src="{% static 'img/merkePhotoSets/1Init/7.jpeg' %}" alt="Person" width="300" /></figure>
+								
+									<p class="ask"><strong><i class="fa fa-question"></i>Wie lautet die Ausweisnummer dieser Person?</strong>
+										<ol>
+											
+										</ol>
+									</p>
+									
+									<p class="analysis invisible"></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="1" />
+												<label>63015</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>63014</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>63012</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>63011</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Alle Aussagen (a)-(d) sind falsch.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Wie heißt die Person, deren Ausweis aus Finnland stammt?</strong>
+										<ol>
+											
+										</ol>
+									</p>
+									
+									<p class="analysis invisible"></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label>Myintu</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Binoage</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Fidelity</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Brok</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Alle Aussagen (a)-(d) sind falsch.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Welche Personen haben Blutgruppe B?</strong>
+										<ol>
+											
+										</ol>
+									</p>
+									
+									<p class="analysis invisible"></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label>Macdonald und Myintu</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Binoage und Myintu</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Macdonald und Fidelity</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Fidelity und Lowell</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Alle Aussagen (a)-(d) sind falsch.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Welche Personen haben im August Geburtstag?</strong>
+										<ol>
+											
+										</ol>
+									</p>
+									
+									<p class="analysis invisible"></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="1" />
+												<label>Fidelity und Cassie</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Cassie und Brok</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Brok und Thomasine</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Thomasine und Lowell</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Alle Aussagen (a)-(d) sind falsch.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Wer hat eine Allergie auf Senf?</strong>
+										<ol>
+											
+										</ol>
+									</p>
+									
+									<p class="analysis invisible"></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label>Binoage</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Macdonald</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Brok</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Thomasine</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Alle Aussagen (a)-(d) sind falsch.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Wer hat eine Allergie auf Reis?</strong>
+										<ol>
+											
+										</ol>
+									</p>
+									
+									<p class="analysis invisible"></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label>Binoage</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Macdonald</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Brok</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Thomasine</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Alle Aussagen (a)-(d) sind falsch.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Wer hat eine Allergie auf Aspirin?</strong>
+										<ol>
+											
+										</ol>
+									</p>
+									
+									<p class="analysis invisible"></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label>Binoage</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Macdonald</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Brok</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Thomasine</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Alle Aussagen (a)-(d) sind falsch.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Wer hat Blutgruppe A und nimmt keine Medikamente ein?</strong>
+										<ol>
+											
+										</ol>
+									</p>
+									
+									<p class="analysis invisible"></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="1" />
+												<label>Myintu</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Lowell</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Cassie</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Brok</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Alle Aussagen (a)-(d) sind falsch.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Wer hat eine Allergie auf Paprika?</strong>
+										<ol>
+											
+										</ol>
+									</p>
+									
+									<p class="analysis invisible"></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label>Binoage</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Macdonald</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Brok</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Thomasine</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Alle Aussagen (a)-(d) sind falsch.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Wann hat Lowell Geburtstag?</strong>
+										<ol>
+											
+										</ol>
+									</p>
+									
+									<p class="analysis invisible"></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label>Februar</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>April</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Juni</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>August</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Alle Aussagen (a)-(d) sind falsch.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Wann hat die Person mit Ausweisnummer 63494 Geburtstag?</strong>
+										<ol>
+											
+										</ol>
+									</p>
+									
+									<p class="analysis invisible"></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="1" />
+												<label>Februar</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>April</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Juni</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>August</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Alle Aussagen (a)-(d) sind falsch.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Wer nimmt keine Medikamente ein?</strong>
+										<ol>
+											
+										</ol>
+									</p>
+									
+									<p class="analysis invisible"></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="1" />
+												<label>Binoage und Myintu</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Binoage und Macdonald</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Thomasine, Brok und Cassie</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Lowell</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Alle Aussagen (a)-(d) sind falsch.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Wer hat am 16 April Geburtstag?</strong>
+										<ol>
+											
+										</ol>
+									</p>
+									
+									<p class="analysis invisible"></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="1" />
+												<label>Brok</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Binoage</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Cassie</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Lowell</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Alle Aussagen (a)-(d) sind falsch.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+							
+							</ul>
+							
+							
+						<div id="result" class="no_display">
+							
+					<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><img srcset="{% static 'img/ritterkarten/2x/merk.png' %} 554w" alt="Gewebe" width="277" /></a>
+				
+					<h3><i class="fas fa-thumbs-up"></i><b> Fertig! Dein Ergebnis?</b></h3>
+					
+					<h1></h1>
+					
+					<h5 class="labelo white"> </h5>
+					
+					<div><h2>Du erhältst eine MedKnight-Karte!</h2>
+					
+						<h5 class="white"><i class="fab fa-facebook-f"></i> <i>Teile sie mit Freunden und Feinden, die ebenfalls für den MedAT lernern</i></h5>
+					
+						<div class="fb-share-button" data-href="https://medcastle.at{{ request.path }}" data-layout="box_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmedcastle.at%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+					</div>
+					
+					<!--<h5 class="space-top">Hier nochmal die Analysen zu deinen Fragen, zum Mitschreiben –</h5>
+					
+					<p><b>Nein wirklich! Am Besten du schreibst dir gleich alle rot unterlegten Analysen</b> (Wie war nochmal die dazugehörige Frage?) <b>auf Karteikarten.</b></p>-->										
+						</div>	
+						
+							
+							<p id="questionsLeft" class=""></p>
+							
+						</form>
+						
+						<p><i><i class="fas fa-exclamation-circle"></i> Wie auch beim echten MedAT wird dir hier erlaubt deine Antwort <strong>ab</strong>zuändern (vgl. auf Papier: altes Kästchen ausmalen, neues Kreuz setzen), nicht aber <strong>zurück</strong>zuändern: ist beim MedAT das Kästchen einmal ausgemalt, kannst du es nicht wieder ankreuzen. <strong>Eine Abänderung ist also endgültig.</strong></i></p> 
+						
+							
+					</div>
+				
+				</div>
+					
+				
+			<!--<hr/>-->
+
+
+{% endblock %}

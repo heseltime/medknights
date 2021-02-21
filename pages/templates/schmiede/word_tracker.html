@@ -1,0 +1,107 @@
+{% extends "base_content_with_shop_link.html" %}
+
+
+{% load static %}
+
+
+{% block title %}
+
+Wortflüssigkeit: KF-Schmiede
+
+{% endblock %} 
+
+
+{% block social_scripts %}
+
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
+
+{% endblock %}
+
+
+{% block add_assets %}
+
+<script src="{% static 'js/word_tracker.js' %}"></script>
+
+{% endblock %}
+
+
+{% block content %}
+
+		<!-- Three -->
+		<section id="three" class="wrapper bg_b">
+			
+			<div class="inner">
+				
+				<header class="align-center">
+					
+					<img srcset="{% static 'img/site-elements/icons/2x/anvil_icon.png' %} 260w, {% static 'img/site-elements/icons/4x/anvil_icon.png' %} 520w" alt="anvil%20icon@4x" width="185" />
+					
+					<h2>Wortflüssigkeit' <strong>KF-Schmiede-UTIL</strong></h2>
+					
+					<p>Willkommen zum <i class="swatch2">KF(F)-Wasserfallmodus:</i> <strong>ENABLED BY WORDTRACKER!</strong></p>
+					
+					<a href="/schmiede/wf" class="button special waterfall"><h2><i class="fas fa-sync-alt"></i></h2></a>
+					
+					<p><i><i class="fa fa-arrow-right"></i> <strong>gratis, nur auf </strong> med<b>Castle</b>.at - von Studenten für Studenten</i></p>
+										
+					
+					<ul class="actions">
+						<li><a href="/schmiede/fz" class="button">Figuren Zusammensetzen'</a></li>
+						<li><a class="button special" id="xml_gen">GENERATE XML</a></li>
+						<li><a href="/schmiede/zf" class="button">Zahlenfolgen'</a></li>
+					</ul>
+															
+				</header>
+				
+				
+				<!-- Content -->	
+					
+				<div class="row">
+					
+					<div class="12u 12u$(medium) ">
+						
+						
+					<div id="analysis" class="invisible">
+				
+				<h5><strong><i class="fa fa-exclamation-circle"></i> Das Wort War <i class="fa fa-arrow-down"></i></strong></h5>
+				
+				<p></p>
+				
+					</div>
+				
+				
+						<form class="box" action="" method="">		
+							<ul>
+								
+							
+								<li>
+									<p class="ask"><strong><i class="fa fa-EXCLAMATION-CIRCLE"></i>CURRENT WORDS</strong></p>
+																		
+									<form action="/word_tracker.html" method="post" id="2" name="3">
+										
+									</form>
+									
+									
+								</li>
+
+							</ul>
+							
+							
+							
+						
+							
+							<p id="questionsLeft" class=""></p>
+							
+						</form>
+						
+						<p><i><i class="fas fa-exclamation-circle"></i> Wie auch beim echten MedAT wird dir hier erlaubt deine Antwort <strong>ab</strong>zuändern (vgl. auf Papier: altes Kästchen ausmalen, neues Kreuz setzen), nicht aber <strong>zurück</strong>zuändern: ist beim MedAT das Kästchen einmal ausgemalt, kannst du es nicht wieder ankreuzen. <strong>Eine Abänderung ist also endgültig.</strong></i></p> 
+						
+							
+					</div>
+				
+					
+				
+			<!--<hr/>-->
+								
+
+{% endblock %}

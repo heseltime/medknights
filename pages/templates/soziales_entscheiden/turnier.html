@@ -1,0 +1,862 @@
+{% extends "base_content_with_shop_link.html" %}
+
+
+{% load static %}
+
+
+{% block title %}
+
+Soziales Entscheiden: Turnier
+
+{% endblock %} 
+
+{% block custom_og %}
+
+	<meta property="og:url"                content="https://medcastle.at{{ request.path }}" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Ich hab die MedKnight-Karte für diesen Teil des Mediziner-Tests Erhalten!" />
+	<meta property="og:description"        content="Das heißt, den Übungstest für diesen Teil des MedAT habe ich statistisch geschafft: medCastle.at ist meine gratis Vorbereitung und online-Lernplattform für den MedAT. " />
+	<meta property="og:image"              content="https://medcastle.at{% static 'img/ritterkarten/2x/se.png' %}" />
+	
+	<meta property="fb:app_id"              content="667140217484992" />
+
+{% endblock %}
+
+
+{% block social_scripts %}
+
+{% endblock %}
+
+
+{% block add_assets %}
+
+<script src="{% static 'js/quiz_se.js' %}"></script>
+
+{% endblock %}
+
+
+{% block content %}
+
+		<!-- Three -->
+		<section id="three" class="wrapper bg_g">
+			
+			<div class="inner">
+				
+				<header class="align-center">
+					
+					<h2>Soziales Entscheiden: <strong>Das Turnier</strong></h2>
+					
+					<p>Werde Turniermeister und komm ins medCastle durch richtige Beantwortung aller <strong>MedAT Alt- und Neufragen!</strong></p>
+										
+					
+					<ul class="actions">
+						<li><a href="/turnier/gewebe" class="button">Vorheriges Mini-Turnier</a></li>
+						<li><a href="/skript/se" class="button special">Zurück zum Skript</a></li>
+						<li><a href="#" class="button dead">Nächstes Mini-Turnier</a></li>
+					</ul>
+					
+					<p id="analysis-note"><i><i class="fas fa-exclamation-circle"></i> Hier geht es um die <strong>Reihung von "am relevantesten" zu "am wenigsten relevant,"</strong> von 1. bis 5., als Zuordnung für die Überlegungen a. bis e.</i></p> 
+										
+				</header>
+				
+				
+				<!-- Content -->	
+					
+				<div class="row">
+					
+					<div class="12u 12u$(medium) ">
+						
+						
+					<div id="analysis" class="invisible">
+				
+				<h5><strong><i class="fa fa-exclamation-circle"></i> Fragen-Analyse</strong></h5>
+				
+				<p></p>
+				
+					</div>
+				
+				
+						<form class="box se" action="/turnier" method="post">		
+							<ul>
+								
+							
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Frau Burgschloss hat seit vielen Jahren eine tüchtige Haushaltshilfe. Seit einigen Wochen ist die Haushaltshilfe, die Mutter von einem Kind ist, von ihrem Lebensgefährten getrennt, und seither bei der Arbeit unkonzentriert, unpünktlich, oder meldet sich erst spät, wenn sie es nicht zur Arbeit schafft. Frau Burgschloss ist sich nicht sicher wie sie auf diese ungewollte Veränderung reagieren soll. Wie relevant sollten deiner Meinung nach folgende Überlegungen sein, die Frau Burgschloss bei ihrer Entscheidung über ihren Vorgang anstellt?</strong>
+						
+										<ol type="a">
+											<li>
+												Würde es für mich nicht von Nachteil sein, wenn ich die Haushaltshilfe fristlos entlasse?
+											</li>
+											<li>
+												Würden andere an meiner Stelle die Haushaltshilfe kündigen?
+											</li>
+											<li>
+												Würde es nicht wichtig sein, dass ich die Haushaltshilfe auf ihre unzuverlässige und nicht pflichtbewusste Arbeitsweise anspreche und sie um Besserung zu bitten, da man sich auch in schwierigen persönlichen Situationen auf die Arbeit einer jeden Person verlassen können sollte? 
+											</li>
+											<li>
+												Wäre es sinnvoll auf die Dienste der Haushaltshilfe sofort zu verzichten, damit ich kein unangenehmes Gespräch führen muss?
+											</li>
+											<li>
+												Wäre es nicht wichtig, dass ich mich darum kümmere, dass meine Haushaltshilfe ihrer Pflichten (Anwesenheit, Pünktlichkeit, Sorgfältigkeit) nachkommt?
+											</li>
+										</ol>
+									</p>
+									
+									<p class="analysis invisible">Es gilt also: <strong>a = 5., b = 3., c = 1., d = 4., e = 2.</strong></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="checkbox" value="5" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="3" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="1" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="4" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="2" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Mini-MedKnight hat das Garagenfenster eines aufbrausenden Nachbars unabsichtlich mit einem Fußball eingeschossen. Mini Med-Knight ist unsicher wie er reagieren soll, da ihn niemand beobachtet hat. Es wäre wahrscheinlich möglich, die Sache zu vertuschen. Wie relevant sollten deiner Meinung nach folgende Überlegungen sein, die Mini-MedKnight bei seiner Entscheidung haben könnte?</strong>
+						
+										<ol type="a">
+											<li>
+												Würde jemand dahinterkommen, wenn ich mich nicht melde?
+											</li>
+											<li>
+												Haben mich meine Eltern nicht gelehrt, immer die Wahrheit zu sagen?
+											</li>
+											<li>
+												Würden andere an meiner Stelle die Tat gestehen?
+											</li>
+											<li>
+												Wäre es wichtig, dass ich meine Tat eingestehe, damit nicht eine andere Person für mein Verhalten beschuldigt wird?
+											</li>
+											<li>
+												Würde ich mir oder meinen Eltern die Reparaturkosten erspare können, wenn ich meine Tat verschweige?
+											</li>
+										</ol>
+									</p>
+									
+									<p class="analysis invisible"><strong>a = 5., b = 2., c = 3., d = 1., e = 4.</strong></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="checkbox" value="5" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="2" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="3" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="1" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="4" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Ein Gast im Burgrestaurant, der mit einer Gruppe angereist war, verlässt das Lokal und bemerkt, dass er vergessen hat zu zahlen. Da der Gast aber den Bus, der in wenigen Minuten abfährt, nicht verpassen möchte, ist er unsicher, und es gehen ihm folgende Gedanken durch den Kopf. Wie relevant sollten deiner Meinung nach die Überlegungen sein?</strong>
+						
+										<ol type="a">
+											<li>
+												Würde ich mir einen zusätzlichen Restaurantbesuch finanzieren können, wenn ich nicht bezahle?
+											</li>
+											<li>
+												Würde Mitglieder meiner Gruppe, mit der ich im Restaurant gegessen habe, in der gleichen Situation umkehren?
+											</li>
+											<li>
+												Würde ich durch mein Verhalten dem Kellner mehr schaden als dem Restaurantbesitzer?
+											</li>
+											<li>
+												Würde mich der Besitzer erwischen oder ich könnte ich ohne Bezahlung und weiteren Folgen verschwinden?
+											</li>
+											<li>
+												Würde ich auf jeden Fall umkehren müssen, da es meine Pflicht ist für den Restaurantbesuch zu bezahlen?
+											</li>
+										</ol>
+									</p>
+									
+									<p class="analysis invisible"><strong>a = 4., b = 3., c = 1., d = 5., e = 2.</strong></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="checkbox" value="4" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="3" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="1" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="5" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="2" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Die Lehrerin der 1. Klasse Volksschule bemerkt, dass ein Schüler seit längerer Zeit große Schwierigkeiten hat im Unterricht mitzuarbeiten. Der Schüler ist unkonzentriert und arbeitet fehlerhaft und langsam. Bei Lernzielkontrollen schafft es der Schüler dann doch ein positives Ergebnis zu erzielen, weswegen sich die Lehrerin unsicher ist, ob eine Umstufung in die Vorschule für das Kind wirklich besser wäre. Wie relevant sollten deiner Meinung nach folgende Überlegungen sein, die die Lehrerin bei ihrer Entscheidung angestellt haben könnte?</strong>
+						
+										<ol type="a">
+											<li>
+												Würde der Schulrat mich bestrafen, wenn ich den Schüler nicht in die richtige Klasse umstufe?
+											</li>
+											<li>
+												Wäre es meine Pflicht mit den Eltern ein Gespräch zu führen und ein Umstufen anzukündigen?
+											</li>
+											<li>
+												Würden meine KollegInnen an meiner Stelle den Schüler umstufen?
+											</li>
+											<li>
+												Würde es nicht dem Kind von großem Vorteil sein, durch das Umstufen in die Vorschulklasse Defizite aufzuholen, wie für die anderen Schüler der 1. Klasse, da das Niveau nicht sinken muss?
+											</li>
+											<li>
+												Würde es für das Kind, aber auch für mich, ein Vorteil sein, wenn das Niveau der Klasse doch sinkt und daher weniger vorbereitet werden müsste? Somit könnte der Schüler in seinem Klassenverband bleiben.
+											</li>
+										</ol>
+									</p>
+									
+									<p class="analysis invisible"><strong>a = 5., b = 2., c = 3., d = 1., e = 4.</strong></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="checkbox" value="5" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="2" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="3" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="1" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="4" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Der Oberarzt bekommt einen Assistenzarzt zugeteilt. Der Oberarzt, der sich im Stress befindet und nicht die nötige Zeit hat diesen auszubilden, ist unsicher, wie er sich dem Assistenzarzt gegenüber verhalten soll. Wie relevant sollten deiner Meinung nach folgende Überlegungen sein?</strong>
+						
+										<ol type="a">
+											<li>
+												Würde es die ärztliche Leitung bemerken, wenn ich den Assistenzarzt nicht ausbilde, bzw. würde dieser es melden?
+											</li>
+											<li>
+												Wäre es meine ärztliche Pflicht für die Ausbildung von KollegInnen zu sorgen?
+											</li>
+											<li>
+												Wäre es unser beider Vorteil, wenn ich für die Ausbildung Sorge trage, ich so über die mittellange Zeit entlastet werde, und die Qualität der Behandlungen besser wird?
+											</li>
+											<li>
+												Würde der Assistenzarzt, wäre er in meiner Position, die Zeit aufbringen wollen, um andere Personen gut auszubilden?
+											</li>
+											<li>
+												Würde ich durch meine Ablehnung des Assistenzarztes nicht die Zeit für meine Patienten gewinnen?
+											</li>
+										</ol>
+									</p>
+									
+									<p class="analysis invisible"><strong>a = 5., b = 2., c = 1., d = 3., e = 4.</strong></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="checkbox" value="5" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="2" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="1" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="3" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="4" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Ein MedKnight kauft in der Burgbäckerei seine Jause ein. Ein anderer Kunde verlässt gerade die Bäckerei, als er eintritt. Sofort fällt ihm ein Geldschein auf, der vor ihm auf dem Verkaufstisch liegt: der Kunde hatte diesen vergessen. Wie relevant sollten deiner Meinung nach folgende Überlegungen sein, die dem MedKnight durch den Kopf gehen?</strong>
+						
+										<ol type="a">
+											<li>
+												Wäre es möglich, dass ich einen Finderlohn bekomme und sich jede Person in so einer Situation freuen würde, wenn ich den Fund melde?
+											</li>
+											<li>
+												Würde ich das Geld als Student nicht gut gebrauchen könnnen?
+											</li>
+											<li>
+												Würde der Besitzer des Scheins den Verlust bemerken und nach ihm bzw. dem Finder suchen?
+											</li>
+											<li>
+												Wäre es nicht meine Pflicht, dem Kunden nachzugehen?
+											</li>
+											<li>
+												Würden sich meine Studienkollegen den Schein einstecken?
+											</li>
+										</ol>
+									</p>
+									
+									<p class="analysis invisible"><strong>a = 1., b = 4., c = 5., d = 2., e = 3.</strong></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="checkbox" value="1" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="4" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="5" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="2" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="3" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Eine Krankenschwester kämpft seit mehreren Tagen mit starkem Husten und einer Grippe. Da sich im Kollegium bereits andere im Krankenstand befinden, ist sie unsicher, ob sie sich auch noch krankmelden oder doch lieber arbeiten gehen soll. Wie relevant sollten deiner Meinung nach die folgenden Überlegungen sein, die die Krankenschwester bei ihrer Entscheidung angestellt haben könnte?</strong>
+						
+										<ol type="a">
+											<li>
+												Könnte ich durch Fernbleiben von der Arbeit verhindern, dass sich KollegeInnen und PatientInnen anstecken und die Qualität der Behandlungen bewahren?
+											</li>
+											<li>
+												Würde ich durch meine schlechte gesundheitliche Verfassung Fehler machen?
+											</li>
+											<li>
+												Wäre es nicht für meine PatientInnen am besten, wenn diese von gesunden Menschen betreut werden?
+											</li>
+											<li>
+												Meine Kollegen bleiben ja auch zu hause: würden das die anderen auch so tun?
+											</li>
+											<li>
+												Würde es für mich von Vorteil sein, wenn ich trotz Erkrankung zur Arbeit gehe, weil dadurch andere nicht durch Überstunden belastet werden?
+											</li>
+										</ol>
+									</p>
+									
+									<p class="analysis invisible"><strong>a = 1., b = 5., c = 2., d = 3., e = 4.</strong></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="checkbox" value="1" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="5" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="2" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="3" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="4" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Eine Mini-MedKnight-Mutter hat morgen einen wichtigen Geschäftsabschluss, aber ihr Kleines, das den Kindergarten besucht, hatte in der Nacht mehrmals starken Durchfall. Sie ist unsicher, wie sie sich verhalten soll. Wie relevant sind deiner Meinung nach die folgenden Überlegungen, die die berufstätige Mutter nun anstellt? </strong>
+						
+										<ol type="a">
+											<li>
+												Wäre es nicht besser, wenn meine Tochter einen Tag zu hause bleibt, um zu sehen, on es ihr wirklich gut geht und sich nicht andere Kinder anstecken kann?
+											</li>
+											<li>
+												Würde mir durch ein Fernbleiben von der Arbeit um meine Tochter zu betreuen ein wichtiger Kunde entgehen, da das geplante Geschäft ausfällt?
+											</li>
+											<li>
+												Würde mein Chef meine kurzfristige Absage verstehen können?
+											</li>
+											<li>
+												Sollte ich auf jeden Fall den Termin wahrnehmen um einen großen Geschäftsabschluss machen zu können und darauf hoffen, dass es meiner Tochter im Kindergarten gesundheitlich gut geht?
+											</li>
+											<li>
+												Würde ich nicht die Verpflichtung haben, mich um das Wohl meiner Tochter zu sorgen?
+											</li>
+										</ol>
+									</p>
+									
+									<p class="analysis invisible"><strong>a = 1., b = 5., c = 3., d = 4., e = 2.</strong></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="checkbox" value="1" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="5" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="3" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="4" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="2" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Ein Stationsarzt verwechselt zwei Patientenakte mit ähnlichem Namen und verschreibt ihnen die Medikation des jeweils anderen. Der Arzt bemerkt den Fehler und ist unsicher, wie er reagieren soll. Wie relevant sollten deiner Meinung nach die folgenden Überlegungen, die der Arzt bei seiner Entscheidung angestellt haben könnte, sein?</strong>
+						
+										<ol type="a">
+											<li>
+												Würden die Patienten es merken, wenn sie die falsche Therapie verabreicht bekommen und mich anzeigen?
+											</li>
+											<li>
+												Würde ich meinen guten Ruf wahren können, wenn ich meinen Fehler zugebe?
+											</li>
+											<li>
+												Wäre es nicht sinnvoll, beide Patienten über den Irrtum aufzuklären, weil man generell die Wahrheit sagen sollte?
+											</li>
+											<li>
+												Wie würde der Oberarzt handeln?
+											</li>
+											<li>
+												Könnte ich durch rasches Handeln eventuelle Nebenwirkungen der Medikament verhindern und den Patienten die geeignete heilende Therapie verschreiben?
+											</li>
+										</ol>
+									</p>
+									
+									<p class="analysis invisible"><strong>a = 5., b = 4., c = 2., d = 3., e = 1.</strong></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="checkbox" value="5" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="4" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="2" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="3" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="1" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Ein Ausländer und ein Österreicher werden nach einer Schlägerei beide in die Burgklinik eingewiesen. Sie müssen aufgrund schwerer Verletzung sofort behandelt werden. Der einzige Oberarzt auf der Station muss sich entscheiden, welchen Patienten er zuerst behandelt. Vom Notarzt erfährt er, dass der Ausländer die Auseinandersetzung verursacht hatte. Wie relevant sollten deiner Meinung nach folgende mögliche Überlegungen des Oberarztes sein?</strong>
+						
+										<ol type="a">
+											<li>
+												Würde sich der Notarzt für den Österreicher entscheiden?
+											</li>
+											<li>
+												Wäre es nicht selbstverständlich, durch einen raschen Überblick die Notwendigkeit der Interventionen abzuschätzen und sich erst dann für einen Patienten entscheiden?
+											</li>
+											<li>
+												Wäre es besser den Österreicher zu behandeln, da dieser wohlhabender scheint und sich mir erkenntlicher zeigen könnte?
+											</li>
+											<li>
+												Wäre es besser den Ausländer zu behandeln, weil ich sonnst als Rassist oder Xenophobe beschimpft werden könnte?
+											</li>
+											<li>
+												Wäre es nicht meine Aufgabe beide Patienten so gut und rasch wie möglich zu behandeln?
+											</li>
+										</ol>
+									</p>
+									
+									<p class="analysis invisible"><strong>a = 3., b = 1., c = 4., d = 5., e = 2.</strong></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="checkbox" value="3" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="1" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="4" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="5" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+											<li>
+												<input type="checkbox" value="2" />
+												<label>1</label>
+												<label>2</label>
+												<label>3</label>
+												<label>4</label>
+												<label>5</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+							</ul>
+							
+							
+						<div id="result" class="no_display">
+							
+					<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><img srcset="{% static 'img/ritterkarten/1x/se.png' %} 277w, {% static 'img/ritterkarten/2x/se.png' %} 554w" alt="Soziales Entscheiden" width="277" /></a>
+				
+					<h3><i class="fas fa-thumbs-up"></i><b> Fertig! Dein Ergebnis?</b></h3>
+					
+					<h1></h1>
+					
+					<h5 class="labelo white"> </h5>
+					
+					<div><h2>Du erhältst eine MedKnight-Karte!</h2>
+					
+						<h5 class="white"><i class="fab fa-facebook-f"></i> <i>Teile sie mit Freunden und Feinden, die ebenfalls für den MedAT lernern</i></h5>
+						
+						<a class="button special" href="mailto:?subject=Ich habe eine MedKnight-Karte Erhalten&amp;body=Kannst du bei deiner MedAT Vorbereitung mithalten? Versuch dich schon vor dem MedAT bei medCastle auf http://medCastle.at, der Vorbereitung von Studenten für Studenten." title="Email-Einladung"><i class="fas fa-envelope-square"></i> Email-Link</a>
+					
+						<div class="fb-share-button" data-href="https://medcastle.at{{ request.path }}" data-layout="box_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmedcastle.at%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+					</div>
+					
+					<h5 class="space-top"></h5>
+					
+					<p><b></b></p>		
+													
+						</div>	
+						
+							
+							<p id="questionsLeft" class=""></p>
+							
+						</form>
+						
+						<p><i><i class="fas fa-exclamation-circle"></i> Wie auch beim echten MedAT wird dir hier erlaubt deine Antwort <strong>ab</strong>zuändern (vgl. auf Papier: altes Kästchen ausmalen, neues Kreuz setzen), nicht aber <strong>zurück</strong>zuändern: ist beim MedAT das Kästchen einmal ausgemalt, kannst du es nicht wieder ankreuzen. <strong>Eine Abänderung ist also endgültig.</strong></i></p> 
+						
+							
+					</div>
+				
+				</div>
+					
+				
+			<!--<hr/>-->
+
+{% endblock %}

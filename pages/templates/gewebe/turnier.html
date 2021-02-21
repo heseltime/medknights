@@ -1,0 +1,808 @@
+{% extends "base_content_with_shop_link.html" %}
+
+
+{% load static %}
+
+
+{% block title %}
+
+Gewebe: Turnier
+
+{% endblock %} 
+
+{% block custom_og %}
+
+	<meta property="og:url"                content="https://medcastle.at{{ request.path }}" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Ich hab die MedKnight-Karte für diesen Teil des Mediziner-Tests Erhalten!" />
+	<meta property="og:description"        content="Das heißt, den Übungstest für diesen Teil des MedAT habe ich statistisch geschafft: medCastle.at ist meine gratis Vorbereitung und online-Lernplattform für den MedAT. " />
+	<meta property="og:image"              content="https://medcastle.at{% static 'img/ritterkarten/2x/gewebe.png' %}" />
+	
+	<meta property="fb:app_id"              content="667140217484992" />
+
+{% endblock %}
+
+
+{% block social_scripts %}
+
+{% endblock %}
+
+
+{% block add_assets %}
+
+<script src="{% static 'js/quiz.js' %}"></script>
+
+{% endblock %}
+
+
+{% block content %}
+
+		<!-- Three -->
+		<div id="fb-root"></div>
+		
+		
+		<section id="three" class="wrapper bg_g">
+			
+			<div class="inner">
+				
+				<header class="align-center">
+					
+					<h2>Gewebe: <strong>Das Turnier</strong></h2>
+					
+					<p>Werde Turniermeister und komm ins medCastle durch richtige Beantwortung aller <strong>MedAT Alt- und Neufragen!</strong></p>
+										
+					
+					<ul class="actions">
+						<li><a href="#" class="button dead">Vorheriges Mini-Turnier</a></li>
+						<li><a href="/skript/gewebe" class="button special">Zurück zum Skript</a></li>
+						<li><a href="/turnier/se" class="button">Nächstes Mini-Turnier</a></li>
+					</ul>
+					
+					<p id="analysis-note"><i><i class="fas fa-exclamation-circle"></i> Beachte auch die <strong>Fragen-Analyse</strong> wenn du zunächst eine Frage falsch beantwortest: Im Gegensatz zum MedAT kannst du beliebig viele Mini-Turniere an einem Tag machen!</i></p> 
+										
+				</header>
+				
+				
+				<!-- Content -->	
+					
+				<div class="row">
+					
+					<div class="12u 12u$(medium) ">
+						
+						
+					<div id="analysis" class="invisible">
+				
+				<h5><strong><i class="fa fa-exclamation-circle"></i> Fragen-Analyse</strong></h5>
+				
+				<p></p>
+				
+					</div>
+				
+				
+						<form class="box" action="/turnier" method="post">		
+							<ul>
+								
+							
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Welche Funktionen erfüllt die Gliazelle in Bezug auf die Nervenzelle?</strong>
+						
+										<ol>
+											<li>Nährfunktion</li>
+											<li>Stützfunktion</li>
+											<li>Schutzfunktion</li>
+											<li>elektrische Isolierung</li>
+											<li>Abbaufunktion</li>
+										</ol>
+									</p>
+									
+									<p class="analysis invisible">Gliazellen haben <strong>Ernährungs-, Isolierungs-, sowie Stütz- und Schutzfunktion, nämlich vor Erregern,</strong> nicht aber eine Abbaufunktion.</p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label>1. ist richtig</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>1. und 2. sind richtig</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>3., 4. und 5. sind richtig</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>1., 2., 3. und 4. sind richtig</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>alle sind richtig</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Was sind Kinozilien?</strong>
+										
+										<ol>
+											
+										</ol>
+									</p>
+									
+									<p class="analysis invisible">Kinozilien sind „Flimmerhärchen,“ die Körperchen auf einer Schleimhaut in eine bestimmte Richtung transportieren können</p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label>Fingerförmige Ausstülpungen der äußeren Zellmembran zur Oberflächenvergrößerung.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Antigenpräsentierende Immunzellen.</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>„Flimmerhärchen“, die Körperchen auf einer Schleimhaut in eine bestimmte Richtung transportieren können.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Gebündelte Muskelfasern.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Alle Aussagen (a)-(d) sind falsch.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Welche Aussage über das Bindegewebe ist falsch?</strong>
+										<ol>
+											
+										</ol>
+									</p>
+									
+									<p class="analysis invisible">Das Bindegewebe versorgt die Zelle mit Nährstoffen , Bänder und Sehnen gehören zu ihm, es idt auch ein wichtiger Wasserspeicher für den Körper, und  das Fettgewebe ist auch ein Teil des Bindegewebes.</p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label>Es versorgt viele Zellen mit Nährstoffen.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Bänder und Sehnen gehören zu den Bindegeweben.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Es stellt einen wichtigen Wasserspeicher für den Körper dar.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Das Fettgewebe ist ein Teil des Bindegewebes.</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Alle Aussagen (a)-(d) sind falsch.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Welche Aussagen über das Knorpelgewebe sind korrekt?</strong>
+										
+										<ol>
+											<li>Gelenksknorpel werden bei Abnützung nicht erneuert.</li>
+											<li>Die Lymphozyten werden unter anderem im Knorpelgewebe gebildet.</li>
+											<li>Knorpel haben einen vergleichsweise hohen Zellanteil von 70%.</li>
+											<li>Die Luftröhre wird durch Knorpelgewebe offen gehalten.</li>
+											<li>Es gibt hyaline Knorpel, elastische Knorpel und Faserknorpel.</li>
+										</ol>
+										
+									</p>
+									
+									<p class="analysis invisible">Richtig ist, dass Gelenksknorpel (und auch Faserknorpel) abgenützt werden, die anderen Knorpelarten aber nicht. Lymphozyten werden nicht im Knorpelgewebe gebildet, sondern im Knochenmark, und der Zellanteil im Knorpel ist sehr gering. Schon richtig ist aber, dass die Luftröhre von Knorpelringen stabilisiert und offen gehalten wird, und außerdem, dass es hyaline Knorpel, elastische Knorpel und Faserknorpel gibt.  </p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label>(1) und (3)</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>(2) und (4)</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>(1), (2) und (5)</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>(1), (4) und (5)</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Alle außer (3)</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Welcher der folgenden Zelltypen ist noch am wenigsten ausdifferenziert?</strong>
+										
+										<ol>
+
+										</ol>
+										
+									</p>
+									
+									<p class="analysis invisible">Am wenigsten ausdifferenziert sind omnipotente Stammzellen, die noch die Möglichkeit haben, sich zu allen Zelltypen zu entwickeln. (Semipotente und archaische Stammzellen gibt es nicht.)</p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label>Adulte Stammzellen</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Omnipotente Stammzellen</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Semipotente Stammzellen</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Embryonale Stammzellen</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Archaische Stammzellen.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Welche der folgenden Strukturen befinden sich in einem Röhrenknochen?</strong>
+										
+										<ol>
+											<li>Gelbes Knochenmark</li>
+											<li>Sarkomere</li>
+											<li>Eine Spongiosa</li>
+											<li>Ein Ventrikelsystem</li>
+											<li>Dendriten</li>
+										</ol>
+										
+									</p>
+									
+									<p class="analysis invisible">Röhrenknochen enthalten gelbes Knochenmark und eine Spongiosa. (Sarkomere befinden sich im quergestreiften Muskelgewebe, das Ventrikelsystem enthält die Gehirn-Rückenmarks-Flüssigkeit im Gehirn und Dendriten sind die Zellfortsätze von Nervenzellen.)</p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label>nur (3)</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>(1) und (3)</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>(3) und (4)</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>(4) und (5)</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>(1), (2) und (3)</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Welche Aussage über Schleimhäute ist falsch?</strong>
+										
+										<ol>
+
+										</ol>
+										
+									</p>
+									
+									<p class="analysis invisible">Schleimhäute befinden sich im Eileiter und der Gebärmutter, und sie gehören zu den Epithelgeweben. („Geißeln“ sind Fortsätze, mit denen sich Zellen selbst bewegen können, und kommen beim Menschen nur in den Spermien vor.)</p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label>Im Eileiter befindet sich eine Schleimhaut.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Sie gehören zu den Epithelgeweben.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>In der Gebärmutter befindet sich eine Schleimhaut.</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>In Schleimhäuten können „Geißeln“ enthalten sein, die Partikel in eine Richtung transportieren.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Alle Aussagen (a)-(d) sind richtig.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Welche Aussage über die Basalmembran ist korrekt?</strong>
+										
+										<ol>
+
+										</ol>
+										
+									</p>
+									
+									<p class="analysis invisible">Epithelgewebe ist in der Basalmembran verankert: Basalmembran besteht nicht aus Mastzellen (das sind Bestandteile des Immunsystems!), enthält auch keine Sinneszellen, und kann nicht verhornen, da sie nicht Epithelgewebe ist und nicht an der Hautoberfläche vorkommt.</p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label>Sie besteht aus Mastzellen.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Sie ist der Sitz der Sinneszellen der Haut.</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Das Epithelgewebe ist in der Basalmembran verankert.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Sie kann verhornen.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Alle Aussagen (a)-(d) sind falsch.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Wo im Körper befinden sich „Mikrovilli“?</strong>
+										
+										<ol>
+
+										</ol>
+										
+									</p>
+									
+									<p class="analysis invisible">Mikrovilli befinden sich im Dünndarm und dienen der Nährstoffaufnahme dort.</p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label>Im Bronchialsystem.</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Im Dünndarm.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>In der Lunge.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Im Harnleiter.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>In der Speiseröhre.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Welche der folgenden Strukturen befindet sich nicht im Muskelgewebe?</strong>
+										
+										<ol>
+
+										</ol>
+										
+									</p>
+									
+									<p class="analysis invisible">Aktin, Myosin, Sarkomere und Myofibrillen sind Bestandteile des Muskelgewebes.</p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label>Aktinfilamente.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Myosinköpfe.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Sarkomere.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Myofibrillen.</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Keine der Antworten (a)-(d) ist korrekt.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Welche der folgenden Aussagen zum Knorpelgewebe trifft zu?</strong>
+										
+										<ol>
+											<li>Knorpel gehören zum Knochengewebe.</li>
+											<li>Knorpel werden nicht durchblutet.</li>
+											<li>Die Bandscheiben gehören zu den Knorpelgeweben.</li>
+											<li>Hyaline Knorpel sind auf Biegung spezialisiert.</li>
+											<li>Die Knorpelgewebe haben einen hohen Anteil an Zellsubstanz.</li>
+										</ol>
+										
+										
+									</p>
+									
+									<p class="analysis invisible">Knorpel sind Teil des Stützgewebes (und nicht des Knochengewebes), sind nicht durchblutet, bildet die Bandscheiben. Dabei ist hyaliner Knorpel nicht auf Biegung spezialisiert, denn dieser hat ja keine Fasern die diesem Vorgang dienen würden, und Knorpel hat auch keinen hohen Zellanteil, sondern einen niedrigen.</p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label>(1) und (3)</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>(2) und (3)</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>(2) und (4)</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>(3) und (5)</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>(4) und (5)</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Woher bezieht das Myosin in den Muskeln direkt seine Energie?</strong>
+										
+										<ol>
+
+										</ol>
+										
+										
+									</p>
+									
+									<p class="analysis invisible">Myosin bezieht Energie hauptsächlich aus der Spaltung von ATP zu ADP, nicht aber der Fett, Glukose- oder Harnstoffverbrennung: Harnstoff kann gar nicht mehr weiter verbrannt werden, er ist das Endprodukt von abgebauten Aminosäuren. </p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label>Durch die Fettverbrennung.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Durch die Glukoseverbrennung.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Durch die Spaltung von ADP.</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Durch die Spaltung von ATP.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Durch die Verbrennung von Harnstoff.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Wie unterscheidet sich der Herzmuskel von anderen quergestreiften Muskelgeweben?</strong>
+										
+										<ol>
+											<li>Er enthält keine Aktinfilamente.</li>
+											<li>Er enthält keine Myosinfilamente.</li>
+											<li>Er enthält überwiegend einkernige Muskelzellen.</li>
+											<li>Er wird vom vegetativen Nervensystem gesteuert.</li>
+											<li>Er enthält keine Myofibrillen.</li>
+										</ol>
+										
+										
+									</p>
+									
+									<p class="analysis invisible">Den Herzmuskel unterscheidet vom quergestreiften Muskelgewebe, dass er überwiegend einkernige Muskelzellen enthällt, und vom vegetativen Nervensystem gesteuert wird.</p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label>(1) und (3)</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>(2) und (3)</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>(2) und (4)</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>(3) und (4)</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>(4) und (5)</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Zu welcher Gewebeart gehört das Fettgewebe?</strong>
+										
+										<ol>
+
+										</ol>
+										
+										
+									</p>
+									
+									<p class="analysis invisible">Fettgewebe ist Bindegewebe!</p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="1" />
+												<label>Zum Bindegewebe.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Zum Epithelgewebe.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Zum Stützgewebe.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Zum Muskelgewebe</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Zum Nervengewebe.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Zu welcher Gewebeart gehören die Schleimhäute?</strong>
+										
+										<ol>
+
+										</ol>
+										
+										
+									</p>
+									
+									<p class="analysis invisible">Schleimhäute sind Epithelgewebe.</p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label>Zum Bindegewebe.</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Zum Epithelgewebe.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Zum Stützgewebe.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Zum Muskelgewebe</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Zum Nervengewebe.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Welche der folgenden Drüsen sind exokrin?</strong>
+										
+										<ol>
+											<li>Schilddrüse.</li>
+											<li>Speicheldrüsen.</li>
+											<li>Schweißdrüsen.</li>
+											<li>Die Drüsen der Magen- und Darmschleimhaut.</li>
+											<li>Zirbeldrüse.</li>
+										</ol>
+										
+										
+									</p>
+									
+									<p class="analysis invisible">Speicheldrüsen sezernieren in die Mundhöhle, Schweißdrüsen an die Haut, und Magen und Darmschleimhaut geben auch ihre Sekret direkt an den Nahrungsbrei, bzw. der Körperhöhle ab: alle also exokrin. Endokrin, ins Blut sezernierend, hingegen: Schild- und Zirbeldrüse.</p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label>(1) und (3)</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>(2) und (4)</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>(3) und (5)</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>(2), (3) und (4)</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>(2), (4) und (5)</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+							
+							</ul>
+							
+							
+						<div id="result" class="no_display">
+							
+					<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><img srcset="{% static 'img/ritterkarten/1x/gewebe.png' %} 277w, {% static 'img/ritterkarten/2x/gewebe.png' %} 554w" alt="Gewebe" width="277" /></a>
+				
+					<h3><i class="fas fa-thumbs-up"></i><b> Fertig! Dein Ergebnis?</b></h3>
+					
+					<h1></h1>
+					
+					<h5 class="labelo white"> </h5>
+					
+					<div><h2>Du erhältst eine MedKnight-Karte!</h2>
+					
+						<h5 class="white"><i class="fab fa-facebook-f"></i> <i>Teile sie mit Freunden und Feinden, die ebenfalls für den MedAT lernern</i></h5>
+					
+						<div class="fb-share-button" data-href="https://medcastle.at{{ request.path }}" data-layout="box_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmedcastle.at%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+					</div>
+					
+					<h5 class="space-top">Hier nochmal die Analysen zu deinen Fragen, zum Mitschreiben –</h5>
+					
+					<p><b>Nein wirklich! Am Besten du schreibst dir gleich alle rot unterlegten Analysen</b> (Wie war nochmal die dazugehörige Frage?) <b>auf Karteikarten.</b></p>										
+						</div>	
+						
+							
+							<p id="questionsLeft" class=""></p>
+							
+						</form>
+						
+						<p><i><i class="fas fa-exclamation-circle"></i> Wie auch beim echten MedAT wird dir hier erlaubt deine Antwort <strong>ab</strong>zuändern (vgl. auf Papier: altes Kästchen ausmalen, neues Kreuz setzen), nicht aber <strong>zurück</strong>zuändern: ist beim MedAT das Kästchen einmal ausgemalt, kannst du es nicht wieder ankreuzen. <strong>Eine Abänderung ist also endgültig.</strong></i></p> 
+						
+							
+					</div>
+				
+				</div>
+					
+				
+			<!--<hr/>-->
+
+
+{% endblock %}

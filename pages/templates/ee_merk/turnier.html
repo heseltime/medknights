@@ -1,0 +1,69 @@
+{% extends "base_content.html" %}
+
+{% load static %}
+
+{% block title %}EE und Merk-Turniere{% endblock %} 
+
+{% block add_assets %}
+
+<script src="{% static 'js/ee_merk.js' %}"></script>
+
+{% endblock %}
+
+{% block content %}
+
+			<!-- Banner -->
+			<section id="banner_2">
+				<div class="inner">
+					<header>
+						<h1><b>Bonus</b> Features bei medcastle.at!</h1>
+						<h2 class="white">die Turniere zu den Short Guides (derzeit <b class="white">passwortgeschützt*</b>)</h2>
+						<p class="analysis labelo_red white invisible">Falsches Passwort! <strong class="white">Bitte im jeweiligen Guide nachschauen.</strong></p>
+					</header>
+
+					<div class="flex ">
+						
+						<div>
+							<span class="icon"><a href="" alt="zum Turnier"><i class="fa fa-chess-knight"></i></a></span>
+							<h3>Merkfähigkeit: <a href="" alt="zum Turnier"><b>Turnier</b></a></h3>
+							<p>10-Stück Sets zum Einprägen &amp; Reproduzieren!</p>
+							<input type="email" value="" name="merk" class="email space-top" id="merk" placeholder="Turnier Passwort bitte hier eingeben" required>
+							<a href="#" alt="zum Turnier" class="button" id="merk_button" style="margin: 10px;">zum <b class="swatch_g">Turnier</b> <i class="fa fa-arrow-right"></i></a>
+						</div>
+
+						<div>
+							<span class="icon"><a href="" alt="zum Turnier"><i class="fa fa-chess-knight"></i></a></span>
+							<h3>Emotionen Erkennen: <a href="" alt="zum Turnier"><b>Mini-Turnier</b></a></h3>
+							<p>10er Set mit Situationsbeschreibungen!</p>
+							<input type="email" value="" name="ee" class="email space-top" id="ee" placeholder="Turnier Passwort bitte hier eingeben" required>
+							<a href="#" alt="zum Turnier" class="button" id="ee_button" style="margin: 10px;">zum <b class="swatch_g">Turnier</b> <i class="fa fa-arrow-right"></i></a>
+						</div>
+
+					</div>
+
+					<footer>
+						<p><i class="fa fa-star"></i><i class="fa fa-question"></i><b class="swatch_g"> *Kein Passwort?</b> Diese findest du in den jeweiligen Guides</p>
+						<a href="/skript/ee_merk" alt="zum Guide" class="button"><i class="fa fa-arrow-left"></i> Durch <b class="swatch_g">Engagement in der Community</b> kommst du zu den Guides</a>
+					</footer>
+				</div>
+			</section>
+
+			<!-- Three -->
+			<!--<section id="three" class="wrapper">
+				
+				
+				
+				
+					
+					
+					
+			</section>-->
+			
+			<script>
+			function sendMail() {
+				document.getElementById("collapsible2").checked = "checked";
+			}
+
+			</script>
+
+{% endblock %}

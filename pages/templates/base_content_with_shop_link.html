@@ -1,0 +1,300 @@
+{% load static %}
+
+<html>
+	
+	<head>
+				
+		<title>{% block title %}{% endblock %} - medCastle @ medknights.ai</title>
+		
+		<link rel="icon" type="image/png" href="{% static "img/icon.png" %}" />		
+		
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="stylesheet" href="{% static 'css/main_mC1.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/jack_mC.css' %}" />
+
+		<link rel="stylesheet" href="{% static '' %}css/font-awesome.min.css" />
+		<link rel="stylesheet" href="{% static '' %}css/brands.min.css" />
+		<link rel="stylesheet" href="{% static '' %}css/all.min.css" />
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167317555-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-167317555-1');
+		</script>
+		
+		{% block custom_og %}
+		
+			<meta property="og:url"                content="https://www.medcastle.at" />
+			<meta property="og:type"               content="article" />
+			<meta property="og:title"              content="medCastle + medKnights.ai: Offene MedAT-Lernplatform mit App" />
+			<meta property="og:description"        content="medknights.ai ist deine Vorbereitung und online-Lernplattform für den MedAT" />
+			<meta property="og:image"              content="https://medknights.ai{% static 'img/shop/1x/mooder.png' %}" />
+			
+			<meta property="fb:app_id"              content="667140217484992" />
+			
+		{% endblock %}
+		
+		
+		<!-- Facebook Pixel Code -->
+		<script>
+		  !function(f,b,e,v,n,t,s)
+		  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		  n.queue=[];t=b.createElement(e);t.async=!0;
+		  t.src=v;s=b.getElementsByTagName(e)[0];
+		  s.parentNode.insertBefore(t,s)}(window, document,'script',
+		  'https://connect.facebook.net/en_US/fbevents.js');
+		  fbq('init', '545444539468631');
+		  fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+		  src="https://www.facebook.com/tr?id=545444539468631&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- End Facebook Pixel Code -->
+		
+	</head>
+	
+	<body class="subpage">
+		
+		{% block social_scripts %}
+		
+		{% endblock %}
+		
+		<!-- fb script rec location -->
+		<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0&appId=667140217484992&autoLogAppEvents=1" nonce="A4aRY8Mx"></script>
+
+		<!-- fb analytics -->
+				
+				
+			<script>
+			  window.fbAsyncInit = function() {
+			    FB.init({
+			      appId      : '667140217484992',
+			      cookie     : true,
+			      xfbml      : true,
+			      version    : 'v8.0'
+			    });
+			      
+			    FB.AppEvents.logPageView();   
+			      
+			  };
+			
+			  (function(d, s, id){
+			     var js, fjs = d.getElementsByTagName(s)[0];
+			     if (d.getElementById(id)) {return;}
+			     js = d.createElement(s); js.id = id;
+			     js.src = "https://connect.facebook.net/en_US/sdk.js";
+			     fjs.parentNode.insertBefore(js, fjs);
+			   }(document, 'script', 'facebook-jssdk'));
+			</script>
+
+		<!-- Header -->
+			<header id="header">
+			
+			<div class="inner">
+				
+				<!--<div style="" class="outside-div">
+					<div class="fb-like" data-href="https://medcastle.at" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+				</div>-->
+				
+				<a href="/" class="logo">
+					
+					<!--<img src="{% static 'img/site-elements/icon.png' %}" alt="icon" width="40" height="45" />--><i class="fab fa-fort-awesome magnify"></i>
+					
+					<span>med<strong>Castle</strong> auf med<strong>Knights</strong>.ai  <i>BETA</i></span></a>
+				
+				<nav id="nav">
+					
+					<h5><a href="/pages/maxi" id="shop_link"><i class="fas fa-envelope"></i> Maxi-Turnier</a></h5>
+					
+					<h5 class="swatch_sch">KF-Schmiede <span>Classic</span>
+						<ul>
+							<li><a href="/schmiede/fz" alt="Figuren Zusammensetzen" class="swatch_sch"><i class="fas fa-chess-knight"></i><img src="{% static 'img/site-elements/icons/1x/lines_icon_4_mini.png' %}" alt="Schmiede Icon" width="25" /> FZ</a><span class="white"></span></li>
+							<li><a href="/schmiede/zf" alt="Zahlenfolgen" class="swatch_sch"><i class="fas fa-chess-knight"></i><img src="{% static 'img/site-elements/icons/1x/lines_icon_4_mini.png' %}" alt="Schmiede Icon" width="25" /> ZF</a></li>
+							
+							<li><a href="/schmiede/wf" alt="Wortflüssigkeit" class="swatch_sch"><i class="fas fa-chess-knight"></i><img src="{% static 'img/site-elements/icons/1x/lines_icon_4_mini.png' %}" alt="Schmiede Icon" width="25" /> WF</a></li>
+							
+							<li><a href="/schmiede/imp" alt="Implikationen" class="swatch_sch"><i class="fas fa-chess-knight"></i><img src="{% static 'img/site-elements/icons/1x/lines_icon_4_mini.png' %}" alt="Schmiede Icon" width="25" /> IMP</a><span class="white"></span></li>
+							
+						</ul>
+					</h5>
+					
+					<h5>Turnier
+						<ul>
+							<li><a href="/turnier/gewebe" alt="Gewebe"><i class="fas fa-chess-knight"></i> Gewebe</a></li>
+							<!--<li><a href="/bio_turniere" alt="Alle Bio Turniere" style="color: #fff;"><i class="fas fa-arrow-right"></i> <i>All Bio</i></a></li>-->
+							<li class="notice"><a href="/pages/next_steps" id="">Alles Bio? <i class="fas fa-book"></i></a></li>
+							<li><a href="/turnier/se" alt="Soziales Entscheiden"><i class="fas fa-chess-knight"></i> Soziales Entscheiden</a></li>
+							<li><a href="/turnier/ee_merk" alt="EE/Merk" style="color: #fff;"><i class="fas fa-plus"></i><i class="fas fa-plus"></i> EE/Merk</a></li>
+							<li><a href="/tv/turnier" alt="Textverständnis" class="swatch_b" style="color: #000;"><img src="{% static 'img/site-elements/icons/1x/tv_mini.png' %}" alt="TV Icon" width="27" style="margin-top:-5px;" /> Text-verständnis</a></li>
+						</ul>
+					</h5>
+					
+					<h5>Skript
+						<ul>
+							<li><a href="/skript/gewebe" alt="Gewebe"><i class="fas fa-feather"></i> Gewebe</a></li>
+							<!--<li><a href="/skript/bms_canon" alt="Alle Skripten" style="color: #fff;"><i class="fas fa-question"></i> Alle Skripten?</a></li>-->
+							<li class="notice"><a href="/pages/next_steps" id="">Alles Bio? <i class="fas fa-book"></i></a></li>
+							<li><a href="/skript/se" alt="Soziales Entscheiden"><i class="fas fa-feather"></i>  Soziales Entscheiden</a></li>
+							<li><a href="/skript/ee_merk" alt="EE/Merkfähigkeit" style="color: #fff;"><i class="fas fa-plus"></i>  EE/Merk</a></li>
+						</ul>
+					</h5>
+				</nav>
+				
+				<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				
+			</div>
+			
+		</header>
+		
+		
+		
+		{% block content %}
+		
+
+		{% endblock %}
+		
+				<h3 id="content"><i class="fas fa-chess-knight"></i><b> Aus-Turniert?</b></h3>	
+											
+					
+					<ul class="actions align-center">
+						<p class="space-top">Dann wird es Zeit für <strong>eine ganze MedAT-Simulation!</strong></p>
+						
+						<li><a href="/pages/maxi" alt="zum Maxi" class="button special big">Zum Maxi-Turnier</a></li>
+						
+					</ul>
+					
+					<a href="/pages/maxi" alt="zum Shop"><img class="float_left scale_2" srcset="{% static 'img/shop/2x/product_image.png' %} 2560w, {% static 'img/shop/1x/product_image.png' %} 1280w" alt="zum medCastle Shop" width="640" /></a>
+						
+							<div class="min_320">
+						
+						<h3 class="align_left"><i class="fas fa-arrow-right green_link"></i><b> Deine <span class="swatch_y">Vorteile</span> im Überblick</b></h3>	
+						
+						<p class="align_left">Das <b>Maxi</b> ist die optimale <strong>Überprüfung deines Vorbereitungsstandes,</strong> denn jetzt im Frühjahr hast du die <b>exklusive Möglichkeit</b> zu ... </p>
+						
+						<h3>
+						
+						<ul class="align_left">
+							<li> <strong>zeigen was du drauf hast! </strong> <span class="light new_line">Du hast dich ja vorbereitet.</span></li>
+							<li> dort <strong>nach zu schmieden</strong>, <span class="light new_line">wo es eventuell noch einen Bedarf gibt </span>  <span class="light new_line"> etwa im <a href="/skript/gewebe" alt="Das Gewebe" class="green_link">im Gewebe-Kapitel</a> oder der Schmiede</span></li>
+							<!--<li>&amp; ganz wichtig: <strong>das Maxi-Feedback!</strong> <span class="light new_line">ein Anruf oder Email-Kontakt mit  Med-Studenten</span>
+							<span class="light new_line"><i class="fas fa-arrow-right"></i> du erhältst Antworten zu deinen Fragen + Tips</span>-->
+						</ul> 
+						
+						</h3>
+						
+							</div>
+					
+					
+					<!--<p>Zusammen mit deiner Arbeit in der KF-Schmiede, im Skript, und mit deinen Schulunterlagen, hast du auf diese Weise <b>gute Karten für den MedAT 2020</b>, <span class="light new_line">und zwar auch im <i>Corona Jahr</i>, und auch <b>ohne überteuerten Präsenzkursen</b> <i class="fas fa-arrow-right"></i> Wir sind für dich da, <i>von Studenten für (künftige) Studenten!</i> <i class="fas fa-thumbs-up"></i></span></p>-->
+				
+		</div>	
+			
+	</section>
+		
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					
+					<div class="row">
+						
+						<section class="3u 6u(medium) 12u$(small)">
+							<table border="0" width="280" cellspacing="0" cellpadding="0" style="border-collapse:separate;background-image:url({% static 'img/shop/1x/mooder.png' %});border:1px solid #dddfe2;border-radius:3px;font-family:Helvetica, Arial, sans-serif;margin:0px auto;"><tr><td style="font-size:14px;font-weight:bold;padding:8px 8px 0px 8px;text-align:center; color: #fff;">medKnights Unter Sich!</td></tr><tr><td style="color:#fff;font-size:12px;font-weight:normal;text-align:center;">Private Gruppe</td></tr><tr><td style="padding:8px 12px 12px 12px;"><table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;width:100%;"><tr><td style="background-color:#4267b2;border-radius:3px;text-align:center;"><a style="color:#fff;text-decoration:none;cursor:pointer;width:100%;" href="https://www.facebook.com/plugins/group/join/popup/?group_id=252411336109045&amp;source=email_campaign_plugin" target="_blank" rel="noopener"><table border="0" cellspacing="0" cellpadding="3" align="center" style="border-collapse:collapse;"><tr><td style="border-bottom:3px solid #4267b2;border-top:3px solid #4267b2;color:#FFF;font-family:Helvetica, Arial, sans-serif;font-size:12px;font-weight:bold;">Gruppe beitreten</td></tr></table></a></td></tr></table></td></tr></table>
+							
+						</section>
+						
+						<section class="3u 6u$(medium) 12u$(small)">
+							<h2 class="align-left white"><i class="fas fa-users"></i> Frag die Community!</h2>
+							
+							<p class="align-left">Bei uns sind gratis Ressourcen und der <b class="white">Community</b>-Faktor <i class="fas fa-arrow-left"></i> im Vordergrund.</span></p>
+							
+						</section>
+						
+						<!--<section class="2u 6u$(medium) 12u$(small)">
+							<a href="https://shop.medcastle.at" alt="zum Shop"><h2 class="align-left white"><i class="fas fa-shopping-bag"></i> Shop <i class="fas fa-arrow-up"></i></h2></a>
+							
+							<p class="align-left">Wir stellen auch kostenpflichtige <b class="white">Zusatz</b>produkte bereit, <b class="white">um weiterhin die tollen gratis-Lösungen und Services providen</b> zu können.</span></p>
+							
+						</section>-->
+						
+						<!--<section class="4u 12u$(medium)">
+							<h2 class="align-left white"><i class="fas fa-smile"></i> Das med<b class="white">Castle</b>.at Team </h2>
+							
+							<p class="align-left"> <a href="/pages/jack" alt="Über Uns"><b class="white magnify">Wir stellen uns vor <i class="fas fa-arrow-right"></i></b> <img src="{% static 'img/paid/s-3.png' %}" alt="k" width="250" class="scale" /> </a> </p>
+						</section>-->
+					</div>
+					
+					<!--<div class="row white beta space-top">
+						<section class="12u 12u$(medium)">
+							<img src="{% static 'img/site-elements/beta@2x-01.png' %}" alt="Beta" class="scale" width="320" />
+						</section>
+					</div>-->
+					
+					<!--<div class="wrap-collabsible">
+						
+					  <input id="collapsible" class="toggle" type="checkbox">
+					  
+					  <label for="collapsible" class="lbl-toggle"><h2 class="white"><i class="fas fa-envelope"></i> medKnight-Kontakt &trade;</h2></label>
+					  
+					  <div id="message_field" class="collapsible-content">
+					    <div class="content-inner">
+						<form action="#" method="post">
+		
+							<div class="field">
+								<label for="name">Name</label>
+								<input name="name" id="name" type="text" placeholder="Name">
+							</div>
+							<div class="field">
+								<label for="message">Nachricht</label>
+								<textarea name="message" id="message" rows="6" placeholder="Nachricht"></textarea>
+								<p class="align-left"><i class="fas fa-arrow-right"></i> <i>Es dauert normalerweise nicht länger als 24h, dass wir uns melden!</i></p>
+								<h5 class="align-left white"><i class="fas fa-exclamation-circle"></i> Derzeit wird der medKnight-Kontakt &trade; vom medCastle-Team betrieben. </h5>
+							</div>
+							<ul class="actions">
+								<li><button class="button alt" onclick="sendMail(); return false">Abschicken</button></li>
+							</ul>
+							
+							<h5><a href="/pages/medKnights" class="swatch_g " alt="Werde Med-Knight"> Werde medKnight &trade; <i>Beta</i></a></h5>
+		
+						</form>
+					    </div>
+					  </div>
+					</div>-->
+
+					<div class="copyright space-top">
+						<p>&copy; medknights.ai {% now "Y" %}</p>
+					</div>
+
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{% static 'js/jquery.min.js' %}"></script>
+			<script src="{% static 'js/skel.min.js' %}"></script>
+			<script src="{% static 'js/util.js' %}"></script>
+			<script src="{% static 'js/main.js' %}"></script>
+			
+			<script>
+			function sendMail() {
+				var mailto_link = 'mailto:desk@medcastle.at?subject=medKnight-Kontakt Anfrage&body=' + $('#message').val() + '%0d%0a %0d%0a' + $('#name').val();
+				var win = window.open(mailto_link, 'emailWindow');
+			    if (win && win.open && !win.closed) win.close();
+			}
+			</script>
+			
+			
+{% block add_assets %}
+
+{% endblock %}
+
+	</body>
+</html>

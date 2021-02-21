@@ -1,0 +1,174 @@
+{% extends "base_content_with_shop_link.html" %}
+
+
+{% load static %}
+
+
+{% block title %}
+
+Figuren Zusammensetzen: KF-Schmiede
+
+{% endblock %} 
+
+{% block custom_og %}
+
+	<meta property="og:url"                content="https://medcastle.at{{ request.path }}" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Ich hab die MedKnight-Karte für diesen Teil des Mediziner-Tests Erhalten!" />
+	<meta property="og:description"        content="Das heißt, den Übungstest für diesen Teil des MedAT habe ich statistisch geschafft: medCastle.at ist meine gratis Vorbereitung und online-Lernplattform für den MedAT. " />
+	<meta property="og:image"              content="https://medcastle.at{% static 'img/ritterkarten/2x/fz.png' %}" />
+	
+	<meta property="fb:app_id"              content="667140217484992" />
+
+{% endblock %}
+
+
+{% block social_scripts %}
+
+
+{% endblock %}
+
+
+{% block add_assets %}
+
+<script src="{% static 'js/3rd_party/svg/svg.min.js' %}"></script>
+
+<script src="{% static 'js/quiz_fz.js' %}"></script>
+
+{% endblock %}
+
+
+{% block content %}
+
+		<!-- Three -->
+		<section id="three" class="wrapper bg_b">
+			
+			<div class="inner">
+				
+				<header class="align-center">
+					
+					<img srcset="{% static 'img/site-elements/icons/2x/anvil_icon.png' %} 260w, {% static 'img/site-elements/icons/4x/anvil_icon.png' %} 520w" alt="anvil%20icon@4x" width="185" />
+					
+					<h2>Figuren Zusammensetzen: <strong>KF-Schmiede</strong></h2>
+					
+					<p>Willkommen zum <i class="swatch2">KF(F)-Wasserfallmodus:</i> <strong>Hier gibts unendlich viele Aufgaben für den MedAT</strong></p>
+					
+					<a href="/schmiede/fz" class="button special waterfall"><h2><i class="fas fa-sync-alt"></i></h2></a>
+					
+					<p><i><i class="fa fa-arrow-right"></i> <strong>gratis, nur auf </strong> med<b>Castle</b>.at - von Studenten für Studenten</i></p>
+										
+					
+					<ul class="actions">
+						<li><a href="/schmiede/fz" class="button special dead">Figuren Zusammensetzen</a></li>
+						<!--<li><a href="" class="button special dead">Bearbeitungsmethoden</a></li>-->
+						<li><a href="/schmiede/zf" class="button">Zahlenfolgen</a></li>
+						<li><a href="/schmiede/wf" class="button">Wortflüssigkeit</a></li>
+						<li><a href="/schmiede/imp" class="button">Implikationen</a></li>
+					</ul>
+					
+					<p id="analysis-note"><i><i class="fas fa-arrow-down"></i> <i class="fas fa-exclamation-circle"></i> Oft ist es hilfreich, den Sachverhalt <strong>grafisch, auf einem Blatt Papier,</strong> darzustellen: Es ist dir beim MedAT auch erlaubt, auf deinem Testblatt zu kritzeln. Wenn keine Figur eindeutig erkennbar ist, ist <strong>Antwort e)</strong> zu wählen – In diesem Fall lassen sich nur Figuren zusammensetzen, die nicht den Lösungsmöglichkeiten entsprechen.</i></p> 
+										
+				</header>
+				
+				
+				<!-- Content -->	
+					
+				<div class="row">
+					
+					<div class="12u 12u$(medium) ">
+						
+						
+					<div id="analysis" class="no_display">
+				
+				<h5><strong><i class="fa fa-exclamation-circle"></i> Die Figur War <i class="fa fa-arrow-down"></i></strong></h5>
+				
+				<p><img /></p>
+				
+					</div>
+				
+				
+						<form class="box" action="/turnier" method="post">		
+							<ul>
+								
+							
+								<li>
+									<p class="ask"><strong><i class="fa fa-question"></i>Gesucht</strong></p>
+									
+								
+									<h2><img src="" alt="problem set"/ width="612"></h2>
+									
+									<p class="analysis no_display"><img src="" alt="problem set solution" width="612" style="padding: 20px 40px 0;"/></p>
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a">
+											<li>
+												<input type="radio" value="0" />
+												<label><b></b></label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label><b></b></label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label><b></b></label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label><b></b></label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Keine der Figuren ist richtig.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+
+							</ul>
+							
+							
+						<div id="result" class="no_display">
+							
+					<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><img srcset="{% static 'img/ritterkarten/1x/fz.png' %} 277w, {% static 'img/ritterkarten/2x/fz.png' %} 554w" alt="Zahlenfolgen" width="277" /></a>
+				
+					<h3><i class="fas fa-thumbs-up"></i><b> Fertig! Dein Ergebnis?</b></h3>
+					
+					<h1></h1>
+					
+					<h5 class="labelo white"> </h5>
+					
+					<div><h2>Du erhältst eine MedKnight-Karte!</h2>
+					
+						<h5 class="white"><i class="fab fa-facebook-f"></i> <i>Teile sie mit Freunden und Feinden, die ebenfalls für den MedAT lernern</i></h5>
+						
+						<a class="button special" href="mailto:?subject=Ich habe eine MedKnight-Karte Erhalten&amp;body=Kannst du bei deiner MedAT Vorbereitung mithalten? Versuch dich schon vor dem MedAT bei medCastle auf http://medCastle.at, der Vorbereitung von Studenten für Studenten." title="Email-Einladung"><i class="fas fa-envelope-square"></i> Email-Link</a>
+					
+						<div class="fb-share-button" data-href="https://medcastle.at{{ request.path }}" data-layout="box_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmedcastle.at%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+					</div>
+					
+					<p class="space-top"></p>	
+														
+						</div>	
+						
+							
+							<p id="questionsLeft" class=""></p>
+							
+						</form>
+						
+						<p><i><i class="fas fa-exclamation-circle"></i> Wie auch beim echten MedAT wird dir hier erlaubt deine Antwort <strong>ab</strong>zuändern (vgl. auf Papier: altes Kästchen ausmalen, neues Kreuz setzen), nicht aber <strong>zurück</strong>zuändern: ist beim MedAT das Kästchen einmal ausgemalt, kannst du es nicht wieder ankreuzen. <strong>Eine Abänderung ist also endgültig.</strong></i></p> 
+						
+							
+					</div>
+				
+				</div>
+					
+				
+			<!--<hr/>-->
+								
+
+{% endblock %}

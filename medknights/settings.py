@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'accounts',
     'dropbox_links',
+    'pages',
 ]
 
 MIDDLEWARE = [

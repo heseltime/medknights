@@ -1,0 +1,227 @@
+{% extends "base_content_with_shop_link_and_custom_og.html" %}
+
+
+{% load static %}
+
+
+{% block title %}
+
+Textverständnis: Turnier
+
+{% endblock %} 
+
+
+{% block custom_og %}
+
+	<meta property="og:url"                content="https://medcastle.at{{ request.path }}" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Ich hab die MedKnight-Karte für diesen Teil des Mediziner-Tests Erhalten!" />
+	<meta property="og:description"        content="Das heißt, den Übungstest für diesen Teil des MedAT habe ich statistisch geschafft: medCastle.at ist meine gratis Vorbereitung und online-Lernplattform für den MedAT. " />
+	<meta property="og:image"              content="https://medcastle.at{% static 'img/ritterkarten/2x/tv.png' %}" />
+	
+	<meta property="fb:app_id"              content="667140217484992" />
+
+{% endblock %}
+
+
+{% block social_scripts %}
+
+{% endblock %}
+
+
+{% block add_assets %}
+
+<script src="{% static 'js/quiz.js' %}"></script>
+
+{% endblock %}
+
+
+{% block content %}
+
+		<!-- Three -->
+		<div id="fb-root"></div>
+		
+		
+		<section id="three" class="wrapper tv">
+			
+			<div class="inner">
+				
+				<header class="align-center">
+					
+					<img src="{% static 'img/heros/1x/tv.png' %}" alt="Textverständnis" width="250" />
+					
+					<h2><b>T</b>ext<b>V</b>erständnis-<strong>Turnier</strong></h2>
+					
+					<p>Werde Turniermeister und komm ins medCastle durch richtige Beantwortung mehrer <strong>MedAT Alt- und Neufragen zu Fachtexten.</strong> </p>
+					
+					<p><i>Dem MedAT angepasst findest du hier eine  Auswahl aus <strong>Bio-Fachliteratur</strong> (bevorzugt Genetik und Geburt, fällt uns auf), <strong>aber auch Geschichte und Politik</strong>.</i></p>
+					
+					<!--<p class="italics">Übe am Besten Set-weise, wie hier vorgegeben: <strong>12 Aufgaben</strong> (mit Bearbeitungszeit: 35 min) sind ein Set.</p>-->
+										
+					
+					<ul class="actions">
+						<li><a href="" class="button dead">Bearbeitungsmethoden</a></li>
+						<li><a href="/tv/turnier_01" class="button">Text 1</a></li>
+						<li><a href="/tv/turnier_02" class="button">Text 2</a></li>
+						<li><a href="/tv/turnier_03" class="button special">Text 3</a></li>
+						<li><a href="/tv/turnier_04" class="button">Text 4</a></li>
+						<li><a href="/tv/turnier_05" class="button">Text 5</a></li>
+					</ul>
+												
+					
+					<!--<p id="analysis-note"><i><i class="fas fa-exclamation-circle"></i> Beachte auch die <strong>Fragen-Analyse</strong> wenn du zunächst eine Frage falsch beantwortest: Im Gegensatz zum MedAT kannst du beliebig viele Mini-Turniere an einem Tag machen!</i></p> -->
+										
+				</header>
+				
+				
+				<!-- Content -->	
+					
+				<div class="row">
+					
+					<div class="12u 12u$(medium) ">
+						
+						
+					<!--<div id="analysis" class="invisible">
+				
+				<h5><strong><i class="fa fa-exclamation-circle"></i> Fragen-Analyse</strong></h5>
+				
+				<p></p>
+				
+					</div>-->
+				
+				
+						<form class="box" action="/turnier" method="post">		
+							<ul>
+								
+							
+								<li>
+									<p class="ask"><strong><i class="fa fa-book"></i> Text</strong></p>
+										
+										<p>Die Halbinsel Krim liegt im nördlichen Schwarzen Meer und ist nur durch zwei schmale Landbrücken mit dem ukrainischen Festland verbunden. Allerdings gestaltet es sich seit Frühling 2014 schwierig vom Festland auf die Krim zu gelangen, ada die Krim nun faktisch gesehen zur Russischen Föderation gehört.</p>
+										
+										<p>Im Zuge eines politischen Umbruchs in der Ukraine eskalierte vom 18. bis 21. Februar 2014 am Maidan (Platz der Unabhängigkeit) im Zentrum der ukrainischen Hauptstadt Kiev die Gewalt zwischen regierungskritischen, pro-europäischen Demonstranten und Polizei, was über 80 Todesopfer zur Folge hatte. Diese Ereignisse und die dahinterstehenden politischen Kräfte veranlassten den damals amtierenden pro-russischen Präsidenten der Ukraine, Viktor Janukovitsch, am 21. Februar 2014 nach Russland zu fliehen. Daraufhin wurde er vom ukrainischen Parlament für abgesetzt erklärt. Die Kräfte, die nun in der Ukraine an die Macht kamen, waren pro-europäisch orientiert und strebten eine engere Assoziation mit der EU un der Nato an. Die hatte unmittelbare Folgen für die Krim, die mehrheitlich von Russen bewohnt wird und mit Sevastopol als Hauptstützpunkt der russischen Schwarzmeerflotte strategisch für Russland wichtig ist. Schon in den folgenden Tagen kam es in verschiedenen Städten auf der Krim zu Auseinandersetzungen zwischen Vertretern der drei Hauptbevölkerungsgruppen der Halbinsel: Ukrainer und Krim-Tartaren auf der einen Seite und Russen auf der anderen. Am 27. Februar 2014 wurde dann das Parlament der Krim in Simferopol von unbekannten bewaffneten Truppen besetzt, es kam zu einem Machtwechsel in der lokalen Regierung der Krim, welche nun die Legitimität der pro-europäischen Übergangsregierung in Kiev nicht anerkannte. Diese lokale Regierung sprach sich am 6. März 2014 für eine Loslösung von der Ukraine und einen Anschluss an Russland aus. Nach einer positiven Befragung der Bevölkerung der Krim wurde sie am 21. März 2014 in die Russische Föderation aufgenommen. Dieser Anschluss der Krim an Russland wurde völkerrechtlich allerdings von der internationalen Gemeinschaft am 24. März 2014 durch eine Resolution der Uno-Vollversammlung für ungültig erklärt.</p>
+																			
+									<p class="ask"><strong><i class="fa fa-question"></i> Frage zum Text</strong></p> 
+									
+									<p class="ask"><strong>Welche der nachfolgenden Aussagen zum Text ist falsch?</strong></p>								
+										
+
+									
+									<!--<p class="analysis invisible"></p>-->
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a" class"swatch_g">
+											<li class"swatch_g">
+												<input type="radio" value="0" />
+												<label style"">Obwohl die Krim bis zum 21. März 2014 unbestritten zur Ukraine gehörte, leben dort mehrheitlich Russen.</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Sevastopol ist der Verwaltungssitz des lokalen Parlaments der Krim.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Russland hatte vor dem 21. März 2014 einen Teil seiner Truppen in der Ukraine stationiert.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Die Demonstrationen am Maidan richteten sich gegen die russisch-orientierte Politik von Janukovitsch.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Die Krim gehört rechtlich laut einer Resolution der internationalen Staatengemeinschaft noch immer zur Ukraine, faktisch allerdings zu Russland.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>
+								
+								
+								<li>
+									<p class="ask"><strong><i class="fa fa-book"></i> Text</strong></p>
+										
+										<p>Die Halbinsel Krim liegt im nördlichen Schwarzen Meer und ist nur durch zwei schmale Landbrücken mit dem ukrainischen Festland verbunden. Allerdings gestaltet es sich seit Frühling 2014 schwierig vom Festland auf die Krim zu gelangen, ada die Krim nun faktisch gesehen zur Russischen Föderation gehört.</p>
+										
+										<p>Im Zuge eines politischen Umbruchs in der Ukraine eskalierte vom 18. bis 21. Februar 2014 am Maidan (Platz der Unabhängigkeit) im Zentrum der ukrainischen Hauptstadt Kiev die Gewalt zwischen regierungskritischen, pro-europäischen Demonstranten und Polizei, was über 80 Todesopfer zur Folge hatte. Diese Ereignisse und die dahinterstehenden politischen Kräfte veranlassten den damals amtierenden pro-russischen Präsidenten der Ukraine, Viktor Janukovitsch, am 21. Februar 2014 nach Russland zu fliehen. Daraufhin wurde er vom ukrainischen Parlament für abgesetzt erklärt. Die Kräfte, die nun in der Ukraine an die Macht kamen, waren pro-europäisch orientiert und strebten eine engere Assoziation mit der EU un der Nato an. Die hatte unmittelbare Folgen für die Krim, die mehrheitlich von Russen bewohnt wird und mit Sevastopol als Hauptstützpunkt der russischen Schwarzmeerflotte strategisch für Russland wichtig ist. Schon in den folgenden Tagen kam es in verschiedenen Städten auf der Krim zu Auseinandersetzungen zwischen Vertretern der drei Hauptbevölkerungsgruppen der Halbinsel: Ukrainer und Krim-Tartaren auf der einen Seite und Russen auf der anderen. Am 27. Februar 2014 wurde dann das Parlament der Krim in Simferopol von unbekannten bewaffneten Truppen besetzt, es kam zu einem Machtwechsel in der lokalen Regierung der Krim, welche nun die Legitimität der pro-europäischen Übergangsregierung in Kiev nicht anerkannte. Diese lokale Regierung sprach sich am 6. März 2014 für eine Loslösung von der Ukraine und einen Anschluss an Russland aus. Nach einer positiven Befragung der Bevölkerung der Krim wurde sie am 21. März 2014 in die Russische Föderation aufgenommen. Dieser Anschluss der Krim an Russland wurde völkerrechtlich allerdings von der internationalen Gemeinschaft am 24. März 2014 durch eine Resolution der Uno-Vollversammlung für ungültig erklärt.</p>
+																			
+									<p class="ask"><strong><i class="fa fa-question"></i> Frage zum Text</strong></p> 
+									
+									<p class="ask"><strong>Welche der nachfolgenden Aussagen zur Krim-Krise ist richtig?</strong></p>							
+
+									
+									<!--<p class="analysis invisible"></p>-->
+									
+									<h4 class="options"><strong><i class="fa fa-hand-pointer-o white invisible"></i></strong> 
+										
+										<ol type="a" class"swatch_g">
+											<li class"swatch_g">
+												<input type="radio" value="0" />
+												<label style"">Zurzeit, als in Kiev eine pro-russische Führung regierte, sprach sich die lokale Regierung auf der Krim für einen Anschluss an die russische Föderation aus.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Der Anschluss der Krim an Russland folgt vor allem wirtschaftlichen Motiven und ist nicht durch Volksgruppen-Zugehörigkeit oder strategischen Motiven zu erklären.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Die Auseinandersetzungen zwischen den drei Hauptbevölkerungsgruppen der Krim auf dem Maidan-Platz hatten viele Todesopfer zur Folge.</label>
+											</li>
+											<li>
+												<input type="radio" value="0" />
+												<label>Mit Janukovitsch kam nach dem Machtwechsel in Kiev ein pro-westlicher Präsident an die Macht.</label>
+											</li>
+											<li>
+												<input type="radio" value="1" />
+												<label>Nach Besetzungen der lokalen Parlaments der Krim durch unbekannte Truppen kamen neue politische Kräfte an die Macht, die in ihren Ansichten mit pro-europäischen Übergangsregierung in Kiev nicht übereinstimmten.</label>
+											</li>
+										</ol>
+										
+									</h4>
+									
+								</li>	
+							
+							</ul>
+							
+							
+						<div id="result" class="no_display">
+							
+					<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><img srcset="{% static 'img/ritterkarten/1x/tv.png' %} 277w, {% static 'img/ritterkarten/2x/tv.png' %} 554w" alt="Gewebe" width="277" /></a>
+				
+					<h3><i class="fas fa-thumbs-up"></i><b> Fertig! Dein Ergebnis?</b></h3>
+					
+					<h1></h1>
+					
+					<h5 class="labelo white"> </h5>
+					
+					<div><h2>Du erhältst eine MedKnight-Karte!</h2>
+					
+						<h5 class="white"><i class="fab fa-facebook-f"></i> <i>Teile sie mit Freunden und Feinden, die ebenfalls für den MedAT lernern</i></h5>
+					
+						<div class="fb-share-button" data-href="https://medcastle.at{{ request.path }}" data-layout="box_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmedcastle.at%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+					</div>
+					
+					<h5 class="space-top"></h5>
+					
+					<!--<p><b>Nein wirklich! Am Besten du schreibst dir gleich alle rot unterlegten Analysen</b> (Wie war nochmal die dazugehörige Frage?) <b>auf Karteikarten.</b></p>	-->									
+						</div>	
+						
+							
+							<p id="questionsLeft" class=""></p>
+							
+						</form>
+						
+						<p><i><i class="fas fa-exclamation-circle"></i> Wie auch beim echten MedAT wird dir hier erlaubt deine Antwort <strong>ab</strong>zuändern (vgl. auf Papier: altes Kästchen ausmalen, neues Kreuz setzen), nicht aber <strong>zurück</strong>zuändern: ist beim MedAT das Kästchen einmal ausgemalt, kannst du es nicht wieder ankreuzen. <strong>Eine Abänderung ist also endgültig.</strong></i></p> 
+						
+							
+					</div>
+				
+				</div>
+					
+				
+			<!--<hr/>-->
+
+
+{% endblock %}
